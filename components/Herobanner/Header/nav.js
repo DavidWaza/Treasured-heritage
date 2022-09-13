@@ -5,10 +5,17 @@ import Image from "next/image";
 import Logo from "../../../public/img/logo.png";
 import BackButton from "../../../public/img/buttonBk.png";
 import FrontButton from "../../../public/img/buttonFk.png";
+import styles from '../../../styles/Home.module.css'
 
 function CollapsibleNav() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="transparent" variant="light">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      bg="transparent"
+      variant="dark"
+      className={`${styles.transparent}`}
+    >
       <Container>
         <Navbar.Brand href="/">
           <Image src={Logo} alt="logo" height={70} width={70} />
@@ -16,18 +23,18 @@ function CollapsibleNav() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
-          <Nav className="flex">
+          <Nav className="flex text-bolder">
             <Nav.Link href="#deets">Home</Nav.Link>
-            <Nav.Link href="#deets">About Us</Nav.Link>
-            <Nav.Link href="#deets">Programs</Nav.Link>
-            <Nav.Link href="#deets">Events</Nav.Link>
-            <Nav.Link href="#deets">Contact</Nav.Link>
+            <Nav.Link href="#about">About Us</Nav.Link>
+            <Nav.Link href="#program">Programs</Nav.Link>
+            <Nav.Link href="#event">Events</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
             <Nav.Link href="/admission">
-              <button className="flex -mt-3">
+              <button className="flex -mt-3 cursor-pointer">
                 <div className=" relative">
-                  <Image src={BackButton} alt="" height={50} width={150} />
+                  <Image src={BackButton} alt="" height={49} width={150} />
                 </div>
-                <div className="flex absolute mt-1">
+                <div className="flex absolute mt-1.5">
                   <Image
                     src={FrontButton}
                     alt="front"
@@ -35,7 +42,7 @@ function CollapsibleNav() {
                     width={140}
                   />
                 </div>
-                <div className="absolute ml-8 mt-2.5">
+                <div className="absolute ml-8 mt-3">
                   <p className="text-white">admission</p>
                 </div>
               </button>
