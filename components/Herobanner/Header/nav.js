@@ -1,61 +1,50 @@
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 import Image from "next/image";
-import Link from "next/link";
 import Logo from "../../../public/img/logo.png";
-import ButtonBack from "../../../public/img/buttonBk.png";
-import ButtonFront from "../../../public/img/buttonFk.png";
-import styles from "../../../styles/Home.module.css";
+import BackButton from "../../../public/img/buttonBk.png";
+import FrontButton from "../../../public/img/buttonFk.png";
 
-const Navbar = () => {
+function CollapsibleNav() {
   return (
-    <>
-      <div className="flex fixed z-10 absolute top-2 left-5 w-screen">
-        <Image src={Logo} alt="Logo" height={100} width={100} />
-        <ul
-          className={`${styles.navLink} flex flex-1 justify-center mr-auto text-white text-center absolute top-2 left-60 z-100 `}
-        >
-          <li>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <a>About</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <a>Programs</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <a>Events</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <a>Contact</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/admission">
-              <a>
-                <button className={styles.buttonbk}>
-                  <Image src={ButtonBack} alt="button" />
-                </button>
-                <button className={styles.buttonfk}>
-                  <Image src={ButtonFront} alt="button" />
-                  <span className="absolute top-3 left-10">
-                    <p>Admission</p>
-                  </span>
-                </button>
-              </a>
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </>
+    <Navbar collapseOnSelect expand="lg" bg="transparent" variant="light">
+      <Container>
+        <Navbar.Brand href="/">
+          <Image src={Logo} alt="logo" height={70} width={70} />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto"></Nav>
+          <Nav className="flex">
+            <Nav.Link href="#deets">Home</Nav.Link>
+            <Nav.Link href="#deets">About Us</Nav.Link>
+            <Nav.Link href="#deets">Programs</Nav.Link>
+            <Nav.Link href="#deets">Events</Nav.Link>
+            <Nav.Link href="#deets">Contact</Nav.Link>
+            <Nav.Link href="/admission">
+              <button className="flex -mt-3">
+                <div className=" relative">
+                  <Image src={BackButton} alt="" height={50} width={150} />
+                </div>
+                <div className="flex absolute mt-1">
+                  <Image
+                    src={FrontButton}
+                    alt="front"
+                    height={45}
+                    width={140}
+                  />
+                </div>
+                <div className="absolute ml-8 mt-2.5">
+                  <p className="text-white">admission</p>
+                </div>
+              </button>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
-};
-export default Navbar;
+}
+
+export default CollapsibleNav;
