@@ -24,9 +24,8 @@
 .transparent {
   width: 100%;
   z-index: 10;
-  position: fixed;
+  position: sticky;
 }
-
 
 /* HEROBANNER */
 .bigText {
@@ -166,8 +165,8 @@
 
 /* ABOUT SECTION */
 .abtSection {
-  background-color: #F9F9F9;
-  height:auto;
+  background-color: #f9f9f9;
+  height: auto;
   padding-top: 20px;
   padding-bottom: 20px;
   letter-spacing: 0.06rem;
@@ -176,26 +175,25 @@
   font-family: "Poppins", sans-serif;
 }
 
-
 .welcomeText > a {
   font-family: "Poppins", sans-serif;
   color: black;
   text-decoration: none;
-  transition: all .8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 .objPos {
-  object-position:left;
+  object-position: left;
 }
 
 /* PROGRAMS */
 .programText > h2 {
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
 .programText > h5 {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-}  
+}
 .progHeader > h4 {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -210,7 +208,7 @@
 /* TESTIMONIALS */
 .testBg {
   position: relative;
-  background-color: #A0457B;
+  background-color: #a0457b;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -224,4 +222,22 @@
 .carousel {
   color: wheat;
   width: 100%;
+}
+.btnSlider {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  border: 1px solid rgba(34, 34, 34, 0.287);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.prev {
+  transform: translateY(-60%);
+}
+.next {
+  transform: translateY(-60%);
 }

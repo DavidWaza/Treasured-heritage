@@ -5,7 +5,7 @@ import Image from "next/image";
 import Logo from "../../../public/img/logo.png";
 import BackButton from "../../../public/img/buttonBk.png";
 import FrontButton from "../../../public/img/buttonFk.png";
-import styles from '../../../styles/Home.module.css'
+import styles from "../../../styles/Home.module.css";
 
 function CollapsibleNav() {
   return (
@@ -13,7 +13,7 @@ function CollapsibleNav() {
       collapseOnSelect
       expand="lg"
       bg="transparent"
-      variant="dark"
+      variant="light"
       className={`${styles.transparent}`}
     >
       <Container>

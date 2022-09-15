@@ -1,25 +1,16 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
-import Link from "next/link";
 import Parent from "../../public/img/parent.png";
 import Bus from "../../public/img/bus.png";
 import styles from "../../styles/Home.module.css";
-import LeftC from "../../public/img/leftC.png";
-import RightC from "../../public/img/rightC.png";
-import Right from "../../public/img/right.png";
-import Left from "../../public/img/left.png";
 import { useState } from "react";
+import Slider from "../Slider";
 
 const Testimony = () => {
-  const [prev, setPrev] = useState(0);
-  const [next, setNext] = useState(0);
+  const [slideIndex, setSlideIndex] = useState(1);
 
-  const goToNext = () => {
-    setNext((prev) => prev + 1);
-  };
-  const Previous = () => {
-    setPrev((prev) => prev - 1);
-  };
+  const nextSlide = () => {};
+  const prevSlide = () => {};
 
   return (
     <>
@@ -44,24 +35,11 @@ const Testimony = () => {
                 Testimonials
               </p>
             </div>
-            <div className="scale-50 flex justify-center space-x-10">
-              <button onClick={Previous}>
-                <a className="flex">
-                  <Image src={LeftC} alt="leftCaret" />
-                  <div className="absolute mt-1 mr-5 scale-70">
-                    <Image src={Left} alt="right" />
-                  </div>
-                </a>
-              </button>
-              <button onClick={goToNext}>
-                <a className="flex cursor-pointer">
-                  <Image src={RightC} alt="rightCaret" />
-                  <div className="absolute flex justify-center mt-3 ml-4 scale-150">
-                    <Image src={Right} alt="right" />
-                  </div>
-                </a>
-              </button>
+            <div className="flex justify-center">
+            <Slider moveSlide={prevSlide} direction={"prev"} />
+            <Slider moveSlide={nextSlide} direction={"next"} />
             </div>
+            
           </Col>
           <Col sm={6}>
             <div className="textSlider">
