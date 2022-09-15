@@ -5,11 +5,18 @@ import Bus from "../../public/img/bus.png";
 import styles from "../../styles/Home.module.css";
 import { useState } from "react";
 import Slider from "../Slider";
+import { dataSlider } from "../Slider/dataSlider";
 
 const Testimony = () => {
   const [slideIndex, setSlideIndex] = useState(1);
 
-  const nextSlide = () => {};
+  const nextSlide = () => {
+    if (slideIndex !== dataSlider.length) {
+      setSlideIndex(slideIndex + 1);
+    } else if (slideIndex === dataSlider.length) {
+      setSlideIndex(1);
+    }
+  };
   const prevSlide = () => {};
 
   return (
@@ -36,29 +43,23 @@ const Testimony = () => {
               </p>
             </div>
             <div className="flex justify-center">
-            <Slider moveSlide={prevSlide} direction={"prev"} />
-            <Slider moveSlide={nextSlide} direction={"next"} />
-            </div>
-            
-          </Col>
-          <Col sm={6}>
-            <div className="textSlider">
-              <p className="text-black">
-                “Natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Pulvinar sed, hendrerit ac neque. Nunc nulla
-                dolor, semper. Ivinar sed, hendrerit ac neque. Nunc nulla dolor,
-                semper.”
-              </p>
-            </div>
-            <div className="textSlider">
-              <p className="text-white">
-                “Natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Pulvinar sed, hendrerit ac neque. Nunc nulla
-                dolor, semper. Ivinar sed, hendrerit ac neque. Nunc nulla dolor,
-                semper.”
-              </p>
+              <Slider moveSlide={prevSlide} direction={"prev"} />
+              <Slider moveSlide={nextSlide} direction={"next"} />
             </div>
           </Col>
+          {dataSlider.map((obj, quote) => (
+            <Col sm={6} key={obj.id}>
+              <div
+                className={
+                  slideIndex === quote
+                    ? `${styles.slide} ${styles.activeAnim}`
+                    : `${styles.slide}`
+                }
+              >
+                <p className={quote}>{obj.quote}</p>
+              </div>
+            </Col>
+          ))}
         </Row>
       </Container>
     </>

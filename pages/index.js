@@ -7,6 +7,7 @@ import Navbar from '../components/Herobanner/Header/nav'
 import Program from '../components/Programs';
 import Welcome from '../components/Welcome';
 import Testimony from '../components/Testimony';
+import ContactPage from '../components/Contact';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <About />
       <Program />
       <Testimony />
+      <ContactPage />
     </div>
   )
 }
