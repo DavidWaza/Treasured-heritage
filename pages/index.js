@@ -8,6 +8,7 @@ import Program from '../components/Programs';
 import Welcome from '../components/Welcome';
 import Testimony from '../components/Testimony';
 import ContactPage from '../components/Contact';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Program />
       {/* <Testimony /> */}
       <ContactPage />
+      <Footer />
     </div>
   )
 }

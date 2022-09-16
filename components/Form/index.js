@@ -14,8 +14,6 @@ const Form = () => {
       <div className={styles.formSpree}>
         <form
           onSubmit={handleSubmit}
-          action="https://formspree.io/f/mwkyaqvr"
-          method="POST"
           autoComplete="off"
         >
           <label htmlFor="name" className="text-white">
