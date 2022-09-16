@@ -9,6 +9,8 @@ import Welcome from '../components/Welcome';
 import Testimony from '../components/Testimony';
 import ContactPage from '../components/Contact';
 import Footer from '../components/Footer';
+import ScrollTo from '../components/Scroll';
+import WhiteSpace from '../components/whiteSpace';
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
       <Program />
       {/* <Testimony /> */}
       <ContactPage />
+      <WhiteSpace />
+      <ScrollTo />
       <Footer />
     </div>
   )

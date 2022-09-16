@@ -251,6 +251,40 @@
 .active-anim {
   opacity: 1;
 }
+/* SCROLL TO TOP */
+.launch {
+  position: relative;
+}
+.iconPosition {
+  position: fixed;
+  top:18%;
+  right:42%;
+  z-index: 20;
+  cursor: pointer;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all 0.5s ease-in-out;
+}
+.iconPosition:hover {
+  animation: none;
+}
+
+@keyframes movebtn {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 /* CONTACTPAGE */
 .contactBg {
@@ -290,10 +324,9 @@
   padding-top: 50px;
   padding-bottom: 30px;
   text-align: justify;
-  
 }
 .footerItems {
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 200px;
   margin: 0 auto;
   letter-spacing: 0.035em;
@@ -305,4 +338,3 @@
   font-weight: bold;
   color: #a0457b;
 }
-
