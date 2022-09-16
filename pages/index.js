@@ -17,7 +17,7 @@ export default function Home() {
       <Welcome />
       <About />
       <Program />
-      <Testimony />
+      {/* <Testimony /> */}
       <ContactPage />
     </div>
   )
