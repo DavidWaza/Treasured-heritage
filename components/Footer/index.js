@@ -15,11 +15,13 @@ const Footer = () => {
           {FooterArr.map((obj) => (
             <Col sm={4} key={obj.id}>
               <div className={styles.footerItems}>
-                <p>{obj.Header}</p>
-                <p>{obj.subTitleOne}</p>
-                <p>{obj.subTitleTwo}</p>
-                <p>{obj.subTitleThree}</p>
-                <p>{obj.subTitleFour}</p>
+                
+                  <p>{obj.Header}</p>
+                  <p>{obj.subTitleOne}</p>
+                  <p>{obj.subTitleTwo}</p>
+                  <p>{obj.subTitleThree}</p>
+                  <p>{obj.subTitleFour}</p>
+                
               </div>
             </Col>
           ))}

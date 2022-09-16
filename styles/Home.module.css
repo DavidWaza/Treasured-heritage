@@ -285,7 +285,7 @@
 /* FOOTER */
 .footerbg {
   color: white;
-  background-color: black;
+  background-color: #171717;
   height: auto;
   padding-top: 50px;
   padding-bottom: 30px;
@@ -299,6 +299,7 @@
   letter-spacing: 0.035em;
   font-size: 0.88em;
   line-height: 18px;
+  padding: 12px;
 }
 .footerItems > p:nth-child(1) {
   font-weight: bold;
