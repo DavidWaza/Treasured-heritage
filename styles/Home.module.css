@@ -303,5 +303,6 @@
 }
 .footerItems > p:nth-child(1) {
   font-weight: bold;
+  color: #a0457b;
 }
 
