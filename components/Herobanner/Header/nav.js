@@ -24,11 +24,11 @@ function CollapsibleNav() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav className="flex text-bolder">
-            <Nav.Link href="#deets">Home</Nav.Link>
-            <Nav.Link href="#about">About Us</Nav.Link>
-            <Nav.Link href="#program">Programs</Nav.Link>
-            <Nav.Link href="#event">Events</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/about">About Us</Nav.Link>
+            <Nav.Link href="/program">Programs</Nav.Link>
+            <Nav.Link href="/event">Events</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
             <Nav.Link href="/admission">
               <button className="flex -mt-3 cursor-pointer">
                 <div className=" relative">

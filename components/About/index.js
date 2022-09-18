@@ -4,14 +4,14 @@ import AboutImg from "../../public/img/about.png";
 import Image from "next/image";
 import Link from "next/link";
 import Arrow from "../../public/img/right.png";
-import Casual from "../../public/img/casual.png"
+import Casual from "../../public/img/casual.png";
 
 const About = () => {
   return (
     <>
       <Container fluid className={styles.abtSection}>
         <Row>
-          <Col sm={12}></Col>
+          {/* <Col sm={12}></Col> */}
           <Container>
             <Row>
               <Col sm={8}>
@@ -30,9 +30,7 @@ const About = () => {
                   <div className="pl-12">
                     <button className="flex cursor-pointer">
                       <Link href="/">
-                        <a className="text-black no-underline">
-                          Learn more{" "}
-                        </a>
+                        <a className="text-black no-underline">Learn more </a>
                       </Link>
                       <Image src={Arrow} alt="arrow" />
                     </button>

@@ -1,21 +1,18 @@
 
 // import styles from '../styles/Home.module.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import About from '../components/About';
 import Herobanner from '../components/Herobanner'
-import Navbar from '../components/Herobanner/Header/nav'
 import Program from '../components/Programs';
 import Welcome from '../components/Welcome';
 import Testimony from '../components/Testimony';
 import ContactPage from '../components/Contact';
-import Footer from '../components/Footer';
-import ScrollTo from '../components/Scroll';
-import WhiteSpace from '../components/whiteSpace';
+import ScrollTo from "../components/Scroll";
+import WhiteSpace from "../components/whiteSpace";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      
       <Herobanner />
       <Welcome />
       <About />
@@ -24,7 +21,6 @@ export default function Home() {
       <ContactPage />
       <WhiteSpace />
       <ScrollTo />
-      <Footer />
     </div>
   )
 }

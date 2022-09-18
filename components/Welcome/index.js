@@ -14,10 +14,9 @@ const Welcome = () => {
             <div className="relative flex justify-center">
               <Image src={Background} alt="background" />
               <div className="absolute right-2">
-              <Image src={Principal} alt="principal" />
+                <Image src={Principal} alt="principal" />
+              </div>
             </div>
-            </div>
-           
           </Col>
           <Col sm={8}>
             <div className={styles.welcomeText}>
@@ -38,10 +37,10 @@ const Welcome = () => {
                   lives.
                 </p>
                 <span>
-                  <p className={styles.psudoName}>
+                  <p className={`${styles.psudoName} flex justify-center`}>
                     Martina George - Bominuru(Mrs)
                   </p>
-                  <p className={styles.position}>Proprietress</p>
+                  <p className={`${styles.position} flex justify-center`}>Proprietress</p>
                 </span>
               </p>
             </div>
