@@ -7,20 +7,15 @@ import LeftQuote from "../public/img/about/leftQuote.png";
 import Background from "../public/img/bgimg.png";
 import Principal from "../public/img/Headmis.png";
 import Spiral from "../public/img/about/doodleSpiral.svg";
-import LightBrain from "../public/img/about/lightbrain.png";
-import Congress from "../public/img/about/congress.png";
-import Safety from "../public/img/about/safety.png";
 import ballBoy from "../public/img/about/boyball.png";
-import FortyThree from "../public/img/about/43.png";
-import sevenSeven from "../public/img/about/77.png";
-import oneTen from "../public/img/about/110.png";
+import { StaffArr, whyUsArr } from "../components/staff/staffArr";
 
 const About = () => {
   return (
     <>
       <div className={Abtstyles.hero}></div>
       <Container>
-        <Row>
+        <Row className="pb-10 pt-10">
           <Col>
             <div
               className={`${Abtstyles.Aheader} flex justify-end mt-10 font-bolder text-2xl`}
@@ -101,30 +96,16 @@ const About = () => {
           <div className={Abtstyles.whyUsContainer}>
             <div className={Abtstyles.whyUsContainerDiv}>
               <Row>
-                <Col sm={4}>
+                {whyUsArr.map((obj) => (
+                  <Col sm={4} key={obj.id}>
                   <div className="flex justify-center mt-4">
-                    <Image src={Congress} alt="congress" />
+                    <Image src={obj.icon} alt="congress" />
                   </div>
                   <div className="flex justify-center mt-2 font-bold">
-                    <p>Experienced Teachers</p>
+                    <p>{obj.field}</p>
                   </div>
                 </Col>
-                <Col sm={4}>
-                  <div className="flex justify-center mt-4">
-                    <Image src={LightBrain} alt="congress" />
-                  </div>
-                  <div className="flex justify-center mt-2 font-bold">
-                    <p>Fun Learning Environment</p>
-                  </div>
-                </Col>
-                <Col sm={4}>
-                  <div className="flex justify-center mt-4">
-                    <Image src={Safety} alt="congress" />
-                  </div>
-                  <div className="flex justify-center mt-2 font-bold">
-                    <p>School Safety</p>
-                  </div>
-                </Col>
+                ))}
               </Row>
             </div>
             <Row>
@@ -148,39 +129,19 @@ const About = () => {
             </div>
             <div>
               <Row>
-                <Col sm={4}>
-                  <div className={Abtstyles.staffCard}>
-                    <div className="scale-50">
-                      <Image src={FortyThree} alt="43" />
+                {StaffArr.map((obj) => (
+                  <Col sm={4} key={obj.id}>
+                    <div className={Abtstyles.staffCard}>
+                      <div className="scale-50">
+                        <Image src={obj.Avatar} alt="43" />
+                      </div>
+                      <p className="text-center scale-72 font-bold">
+                        {obj.name}
+                      </p>
+                      <p className="text-center scale-72">{obj.position}</p>
                     </div>
-                    <p className="text-center scale-72 font-bold">
-                      Mr George Bominuru
-                    </p>
-                    <p className="text-center scale-72">CEO</p>
-                  </div>
-                </Col>
-                <Col sm={4}>
-                  <div className={Abtstyles.staffCard}>
-                    <div className="scale-50">
-                      <Image src={oneTen} alt="43" />
-                    </div>
-                    <p className="text-center scale-72 font-bold">
-                      Mr Matina Bominuru
-                    </p>
-                    <p className="text-center scale-72">Propritress</p>
-                  </div>
-                </Col>
-                <Col sm={4}>
-                  <div className={Abtstyles.staffCard}>
-                    <div className="scale-50">
-                      <Image src={sevenSeven} alt="43" />
-                    </div>
-                    <p className="text-center scale-72 font-bold">
-                      Miss Clayton
-                    </p>
-                    <p className="text-center scale-72">Principal</p>
-                  </div>
-                </Col>
+                  </Col>
+                ))}
               </Row>
             </div>
           </div>
