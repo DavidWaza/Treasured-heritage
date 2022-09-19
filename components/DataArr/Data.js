@@ -7,6 +7,8 @@ import LightBrain from "../../public/img/about/lightbrain.png";
 import Congress from "../../public/img/about/congress.png";
 import Safety from "../../public/img/about/safety.png";
 
+import Student from "../../public/img/event/student.png";
+import Bug from "../../public/img/event/bug.png"
 export const StaffArr = [
     {
         id: 1,
@@ -43,4 +45,39 @@ export const whyUsArr = [
         icon: Safety,
         field: "School Safety"
     }
+]
+export const CardArr = [
+    {
+        id: 1,
+        img: Student,
+        update: "Update",
+        title: "Opening Day At THS | Welcome Treasures",
+    },
+    {
+
+        id: 2,
+        img: Student,
+        update: "Update",
+        title: "Its a time for Celebration of Dads!"
+    }
+]
+export const EventDayArr = [
+{
+    id: 1,
+    img: Bug,
+    update: "Photos",
+    title: "Annual Lady Bug Day"
+},
+{
+    id: 1,
+    img: Bug,
+    update: "Photos",
+    title: "Annual Dinosaur Day"
+},
+{
+    id: 1,
+    img: Bug,
+    update: "Photos",
+    title: "Annual Lizard Day"
+},
 ]

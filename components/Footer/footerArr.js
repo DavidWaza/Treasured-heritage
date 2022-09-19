@@ -12,12 +12,14 @@ export const FooterArr = [
     subTitleOne: "Dinosaur Day",
     subTitleTwo: "Penguin Day",
     subTitleThree: "Dinner Dates",
-    subTitleFour: "Swimming Day"
+    subTitleFour: "Swimming Day",
   },
   {
     id: 3,
     Header: "Contact Us",
-    subTitleOne: "Phone no: 08033341574",
-    subTitleTwo: "Email: davidYega69@gmail.com",
-  }
+    subTitleOne: "Phone no: 08029246221",
+    subTitleTwo: "Email: treasuredheritagemontessori@gmail.com ",
+    subTitleThree:
+      "Location: 112, Moferere Street, off Ajilosun, Behind Ado local Govt, Health Center, Ado-Ekiti.",
+  },
 ];

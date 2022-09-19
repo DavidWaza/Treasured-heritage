@@ -8,7 +8,7 @@ import Background from "../public/img/bgimg.png";
 import Principal from "../public/img/Headmis.png";
 import Spiral from "../public/img/about/doodleSpiral.svg";
 import ballBoy from "../public/img/about/boyball.png";
-import { StaffArr, whyUsArr } from "../components/staff/staffArr";
+import { StaffArr, whyUsArr } from "../components/DataArr/Data";
 
 const About = () => {
   return (
