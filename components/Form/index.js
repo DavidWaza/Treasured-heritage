@@ -19,7 +19,7 @@ const Form = () => {
   return (
     <>
       <div className={styles.formSpree}>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} autoComplete="off">
           <label htmlFor="name" className="text-white">
             Your Name
           </label>
