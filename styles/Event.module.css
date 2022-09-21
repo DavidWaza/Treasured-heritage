@@ -49,10 +49,11 @@
 }
 .cardContainer {
   background-color: #f9f9f9;
-  height: 75vh;
+  height: auto;
   border-radius: 0px 0px 20px 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 20px;
+  object-fit: contain;
 }
 .cardContainer > p:nth-child(2) {
   font-family: "Poppins", sans-serif;
@@ -69,3 +70,10 @@
 .cardWrapper {
   width: 100%;
 }
+  
+    .image {
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+    }

@@ -7,7 +7,11 @@ const Card = (props) => {
   return (
     <div className={envStyles.container}>
       <div className={envStyles.cardContainer}>
-        <Image src={props.img} alt="student" height={400} />
+          <Image
+            src={props.img}
+            alt="student"
+            height={400}
+          />
         <p>{props.update}</p>
         <p>{props.title}</p>
         <div className="pl-1">

@@ -1,7 +1,7 @@
 import styles from "../../styles/Home.module.css";
 import Form from "../Form";
 
-const ContactPage = () => {
+const ContactUs = () => {
   return (
     <>
       <div className={styles.contactBg}>
@@ -19,4 +19,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default ContactUs;

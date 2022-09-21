@@ -255,7 +255,7 @@
 }
 .iconPosition {
   position: fixed;
-  top:18%;
+  top:10%;
   right:42%;
   z-index: 20;
   cursor: pointer;
