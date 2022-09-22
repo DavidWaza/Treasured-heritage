@@ -7,6 +7,8 @@ import FaceBook from "../../public/img/fb.png";
 import Instagram from "../../public/img/ig.png";
 import Twitter from "../../public/img/tw.png";
 
+const fbURL = "https://web.facebook.com/profile.php?id=100063690275152"
+
 const Footer = () => {
   return (
     <>
@@ -29,7 +31,7 @@ const Footer = () => {
         <Row>
           <div className="flex justify-center space-x-10 mt-5">
             <div className="cursor-pointer">
-              <Link href="/">
+              <Link href={fbURL}>
                 <Image src={FaceBook} alt="fb" />
               </Link>
             </div>
