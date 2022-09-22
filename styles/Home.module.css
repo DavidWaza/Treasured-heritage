@@ -70,7 +70,7 @@
   top: -95px;
   right: 30px;
   transform: scale(0.6);
-  display: none;
+  /* display: none; */
 }
 .ballOne {
   position: absolute;

@@ -1,12 +1,12 @@
 import { Col, Container, Row } from "react-bootstrap";
 import contactStyles from "../styles/Contact.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import Location from "../public/img/contact/location.png";
 import Call from "../public/img/contact/call.png";
 import Email from "../public/img/contact/email.png";
 import BackButton from "../public/img/buttonBk.png";
 import FrontButton from "../public/img/buttonFk.png";
-// import Form from '../components/Form/index'
 import ContactUs from "../components/Contact/index";
 
 const ContactPage = () => {
@@ -36,24 +36,33 @@ const ContactPage = () => {
               <p className="text-center">
                 Do you want to make any enquiries? We are here for you. Call us.
               </p>
-              <div className="flex justify-center mt-4">
-                <button className="flex -mt-3 cursor-pointer">
-                  <div className=" relative">
-                    <Image src={BackButton} alt="" height={49} width={150} />
+              <Link href="tel:08029246221">
+                <a>
+                  <div className="flex justify-center mt-4">
+                    <button className="flex -mt-3 cursor-pointer">
+                      <div className=" relative">
+                        <Image
+                          src={BackButton}
+                          alt=""
+                          height={49}
+                          width={150}
+                        />
+                      </div>
+                      <div className="flex absolute mt-1.5">
+                        <Image
+                          src={FrontButton}
+                          alt="front"
+                          height={45}
+                          width={140}
+                        />
+                      </div>
+                      <div className="absolute ml-12 mt-3 tracking-wider font-bold">
+                        <p className="text-white">call</p>
+                      </div>
+                    </button>
                   </div>
-                  <div className="flex absolute mt-1.5">
-                    <Image
-                      src={FrontButton}
-                      alt="front"
-                      height={45}
-                      width={140}
-                    />
-                  </div>
-                  <div className="absolute ml-12 mt-3 tracking-wider font-bold">
-                    <p className="text-white">call</p>
-                  </div>
-                </button>
-              </div>
+                </a>
+              </Link>
             </div>
           </Col>
           <Col sm={4}>
@@ -69,7 +78,7 @@ const ContactPage = () => {
           </Col>
         </Row>
         <Row>
-            <ContactUs />
+          <ContactUs />
         </Row>
       </Container>
     </>

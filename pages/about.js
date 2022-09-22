@@ -101,7 +101,7 @@ const About = () => {
                   <div className="flex justify-center mt-4">
                     <Image src={obj.icon} alt="congress" />
                   </div>
-                  <div className="flex justify-center mt-2 font-bold">
+                  <div className="text-center mt-2 font-bold">
                     <p>{obj.field}</p>
                   </div>
                 </Col>
@@ -132,7 +132,7 @@ const About = () => {
                 {StaffArr.map((obj) => (
                   <Col sm={4} key={obj.id}>
                     <div className={Abtstyles.staffCard}>
-                      <div className="scale-50">
+                      <div className="flex justify-center scale-50">
                         <Image src={obj.Avatar} alt="43" />
                       </div>
                       <p className="text-center scale-72 font-bold">
