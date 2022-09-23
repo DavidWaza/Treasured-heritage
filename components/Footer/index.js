@@ -7,6 +7,7 @@ import FaceBook from "../../public/img/fb.png";
 import Instagram from "../../public/img/ig.png";
 import Twitter from "../../public/img/tw.png";
 
+
 const fbURL = "https://web.facebook.com/profile.php?id=100063690275152"
 
 const Footer = () => {

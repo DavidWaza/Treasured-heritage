@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import contactStyles from "../styles/Contact.module.css";
+import styles from "../styles/Home.module.css"
 import Image from "next/image";
 import Link from "next/link";
 import Location from "../public/img/contact/location.png";
@@ -7,7 +8,8 @@ import Call from "../public/img/contact/call.png";
 import Email from "../public/img/contact/email.png";
 import BackButton from "../public/img/buttonBk.png";
 import FrontButton from "../public/img/buttonFk.png";
-import ContactUs from "../components/Contact/index";
+// import ContactUs from "../components/Contact/index";
+import Form from "../components/Form/index";
 
 const ContactPage = () => {
   return (
@@ -78,7 +80,10 @@ const ContactPage = () => {
           </Col>
         </Row>
         <Row>
-          <ContactUs />
+          <div className={styles.contactBg}>
+            <Form />
+          </div>
+          {/* <ContactUs /> */}
         </Row>
       </Container>
     </>
