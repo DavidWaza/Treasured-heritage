@@ -57,16 +57,9 @@
   margin-top: 10px;
   font-family: 'Poppins', sans-serif;
 }
-/* .staffCard > p:nth-child(3) {
-  display: none;
-  color: #f9f9f9;
-  transition: all .6s ease-in;
-} */
+
 .staffCard:hover {
-  background-color: rgb(137, 35, 98);
-  transform: scale(1.1);
+  background-color: #b0acac;
+  transform: scale(1.02);
   color: #fff;
 }
-/* .staffCard:hover > p:nth-child(3) {
-  display: block;
-} */

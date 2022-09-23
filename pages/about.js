@@ -17,9 +17,12 @@ const About = () => {
         <p className="text-center text-white text-7xl font-bold tracking-wider">
           About Us
         </p>
-        <p className="text-center text-white text-2xl tracking-wide"><q>
-        An investment in knowledge pays the best interest. –  Benjamin Franklin
-          </q></p>
+        <p className="text-center text-white text-2xl tracking-wide">
+          <q>
+            An investment in knowledge pays the best interest. – Benjamin
+            Franklin
+          </q>
+        </p>
       </div>
       <Container>
         <Row className="pb-10 pt-10">
@@ -36,10 +39,19 @@ const About = () => {
                 <p className="mt-10">What we aim to achieve</p>
                 <p>
                   <Image src={LeftQuote} alt="right quote" />
-                  We provide a sound{" "}
+                  <span className="font-bold italic">We</span> provide a sound{" "}
                   <span className="font-bold">Montessori</span> system of
                   education required for the acquisition of relevant knowledge
                   and skills.
+                </p>
+                <p>
+                  {" "}
+                  <span className="font-bold italic">Groom</span> children that
+                  can compete favourably on a global level.
+                </p>
+                <p>
+                  <span className="font-bold italic">Develop</span> children of
+                  faith with godly character
                 </p>
                 <div className="flex justify-center mt-5">
                   <Image src={Spiral} alt="spiral" />
@@ -50,10 +62,12 @@ const About = () => {
                   </p>
                   <div className="flex justify-end">
                     <p>
-                      1. To be among the foremost providers of all-round
-                      qualitative education in Nigeria. <br />
-                      2. A Citadel where leaders with high spiritual, moral and
-                      intellectual values are raised.
+                      <span className="font-bold italic">To</span> be among the
+                      foremost providers of all-round qualitative education in
+                      Nigeria. <br />
+                      <span className="font-bold italic">A</span> Citadel where
+                      leaders with high spiritual, moral and intellectual values
+                      are raised.
                       <Image src={RightQuote} alt="left quote" />
                     </p>
                   </div>
