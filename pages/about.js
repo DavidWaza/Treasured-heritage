@@ -13,7 +13,14 @@ import { StaffArr, whyUsArr } from "../components/DataArr/Data";
 const About = () => {
   return (
     <>
-      <div className={Abtstyles.hero}></div>
+      <div className={Abtstyles.hero}>
+        <p className="text-center text-white text-7xl font-bold tracking-wider">
+          About Us
+        </p>
+        <p className="text-center text-white text-2xl tracking-wide"><q>
+        An investment in knowledge pays the best interest. –  Benjamin Franklin
+          </q></p>
+      </div>
       <Container>
         <Row className="pb-10 pt-10">
           <Col>
@@ -98,13 +105,13 @@ const About = () => {
               <Row>
                 {whyUsArr.map((obj) => (
                   <Col sm={4} key={obj.id}>
-                  <div className="flex justify-center mt-4">
-                    <Image src={obj.icon} alt="congress" />
-                  </div>
-                  <div className="text-center mt-2 font-bold">
-                    <p>{obj.field}</p>
-                  </div>
-                </Col>
+                    <div className="flex justify-center mt-4">
+                      <Image src={obj.icon} alt="congress" />
+                    </div>
+                    <div className="text-center mt-2 font-bold">
+                      <p>{obj.field}</p>
+                    </div>
+                  </Col>
                 ))}
               </Row>
             </div>

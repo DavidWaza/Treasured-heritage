@@ -7,6 +7,9 @@
   background-size: cover;
   height: 75vh;
 }
+.hero > p:nth-child(1) {
+  padding-top: 10%;
+}
 .Aheader {
   font-family: "Poppins", sans-serif;
 }
