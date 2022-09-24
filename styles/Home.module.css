@@ -28,6 +28,27 @@
 }
 
 /* HEROBANNER */
+.Herobanner {
+  position: relative;
+  background-image: url("../public/img/rec1.png");
+  height: 80vh;
+  background-size: cover;
+  background-position: 10% 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.leftContainer > p:nth-child(1) {
+  padding-top: 30%;
+  font-family: "Poppins", sans-serif;
+}
+.leftContainer > p:nth-child(2) {
+  font-family: "Poppins", sans-serif;
+}
+.leftContainer > p:nth-child(3) {
+  font-family: "Poppins", sans-serif;
+}
+
 .bigText {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -43,34 +64,31 @@
   left: 35px;
 }
 .enrolbuttonbk {
-  position: absolute;
+  position: relative;
   height: 50px;
   width: 150px;
-  bottom: 135px;
-  left: 20px;
 }
 
 .enrolbuttonfk {
   position: absolute;
   height: 50px;
   width: 150px;
-  bottom: 130px;
-  left: 15px;
+  left: 8.9%;
 }
 .enrolbuttonfk > span > p {
   font-family: "Poppins", sans-serif;
-  position: absolute  ;
+  position: absolute;
   top: 10px;
   left: 15px;
 }
 .transBoy {
   position: absolute;
-  justify-content: center;
   display: flex;
-  top: -95px;
+  justify-content: center;
+  justify-items: center;
+  top: -24%;
   right: 30px;
   transform: scale(0.6);
-  display: none;
 }
 .ballOne {
   position: absolute;
@@ -244,7 +262,6 @@
   position: absolute;
   opacity: 0;
   transition: opacity ease-in-out 0.4s;
-
 }
 .active-anim {
   opacity: 1;
@@ -255,8 +272,8 @@
 }
 .iconPosition {
   position: fixed;
-  top:10%;
-  right:42%;
+  top: 10%;
+  right: 42%;
   z-index: 20;
   cursor: pointer;
   animation: movebtn 3s ease-in-out infinite;
