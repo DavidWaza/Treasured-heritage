@@ -26,12 +26,11 @@
   position: relative;
 }
 .whyUsContainer {
-  height: 70vh;
+  height: auto;
   position: relative;
 }
 .whyUsContainerDiv {
   position: absolute;
-  height: 20vh;
   background-color: #fff;
   width: 50%;
   margin: 0 auto;
@@ -39,7 +38,6 @@
   border-radius: 20px;
 }
 .staffContainer {
-  padding-top: 20px;
   background-color: #f9f9f9;
   height: auto;
   padding-bottom: 30px;
