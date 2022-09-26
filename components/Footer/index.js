@@ -7,8 +7,7 @@ import FaceBook from "../../public/img/fb.png";
 import Instagram from "../../public/img/ig.png";
 import Twitter from "../../public/img/tw.png";
 
-
-const fbURL = "https://web.facebook.com/profile.php?id=100063690275152"
+const fbURL = "https://web.facebook.com/profile.php?id=100063690275152";
 
 const Footer = () => {
   return (
@@ -18,13 +17,11 @@ const Footer = () => {
           {FooterArr.map((obj) => (
             <Col sm={4} key={obj.id}>
               <div className={styles.footerItems}>
-                
-                  <p>{obj.Header}</p>
-                  <p>{obj.subTitleOne}</p>
-                  <p>{obj.subTitleTwo}</p>
-                  <p>{obj.subTitleThree}</p>
-                  <p>{obj.subTitleFour}</p>
-                
+                <p>{obj.Header}</p>
+                <p>{obj.subTitleOne}</p>
+                <p className="text-sm">{obj.subTitleTwo}</p>
+                <p>{obj.subTitleThree}</p>
+                <p>{obj.subTitleFour}</p>
               </div>
             </Col>
           ))}

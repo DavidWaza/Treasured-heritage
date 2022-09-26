@@ -17,7 +17,7 @@ const Program = () => {
           </Col>
         </Row>
         <Row className="mt-5 object-center">
-          {ProgramArr.map(({ id, image, schoolType, summary }) => (
+          {ProgramArr.map(({ id, image, schoolType, slug}) => (
             <Col sm={4} key={id}>
               <div className="relative flex justify-center">
                 <Image src={PBackground} alt="background" />
@@ -27,7 +27,7 @@ const Program = () => {
               </div>
               <div className={styles.progHeader}>
                 <h4 className="text-center mt-3">{schoolType}</h4>
-                <p className="text-bold">{summary}</p>
+                <p className="text-bold">{slug}</p>
               </div>
             </Col>
           ))}

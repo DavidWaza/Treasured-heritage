@@ -8,7 +8,7 @@ export const FooterArr = [
   },
   {
     id: 2,
-    Header: "Events",
+    Header: "Activities",
     subTitleOne: "Dinosaur Day",
     subTitleTwo: "Penguin Day",
     subTitleThree: "Dinner Dates",
