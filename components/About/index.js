@@ -11,7 +11,6 @@ const About = () => {
     <>
       <Container fluid className={styles.abtSection}>
         <Row>
-          {/* <Col sm={12}></Col> */}
           <Container>
             <Row>
               <Col sm={8}>
@@ -29,7 +28,7 @@ const About = () => {
                   </p>
                   <div className="pl-12">
                     <button className="flex cursor-pointer">
-                      <Link href="/">
+                      <Link href="/about">
                         <a className="text-black no-underline">Learn more </a>
                       </Link>
                       <Image src={Arrow} alt="arrow" />
