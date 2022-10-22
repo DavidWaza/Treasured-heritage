@@ -15,13 +15,29 @@ const Footer = () => {
       <Container fluid className={styles.footerbg}>
         <Row>
           {FooterArr.map((obj) => (
-            <Col sm={4} key={obj.id}>
+            <Col sm={3} key={obj.id}>
               <div className={styles.footerItems}>
                 <p>{obj.Header}</p>
-                <p>{obj.subTitleOne}</p>
-                <p className="text-sm">{obj.subTitleTwo}</p>
-                <p>{obj.subTitleThree}</p>
-                <p>{obj.subTitleFour}</p>
+                <Link href={`/ ${obj.subTitleOne}`}>
+                  <a>
+                    <p>{obj.subTitleOne}</p>
+                  </a>
+                </Link>
+                <Link href={`/ ${obj.subTitleTwo}`}>
+                  <a>
+                    <p className="text-sm">{obj.subTitleTwo}</p>
+                  </a>
+                </Link>
+                <Link href={`/ ${obj.subTitleThree}`}>
+                  <a>
+                    <p>{obj.subTitleThree}</p>
+                  </a>
+                </Link>
+                <Link href={`/ ${obj.subTitleFour}`}>
+                  <a>
+                    <p>{obj.subTitleFour}</p>
+                  </a>
+                </Link>
               </div>
             </Col>
           ))}

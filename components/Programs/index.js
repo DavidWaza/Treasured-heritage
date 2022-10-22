@@ -26,7 +26,7 @@ const Program = () => {
                 </div>
               </div>
               <div className={styles.progHeader}>
-                <h4 className="text-center mt-3">{schoolType}</h4>
+                <h4 className="text-center mt-5 font-bold">{schoolType}</h4>
                 <p className="text-bold">{slug}</p>
               </div>
             </Col>

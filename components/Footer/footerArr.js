@@ -22,4 +22,9 @@ export const FooterArr = [
     subTitleThree:
       "Location: 112, Moferere Street, off Ajilosun, Behind Ado local Govt, Health Center, Ado-Ekiti.",
   },
+  {
+    id: 4,
+    Header: "Events",
+    subTitleOne: "Calender"
+  }
 ];

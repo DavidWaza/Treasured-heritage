@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import HerobannerBg from "../../public/img/rec1.png";
 import ButtonBack from "../../public/img/buttonBk.png";
 import EnrollButton from "../../public/img/rec6.png";
 import Boy from "../../public/img/rec16.png";
@@ -16,7 +15,6 @@ import DoodleThree from "../../public/img/doodle2.png";
 import DoodleFour from "../../public/img/doodle4.png";
 import DoodleFive from "../../public/img/doodle5.png";
 import DoodleSix from "../../public/img/doodle6.png";
-import BookBoy from "../../public/img/bookboy.png";
 import { Col, Container, Row } from "react-bootstrap";
 
 const Herobanner = () => {
@@ -31,9 +29,9 @@ const Herobanner = () => {
                   Admission
                 </p>
                 <p className="text-white text-xl font-bold tracking-wide">
-                  open for <span className="text-3xl">2022 - 2023</span>
+                  open for <span className="text-3xl tracking-wide">2022 - 2023</span>
                 </p>
-                <p className="text-white tracking-wide">
+                <p className="text-white">
                   Creche | Nursery | Grade School
                 </p>
               </div>

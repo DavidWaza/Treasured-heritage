@@ -139,9 +139,9 @@ const About = () => {
           </div>
         </Row>
         <Row>
-          <div className={Abtstyles.staffContainer}>
+          <div className={`pb-5 ${Abtstyles.staffContainer}`}>
             <div>
-              <p className="text-center font-bold text-xl tracking-wide pt-3">
+              <p className="text-center font-bold text-xl tracking-wide pt-5">
                 Meet Our Staff
               </p>
               <p className="text-center tracking-wide font-bold">
