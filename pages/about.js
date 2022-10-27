@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Abtstyles from "../styles/About.module.css";
 import styles from "../styles/Home.module.css";
@@ -11,10 +12,15 @@ import ballBoy from "../public/img/about/boyball.png";
 import { StaffArr, whyUsArr } from "../components/DataArr/Data";
 
 const About = () => {
+  const [showMore, setShowMore] = useState(false);
+
+  const showMoreData =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula tellus id mi posuere, eget congue enim finibus. Duis at ante vitae erat mattis tincidunt a vitae dui. Maecenas suscipit erat sit amet metus egestas rhoncus at sed sem. Praesent vehicula nunc eu lectus scelerisque lobortis. Praesent bibendum magna vitae diam iaculis cursus. Maecenas purus leo, eleifend id urna id, tincidunt pulvinar urna. Vivamus at mattis massa. Curabitur ut volutpat nibh.";
+
   return (
     <>
       <div className={Abtstyles.hero}>
-        <p className="text-center text-white text-7xl font-bold tracking-wider">
+        <p className="text-center text-white text-7xl font-bold tracking-wider animate__animated animate__shakeY">
           About Us
         </p>
         <p className="text-center text-white text-2xl tracking-wide">
@@ -120,7 +126,7 @@ const About = () => {
                 {whyUsArr.map((obj) => (
                   <Col sm={4} key={obj.id}>
                     <div className="flex justify-center mt-4">
-                      <Image src={obj.icon} alt="congress" />
+                      <Image src={obj.icon} alt="icons-summ" />
                     </div>
                     <div className="text-center mt-2 font-bold">
                       <p>{obj.field}</p>
@@ -165,6 +171,21 @@ const About = () => {
                 ))}
               </Row>
             </div>
+            <Row>
+              <Col sm={12}>
+                {showMore ? showMoreData : `${showMoreData.substring(0, 0)}`}
+                <div
+                  className={
+                    showMore
+                      ? `${Abtstyles.buttonCollapse}`
+                      : `${Abtstyles.buttonShowMore}`
+                  }
+                  onClick={() => setShowMore(!showMore)}
+                >
+                  {showMore ? "Show less" : "Show more"}
+                </div>
+              </Col>
+            </Row>
           </div>
         </Row>
       </Container>

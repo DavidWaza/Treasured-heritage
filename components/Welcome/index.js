@@ -1,13 +1,14 @@
+
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
 import Background from "../../public/img/bgimg.png";
 import Principal from "../../public/img/Headmis.png";
 
-const Welcome = () => {
+const Welcome = ({className="animate__animated animate__backInUp"}) => {
   return (
     <>
-      <Container>
+      <Container className={className}>
         <Row>
           <div className={styles.welcomeHeader}>WELCOME NOTE</div>
           <Col sm={4}>
@@ -40,7 +41,9 @@ const Welcome = () => {
                   <p className={`${styles.psudoName} flex justify-center`}>
                     Martina George - Bominuru(Mrs)
                   </p>
-                  <p className={`${styles.position} flex justify-center`}>Proprietress</p>
+                  <p className={`${styles.position} flex justify-center`}>
+                    Proprietress
+                  </p>
                 </span>
               </p>
             </div>

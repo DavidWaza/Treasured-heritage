@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@formspree/react": "^2.4.0",
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.2.1",
     "moment": "^2.29.4",
     "next": "12.2.5",

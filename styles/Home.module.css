@@ -20,7 +20,6 @@
   color: #fff !important;
   text-decoration: none;
   cursor: pointer;
-  
 }
 .transparent {
   width: 100%;
@@ -32,6 +31,7 @@
 .Herobanner {
   position: relative;
   background-image: url("../public/img/rec1.png");
+  background-attachment: scroll;
   height: 80vh;
   background-size: cover;
   background-position: 10% 100%;
@@ -352,4 +352,24 @@
 .footerItems > a {
   text-decoration: none;
   color: #f9f9f9;
+}
+
+/* GALLERY PAGE */
+.Herogallery {
+  background-image: url("../public/img/event/herogal.jpg");
+  background-position: 0% 50%;
+  background-size: cover;
+  position: relative;
+  background-color: #727272;
+  height: 50vh;
+}
+.Herogallery > h1 {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  font-size:3.5rem;
+  letter-spacing: .1rem;
 }

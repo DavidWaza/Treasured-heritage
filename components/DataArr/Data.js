@@ -69,17 +69,22 @@ export const EventDayArr = [
     img: Bug,
     update: "Photos",
     title: "Annual Lady Bug Day",
+    url: "",
   },
   {
     id: 1,
     img: Bug,
     update: "Photos",
     title: "Annual Dinosaur Day",
+    url: "",
   },
   {
     id: 1,
     img: Bug,
     update: "Photos",
     title: "Annual Lizard Day",
+    url: "",
   },
 ];
+
+

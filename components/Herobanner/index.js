@@ -1,4 +1,4 @@
-import React from "react";
+
 import styles from "../../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,6 +17,9 @@ import DoodleFive from "../../public/img/doodle5.png";
 import DoodleSix from "../../public/img/doodle6.png";
 import { Col, Container, Row } from "react-bootstrap";
 
+const admisURL =
+  "https://treasuredheritageschool.com/admission-treasured-heritage-school-ekiti/";
+
 const Herobanner = () => {
   return (
     <>
@@ -29,14 +32,13 @@ const Herobanner = () => {
                   Admission
                 </p>
                 <p className="text-white text-xl font-bold tracking-wide">
-                  open for <span className="text-3xl tracking-wide">2022 - 2023</span>
+                  open for{" "}
+                  <span className="text-3xl tracking-wide">2022 - 2023</span>
                 </p>
-                <p className="text-white">
-                  Creche | Nursery | Grade School
-                </p>
+                <p className="text-white">Creche | Nursery | Grade School</p>
               </div>
               <div>
-                <Link href="/">
+                <Link href={admisURL}>
                   <a>
                     <button className={styles.enrolbuttonbk}>
                       <Image src={ButtonBack} alt="button" />
@@ -52,8 +54,9 @@ const Herobanner = () => {
               </div>
             </Col>
             <Col sm={8}>
-              <div className="hidden">
-                <div className={styles.transBoy}>
+              <div>
+              
+                <div className={` animate__animated animate__headShake ${styles.transBoy}`}>
                   <Image src={Boy} alt="boy" />
                 </div>
                 <div className="absolute top-32 right-60">
