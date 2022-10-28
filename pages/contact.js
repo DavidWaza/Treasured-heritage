@@ -38,31 +38,29 @@ const ContactPage = () => {
                 Do you want to make any enquiries? We are here for you. Call us.
               </p>
               <Link href="tel:08029246221">
-                <a>
-                  <div className="flex justify-center mt-4">
-                    <button className="flex -mt-3 cursor-pointer">
-                      <div className=" relative">
-                        <Image
-                          src={BackButton}
-                          alt="back"
-                          height={49}
-                          width={150}
-                        />
-                      </div>
-                      <div className="flex absolute mt-1.5">
-                        <Image
-                          src={FrontButton}
-                          alt="front"
-                          height={45}
-                          width={140}
-                        />
-                      </div>
-                      <div className="absolute ml-12 mt-3 tracking-wider font-bold">
-                        <p className="text-white">call</p>
-                      </div>
-                    </button>
-                  </div>
-                </a>
+                <div className="flex justify-center mt-4">
+                  <button className="flex -mt-3 cursor-pointer">
+                    <div className=" relative">
+                      <Image
+                        src={BackButton}
+                        alt="back"
+                        height={49}
+                        width={150}
+                      />
+                    </div>
+                    <div className="flex absolute mt-1.5">
+                      <Image
+                        src={FrontButton}
+                        alt="front"
+                        height={45}
+                        width={140}
+                      />
+                    </div>
+                    <div className="absolute ml-12 mt-3 tracking-wider font-bold">
+                      <p className="text-white">call</p>
+                    </div>
+                  </button>
+                </div>
               </Link>
             </div>
           </Col>

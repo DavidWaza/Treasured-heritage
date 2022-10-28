@@ -19,24 +19,16 @@ const Footer = () => {
               <div className={styles.footerItems}>
                 <p>{obj.Header}</p>
                 <Link href={`/ ${obj.subTitleOne}`}>
-                  <a>
-                    <p>{obj.subTitleOne}</p>
-                  </a>
+                  <p>{obj.subTitleOne}</p>
                 </Link>
                 <Link href={`/ ${obj.subTitleTwo}`}>
-                  <a>
-                    <p className="text-sm">{obj.subTitleTwo}</p>
-                  </a>
+                  <p className="text-sm">{obj.subTitleTwo}</p>
                 </Link>
                 <Link href={`/ ${obj.subTitleThree}`}>
-                  <a>
-                    <p>{obj.subTitleThree}</p>
-                  </a>
+                  <p>{obj.subTitleThree}</p>
                 </Link>
                 <Link href={`/ ${obj.subTitleFour}`}>
-                  <a>
-                    <p>{obj.subTitleFour}</p>
-                  </a>
+                  <p>{obj.subTitleFour}</p>
                 </Link>
               </div>
             </Col>

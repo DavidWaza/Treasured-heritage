@@ -39,7 +39,6 @@ const Herobanner = () => {
               </div>
               <div>
                 <Link href={admisURL}>
-                  <a>
                     <button className={styles.enrolbuttonbk}>
                       <Image src={ButtonBack} alt="button" />
                     </button>
@@ -49,7 +48,6 @@ const Herobanner = () => {
                         <p>Enroll</p>
                       </span>
                     </button>
-                  </a>
                 </Link>
               </div>
             </Col>

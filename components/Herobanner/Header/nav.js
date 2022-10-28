@@ -35,7 +35,6 @@ function CollapsibleNav() {
             <Nav.Link href="/contact">Contact</Nav.Link>
             <Nav.Link href="/admission">
               <Link href={admisURL}>
-                <a>
                   <button className="flex -mt-3 cursor-pointer">
                     <div className=" relative">
                       <Image src={BackButton} alt="" height={49} width={150} />
@@ -52,7 +51,6 @@ function CollapsibleNav() {
                       <p className="text-white">admission</p>
                     </div>
                   </button>
-                </a>
               </Link>
             </Nav.Link>
           </Nav>

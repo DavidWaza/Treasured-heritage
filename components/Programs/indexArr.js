@@ -25,4 +25,6 @@ export const ProgramArr = [
       "Our Grades classes 1 to 5. In THS, the terminating class is Grade 5. Like in our Pre-School,we adopt a combination of both the Conventional and the Montessori methods of teaching. The age range for this level is from age 5 to age 11.",
   },
 ];
-    
+const showMoreData =
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula tellus id mi posuere, eget congue enim finibus. Duis at ante vitae erat mattis tincidunt a vitae dui. Maecenas suscipit erat sit amet metus egestas rhoncus at sed sem. Praesent vehicula nunc eu lectus scelerisque lobortis. Praesent bibendum magna vitae diam iaculis cursus. Maecenas purus leo, eleifend id urna id, tincidunt pulvinar urna. Vivamus at mattis massa. Curabitur ut volutpat nibh.";
+

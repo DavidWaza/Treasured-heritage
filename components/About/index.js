@@ -28,8 +28,8 @@ const About = () => {
                   </p>
                   <div className="pl-12">
                     <button className="flex cursor-pointer">
-                      <Link href="/about">
-                        <a className="text-black no-underline">Learn more </a>
+                      <Link href="/about" className="text-black no-underline">
+                        Learn more
                       </Link>
                       <Image src={Arrow} alt="arrow" />
                     </button>
