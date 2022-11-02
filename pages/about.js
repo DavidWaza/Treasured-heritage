@@ -14,6 +14,7 @@ import { StaffArr, whyUsArr } from "../components/DataArr/Data";
 const About = () => {
   const [showMore, setShowMore] = useState(false);
 
+
   const showMoreData =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula tellus id mi posuere, eget congue enim finibus. Duis at ante vitae erat mattis tincidunt a vitae dui. Maecenas suscipit erat sit amet metus egestas rhoncus at sed sem. Praesent vehicula nunc eu lectus scelerisque lobortis. Praesent bibendum magna vitae diam iaculis cursus. Maecenas purus leo, eleifend id urna id, tincidunt pulvinar urna. Vivamus at mattis massa. Curabitur ut volutpat nibh.";
 

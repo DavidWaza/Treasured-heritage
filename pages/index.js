@@ -5,15 +5,17 @@ import Program from "../components/Programs";
 import Welcome from "../components/Welcome";
 // import Testimony from "../components/Testimony";
 import ContactPage from "../components/Contact";
+import Newsletter from "../components/Newsletter";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Herobanner />
       <Welcome  />
       <About />
       <Program />
       <ContactPage />
-    </div>
+      <Newsletter />
+    </>
   );
 }

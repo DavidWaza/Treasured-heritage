@@ -28,123 +28,8 @@
 }
 
 /* HEROBANNER */
-.Herobanner {
-  position: relative;
-  background-image: url("../public/img/rec1.png");
-  background-attachment: scroll;
-  height: 80vh;
-  background-size: cover;
-  background-position: 10% 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-.leftContainer > p:nth-child(1) {
-  padding-top: 30%;
-  font-family: "Poppins", sans-serif;
-}
-.leftContainer > p:nth-child(2) {
-  font-family: "Poppins", sans-serif;
-}
-.leftContainer > p:nth-child(3) {
-  font-family: "Poppins", sans-serif;
-}
-
-.bigText {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  /* letter-spacing:; */
-}
-.subText {
-  font-family: "Poppins", sans-serif;
-  bottom: 259px;
-  left: 35px;
-}
-.subTextSys {
-  font-family: "Poppins", sans-serif;
-  bottom: 210px;
-  left: 35px;
-}
-.enrolbuttonbk {
-  position: relative;
-  height: 50px;
-  width: 150px;
-}
-
-.enrolbuttonfk {
-  position: absolute;
-  height: 50px;
-  width: 150px;
-  left: 5.9%;
-}
-.enrolbuttonfk > span > p {
-  font-family: "Poppins", sans-serif;
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  cursor: pointer;
-}
-.transBoy {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  top: -24%;
-  right: 30px;
-  transform: scale(0.6);
-}
-.ballOne {
-  position: absolute;
-  top: 420px;
-  left: 700px;
-}
-.ballTwo {
-  position: absolute;
-  top: 340px;
-  left: 630px;
-}
-.ballThree {
-  position: absolute;
-  top: 340px;
-  left: 700px;
-}
-.doodleOne {
-  top: 92px;
-  position: absolute;
-  left: 763px;
-}
-.doodleTwo {
-  top: 113px;
-  position: absolute;
-  left: 753px;
-}
-.doodleThree {
-  top: 125px;
-  position: absolute;
-  left: 736px;
-}
-.doodleFour {
-  top: 90px;
-  position: absolute;
-  left: 966px;
-}
-.doodleFive {
-  top: 117px;
-  position: absolute;
-  left: 966px;
-}
-.doodleSix {
-  top: 105px;
-  position: absolute;
-  left: 966px;
-}
-.bookBoy {
-  transform: scale(0.8);
-  left: 370px;
-}
 
 /* WELCOME NOTES */
-
 .welcomeHeader {
   font-weight: bold;
   font-size: 2rem;
@@ -364,12 +249,76 @@
   height: 50vh;
 }
 .Herogallery > h1 {
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+}
+
+/* NEWSLETTER */
+.newsletterBg {
+  background-color: #efefef;
+  background: rgba(239, 239, 239, 0.6);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 60px;
+}
+.NewsletterPng {
+  display: flex;
+  justify-content: center;
+}
+.newsLettertext {
+  display: block;
+  margin: 12% 0px;
+}
+.newsLettertext > p:nth-child(1) {
+  font-size: 2.2rem;
+  font-weight: bold;
   font-family: 'Poppins', sans-serif;
-  font-size:3.5rem;
-  letter-spacing: .1rem;
+}
+.newsLettertext > p:nth-child(2) {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #727272;
+  font-family: 'Poppins', sans-serif;
+  margin: -10px 0px;
+}
+.newsletterInputBg {
+  margin-top: -10%;
+}
+.newsletterInput {
+  width: 70%;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.newsletterInput::placeholder {
+  color: #8F8F8F;
+  font-size: 0.9rem;
+}
+.newsletterButton {
+  margin-top: 20px;
+}
+.subButton {
+  font-family: "poppins", sans-serif;
+  width: 70%;
+  background-color: #BD0075;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.subButtonDisabled {
+  font-family: "poppins", sans-serif;
+  width: 70%;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #8F8F8F;
+  cursor: no-drop !important;
 }
