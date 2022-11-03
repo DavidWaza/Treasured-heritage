@@ -28,7 +28,22 @@
 }
 
 /* HEROBANNER */
+.herobannerOne, .herobannerTwo, .herobannerTwo {
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+.herobannerOne {
+  background-image: url("../public/img/event/dad.jpg");
+}
+.herobannerTwo {
+  background-image: url("../public/img/event/herogal.jpg");
 
+}
+.herobannerThree {
+  background-image: url("../public/img/event/hero.png");
+
+}
 /* WELCOME NOTES */
 .welcomeHeader {
   font-weight: bold;
@@ -281,14 +296,16 @@
 .newsLettertext > p:nth-child(1) {
   font-size: 2.2rem;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.07rem;
 }
 .newsLettertext > p:nth-child(2) {
   font-size: 1rem;
   font-weight: normal;
   color: #727272;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: -10px 0px;
+  letter-spacing: 0.07rem;
 }
 .newsletterInputBg {
   margin-top: -10%;
@@ -299,8 +316,9 @@
   border-radius: 20px;
 }
 .newsletterInput::placeholder {
-  color: #8F8F8F;
+  color: #8f8f8f;
   font-size: 0.9rem;
+  letter-spacing: 0.07rem;
 }
 .newsletterButton {
   margin-top: 20px;
@@ -308,9 +326,10 @@
 .subButton {
   font-family: "poppins", sans-serif;
   width: 70%;
-  background-color: #BD0075;
+  background-color: #bd0075;
   color: #ffffff;
   padding: 10px 20px;
+  letter-spacing: 0.07rem;
   border-radius: 20px;
 }
 .subButtonDisabled {
@@ -319,6 +338,7 @@
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 20px;
-  background-color: #8F8F8F;
+  background-color: #8f8f8f;
+  letter-spacing: 0.07rem;
   cursor: no-drop !important;
 }

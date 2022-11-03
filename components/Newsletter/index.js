@@ -22,11 +22,6 @@ const Newsletter = () => {
   };
 
   const handleSubmit = (e) => {
-    if (email.length >= 1 && email == true) {
-      console.log("proceed");
-    } else {
-      console.log("try again");
-    }
     e.preventDefault();
     console.log(state);
   };
@@ -64,8 +59,8 @@ const Newsletter = () => {
                 type="submit"
                 value="Submit"
                 onClick={handleClick}
-              >
-                subscribe
+              >                                 
+                {!isValid ? "Fill the form" : "Subscribe"}
               </button>
             </div>
           </form>
