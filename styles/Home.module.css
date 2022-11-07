@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400;1,700&family=Poppins:wght@300&display=swap");
 
+.inputForm {
+  display: flex;
+  justify-content: center;
+}
+.input {
+  width: 200px;
+  height: 10px;
+  border: 1px solid black;
+  padding: 20px;
+  
+
+}
 /* NAVBAR */
 .navLink {
   display: flex;
@@ -29,12 +41,13 @@
 
 /* HEROBANNER */
 .herobannerOne, .herobannerTwo, .herobannerTwo {
+  position: relative;
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 70vh;
 }
 .herobannerOne {
-  background-image: url("../public/img/event/dad.jpg");
+  background-image: url("../public/img/rec1.png");
 }
 .herobannerTwo {
   background-image: url("../public/img/event/herogal.jpg");
@@ -43,6 +56,99 @@
 .herobannerThree {
   background-image: url("../public/img/event/hero.png");
 
+}
+.button {
+  padding: 10px;
+  background-color: #a0457b;
+  color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+  margin-top: -7%;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+.heroText {
+  color: #f1f1f1;
+  text-align: justify;
+  padding-left: 10%;
+}
+.heroText > p:nth-child(1) {
+  font-weight: bold;
+  font-size: 5rem;
+  letter-spacing: 0.04rem;
+  margin-top: 20%;
+}
+.heroText > p:nth-child(2) {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.05rem;
+  margin-top: -5%;
+}
+.heroText > p:nth-child(2) > span {
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 0.05rem;
+  margin-top: -5%;
+}
+.heroText > p:nth-child(3) {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.05rem;
+}
+.enrollButton {
+  padding-left: 10%;
+}
+.buttonText {
+  padding-left: 7.5%;
+  margin-top: 10px;
+}
+.boy {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  transform: scale(0.69) translate(-40%, -16.5%);
+}
+.doodleOne {
+  position: absolute;
+  top: 9%;
+}
+.doodleTwo {
+  position: absolute;
+  top: 14%;
+  margin-left: -10px;
+}
+.doodleThree {
+  position: absolute;
+  top: 18%;
+  margin-left: -25px;
+}
+.doodleFour {
+  position: absolute;
+  top: 9%;
+  right: 30%;
+}
+.doodleFive {
+  position: absolute;
+  top: 14%;
+  right: 30%;
+  margin-right: -10px;
+}
+.doodleSix {
+  position: absolute;
+  top: 18%;
+  right: 30%;
+  margin-right: -10px;
+}
+
+/* NOTICE */
+.noticeBg {
+  background-color: #A0457B;
+  height: 20vh;
+  width: 100%;
+  margin-top: -10vh;
+}
+.noticeText {
+  color: #ffffff;
+  padding: 50px;
 }
 /* WELCOME NOTES */
 .welcomeHeader {
@@ -256,7 +362,7 @@
 
 /* GALLERY PAGE */
 .Herogallery {
-  background-image: url("../public/img/event/herogal.jpg");
+  background-image: url("../public/img/gallery.png");
   background-position: 0% 50%;
   background-size: cover;
   position: relative;
@@ -271,7 +377,7 @@
   color: #f9f9f9;
   font-family: "Poppins", sans-serif;
   font-size: 3.5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.04rem;
 }
 
 /* NEWSLETTER */
@@ -341,4 +447,20 @@
   background-color: #8f8f8f;
   letter-spacing: 0.07rem;
   cursor: no-drop !important;
+}
+/* SUCCESS */
+.successBg {
+  margin: 20px auto;
+  background: rgba(239, 239, 239, 0.6);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 70%;
+  height: 30vh;
+}
+.successBg > p {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 10%;
+
 }

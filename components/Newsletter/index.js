@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
 import { Col, Row, Container } from "react-bootstrap";
 import Image from "next/image";
@@ -7,6 +9,7 @@ import NewsletterPng from "../../public/img/news.png";
 const placeholder = "waza@example.com";
 
 const Newsletter = () => {
+  const router = useRouter();
   const [state, setState] = useState({ email: "" });
   const isValid = state.email != null && state.email.trim().length > 0;
   const handleChange = (event) => {
@@ -18,12 +21,13 @@ const Newsletter = () => {
   };
 
   const handleClick = () => {
-    console.log("click");
+    if (state.email != null && state.email.length > 0) {
+      return router.push("/success");
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(state);
   };
   return (
     <Container className={styles.newsletterBg}>
@@ -59,7 +63,7 @@ const Newsletter = () => {
                 type="submit"
                 value="Submit"
                 onClick={handleClick}
-              >                                 
+              >
                 {!isValid ? "Fill the form" : "Subscribe"}
               </button>
             </div>

@@ -1,9 +1,10 @@
 import styles from "../../styles/Home.module.css";
+import { Col, Row } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
 // import ButtonBack from "../../public/img/buttonBk.png";
 import EnrollButton from "../../public/img/rec6.png";
-import Boy from "../../public/img/rec16.png";
+import Boy from "../../public/img/boy.png";
 import Ball1 from "../../public/img/ball1.png";
 import Ball2 from "../../public/img/ball2.png";
 import Ball3 from "../../public/img/ball3.png";
@@ -30,26 +31,74 @@ const admisURL =
   "https://treasuredheritageschool.com/admission-treasured-heritage-school-ekiti/";
 
 const Herobanner = () => {
+  
   return (
     <>
       <CarouselProvider
         naturalSlideWidth={100}
         naturalSlideHeight={45}
         totalSlides={3}
+        isPlaying={5000}
       >
         <Slider>
           <Slide index={0}>
-            <div className={styles.herobannerOne}></div>
+            <div className={styles.herobannerOne}>
+              <Row>
+                <Col sm={6}>
+                  <div className={styles.heroText}>
+                    <p>Admission</p>
+                    <p>
+                      open for <span>2022 - 2023</span>
+                    </p>
+                    <p>Creche | Nursery | Primary</p>
+                  </div>
+                  <Link href="/">
+                    <div className={`absolute text-white ${styles.buttonText}`}>
+                      Enroll Now
+                    </div>
+                    <button className={styles.enrollButton}>
+                      <Image
+                        src={EnrollButton}
+                        alt="button"
+                        width={150}
+                        height={150}
+                      />
+                    </button>
+                  </Link>
+                </Col>
+                <Col sm={6}>
+                  <div className={styles.boy}>
+                    <Image src={Boy} alt="boy" />
+                  </div>
+                  <div className={styles.doodleOne}>
+                    <Image src={DoodleOne} alt="dod1" />
+                  </div>
+                  <div className={styles.doodleTwo}>
+                    <Image src={DoodleTwo} alt="dod1" />
+                  </div>
+                  <div className={styles.doodleThree}>
+                    <Image src={DoodleThree} alt="dod1" />
+                  </div>
+                  <div className={styles.doodleFour}>
+                    <Image src={DoodleFour} alt="dod1" />
+                  </div>
+                  <div className={styles.doodleFive}>
+                    <Image src={DoodleFive} alt="dod1" />
+                  </div>
+                  <div className={styles.doodleSix}>
+                    <Image src={DoodleSix} alt="dod1" />
+                  </div>
+                </Col>
+              </Row>
+            </div>
           </Slide>
           <Slide index={1}>
             <div className={styles.herobannerTwo}></div>
           </Slide>
-          <Slide index={2}>
+          {/* <Slide index={2}>
             <div className={styles.herobannerThree}></div>
-          </Slide>
+          </Slide> */}
         </Slider>
-        <ButtonBack>Back</ButtonBack>
-        <ButtonNext>Next</ButtonNext>
       </CarouselProvider>
     </>
   );

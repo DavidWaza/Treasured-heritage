@@ -5,7 +5,7 @@ import { Col, Row, Container } from "react-bootstrap";
 const Gallery = () => {
   return (
     <>
-      <Container>
+      <Container fluid>
         <Row>
           <Col>
             <section>
