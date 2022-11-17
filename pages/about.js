@@ -156,21 +156,6 @@ const About = () => {
               </p>
             </div>
             <div>
-              <Row>
-                {StaffArr.map((obj) => (
-                  <Col sm={4} key={obj.id}>
-                    <div className={Abtstyles.staffCard}>
-                      <div className="flex justify-center scale-50">
-                        <Image src={obj.Avatar} alt="43" />
-                      </div>
-                      <p className="text-center scale-72 font-bold">
-                        {obj.name}
-                      </p>
-                      <p className="text-center scale-72">{obj.position}</p>
-                    </div>
-                  </Col>
-                ))}
-              </Row>
             </div>
             <Row>
               <Col sm={12}>
