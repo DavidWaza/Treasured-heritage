@@ -1,8 +1,9 @@
 import styles from "../styles/Home.module.css";
 import { Col, Row, Container } from "react-bootstrap";
-// import ImgsViewer from "react-images-viewer";
+// import Image from 'next/image'
 
-const Gallery = () => {
+const Gallery = ({ galleryPhotos }) => {
+  console.log(galleryPhotos);
   return (
     <>
       <Container fluid>
@@ -13,9 +14,14 @@ const Gallery = () => {
                 <h1>Gallery</h1>
               </div>
             </section>
-            <section>
-              
-            </section>
+            <Row className="mt-5">
+              {galleryPhotos.map((photo) => (
+                <Col sm={4} key={photo.id}>
+                  <img src={photo.url} alt="photo"  />
+                  <p>{photo.title}</p>
+                </Col>
+              ))}
+            </Row>
           </Col>
         </Row>
       </Container>
@@ -24,3 +30,14 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
+export const getStaticProps = async () => {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/photos?_limit=8`);
+  const galleryPhotos = await res.json();
+
+  return {
+    props: {
+      galleryPhotos,
+    },
+  };
+};

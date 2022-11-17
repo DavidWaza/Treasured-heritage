@@ -23,7 +23,7 @@ export const Notice = () => {
               <Col sm={6}>
                 <div className="flex justify-center">
                   <Link href="/admission">
-                    <button className="flex mt-12 cursor-pointer">
+                    <button className={`flex mt-12 cursor-pointer ${styles.noticeButton}`}>
                       <div className=" relative">
                         <Image
                           src={BackButton}

@@ -18,7 +18,7 @@ export const FooterArr = [
     id: 3,
     Header: "Contact Us",
     subTitleOne: "Phone no: 08029246221",
-    subTitleTwo: "Email: treasuredheritagemontessori@gmail.com ",
+    subTitleTwo: "Email: ",
     subTitleThree:
       "Location: 112, Moferere Street, off Ajilosun, Behind Ado local Govt, Health Center, Ado-Ekiti.",
   },

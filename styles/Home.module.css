@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400;1,700&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
 
 .inputForm {
   display: flex;
@@ -9,8 +9,6 @@
   height: 10px;
   border: 1px solid black;
   padding: 20px;
-  
-
 }
 /* NAVBAR */
 .navLink {
@@ -40,22 +38,23 @@
 }
 
 /* HEROBANNER */
-.herobannerOne, .herobannerTwo, .herobannerTwo {
-  position: relative;
-  background-size: cover;
-  background-position: center;
+.firstHero,
+.secondHero,
+.thirdHero {
   height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.herobannerOne {
-  background-image: url("../public/img/rec1.png");
+.firstHero {
+  background-image: url("https://res.cloudinary.com/ddwkojhaj/image/upload/v1668630319/310922115_522008566598815_7526448369759444954_n_zs8zq0.jpg");
 }
-.herobannerTwo {
-  background-image: url("../public/img/event/herogal.jpg");
-
+.secondHero {
+  background-image: url("https://res.cloudinary.com/ddwkojhaj/image/upload/v1668629875/314755532_553405830125755_6266091475251493632_n_aod4qc.jpg");
 }
-.herobannerThree {
-  background-image: url("../public/img/event/hero.png");
-
+.thirdHero {
+  background-image: url("https://res.cloudinary.com/ddwkojhaj/image/upload/v1668630857/309506070_515526497247022_7152474865088621976_n_ocpcqt.jpg");
+  background-position: 25% 15% !important;
 }
 .button {
   padding: 10px;
@@ -141,43 +140,57 @@
 
 /* NOTICE */
 .noticeBg {
-  background-color: #A0457B;
-  height: 20vh;
+  background-color: #a0457b;
   width: 100%;
-  margin-top: -10vh;
 }
 .noticeText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.25px;
   color: #ffffff;
-  padding: 50px;
+  padding: 6%;
 }
 /* WELCOME NOTES */
 .welcomeHeader {
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.welPrincp {
-  margin-top: -340px;
-  margin-right: 10px;
+.welcomeTitle > p:nth-child(1) {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.25px;
+  font-weight: bold;
+  font-size: 20px;
 }
-.welcomeText > p:nth-child(2) {
+.welcomeTitle > p:nth-child(2) {
   font-family: "Poppins", sans-serif;
-  letter-spacing: 0.03rem;
+  font-weight: light;
+  letter-spacing: 0.25px;
+  font-size: 18px;
 }
-.psudoName {
-  position: relative;
+.welcomeTitle > p:nth-child(3) {
+  font-family: "Poppins", sans-serif;
+  font-weight: light;
+  letter-spacing: 0.25px;
+  font-size: 18px;
+}
+.welcomeTitle > p:nth-child(4) {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.25px;
+  font-weight: bold;
+  font-size: 21px;
   color: rgb(137, 35, 98);
 }
-.psudoName:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 2px;
-  bottom: -11px;
-  background: #727272;
+.welcomeTitle > hr {
+  width: 50%;
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 15%;
 }
 
 .welcomeText {
@@ -187,45 +200,71 @@
 }
 
 /* ABOUT SECTION */
-.abtSection {
-  background-color: #f9f9f9;
-  height: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  letter-spacing: 0.06rem;
+.abtWrapper {
+  background: url("https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto/v1668634984/Rectangle_24_ukra3h.png");
+  padding-bottom: 50px;
+  background-position: 15% 0% !important;
+  background-size: cover;
+  position: relative;
 }
-.abtSection > h3 {
+.abtHeader {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.25px;
+  font-size: 20px;
+  margin-top: 40%;
+}
+.abtHeader > p:nth-child(2) {
   font-family: "Poppins", sans-serif;
+  font-weight: light;
+  font-size: 18px;
+  letter-spacing: 0.25px;
+  line-height: 30px;
 }
-
-.welcomeText > a {
-  font-family: "Poppins", sans-serif;
-  color: black;
-  text-decoration: none;
-  transition: all 0.8s ease-in-out;
+.abtImg {
+  background-image: url("https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto,w_500,c_scale/v1668636991/296167644_465053988960940_7485100177366996116_n_ktulq1.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-top: 50%;
+  width: 350px;
+  height: 350px;
+  clip-path: circle(43.8% at 46% 55%);
 }
-.objPos {
-  object-position: left;
+.AbtTitle {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  display: inline-block;
 }
 
 /* PROGRAMS */
+.programWrapper {
+  background-color:#F3F3F3;
+  ;
+}
 .programText > h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 .programText > h5 {
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
+  letter-spacing: 0.25px;
+  line-height: 40px;
 }
 .progHeader > h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 .progHeader > p {
   text-align: center;
   font-family: "Poppins", sans-serif;
-  letter-spacing: 0.06rem;
-  font-size: 0.89rem;
+  letter-spacing: 0.25px;
+  font-size: 18px;
 }
 
 /* TESTIMONIALS */
@@ -309,7 +348,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 30px;
+  margin-top: 70px;
+  margin-bottom: 70px;
   height: auto;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -462,5 +502,39 @@
   text-align: center;
   font-size: 2rem;
   padding-top: 10%;
+}
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 767px) {
+  .noticeButton {
+    margin-top: -8px;
+    padding-bottom: 36px;
+  }
+  .welcomeTitle > p:nth-child(4) {
+    font-size: 20px;
+    text-align: center;
+  }
+  .welcomeTitle > hr {
+    width: 100%;
+  }
+  .title {
+    margin: 0;
+    text-align: center;
+  }
+
+  .abtHeader {
+    text-align: center;
+  }
+  .abtImg {
+    display: none;
+  }
+  .abtHeader {
+    font-size: 18px;
+  }
+  .AbtTitle {
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-size: 25px !important;
+  }
 }
