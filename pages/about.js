@@ -7,7 +7,7 @@ import Background from "../public/img/bgimg.png";
 import Principal from "../public/img/Headmis.png";
 import { StaffArr, whyUsArr } from "../components/DataArr/Data";
 import AccordionArr from "../components/Accordion/index";
-
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -42,10 +42,9 @@ const About = () => {
               from you very soon Yours in the affairs of moulding lives.
             </p>
           </div>
-
         </Row>
         <Row>
-        <AccordionArr />
+          <AccordionArr />
         </Row>
         <Row>
           <Col>
@@ -149,27 +148,43 @@ const About = () => {
           </Col>
         </Row>
         <Row>
-          <div className={Abtstyles.whyUsContainer}>
-            <div className={Abtstyles.whyUsContainerDiv}>
-              <Row>
-                {whyUsArr.map((obj) => (
-                  <Col sm={4} key={obj.id}>
-                    <div className="flex justify-center mt-4">
-                      <Image
-                        src={obj.icon}
-                        alt="icons-summ"
-                        width={50}
-                        height={50}
-                      />
-                    </div>
-                    <div className="text-center mt-2 font-bold">
-                      <p>{obj.field}</p>
-                    </div>
-                  </Col>
-                ))}
-              </Row>
-            </div>
-            <Row></Row>
+          <div className={Abtstyles.whyUsContainerDiv}>
+            <Row>
+              {whyUsArr.map((obj) => (
+                <Col sm={4} key={obj.id}>
+                  <div className={Abtstyles.whyUsImg}>
+                    <Image
+                      src={obj.icon}
+                      alt="icons-summ"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                  <div className={Abtstyles.whyUsTitle}>
+                    <p>{obj.field}</p>
+                  </div>
+                </Col>
+              ))}
+            </Row>
+          </div>
+        </Row>
+        <Row>
+          <div className={Abtstyles.otherLinks}>
+            <p>Other Links</p>
+          </div>
+          <div className={Abtstyles.buttonLinksGrp}>
+            <Link href="/event">
+              <button className={Abtstyles.buttonLinks}>Events</button>
+            </Link>
+            <Link href="/admission">
+              <button className={Abtstyles.buttonLinks}>Admission</button>
+            </Link>
+            <Link href="/contact">
+              <button className={Abtstyles.buttonLinks}>Contact us</button>
+            </Link>
+            <Link href="/gallery">
+              <button className={Abtstyles.buttonLinks}>Gallery</button>
+            </Link>
           </div>
         </Row>
       </Container>

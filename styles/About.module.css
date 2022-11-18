@@ -91,18 +91,56 @@
 .whyUsContainerDiv {
   position: absolute;
   background-color: #fff;
+  height: 20vh;
   width: 50%;
-  margin: 0 auto;
   transform: translate(50%, -50%);
   border-radius: 20px;
 }
-
-
+.whyUsImg {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.whyUsTitle {
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+font-size: 15px;
+text-align: center;
+}
+.otherLinks {
+  height: 30vh;
+  background-color: #fff;
+}
+.otherLinks > p {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: .25px;
+  margin-top: 15vh;
+  color: black;
+}
+.buttonLinksGrp {
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+}
+.buttonLinks {
+  padding: 7px 12px;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  font-size: 12px;
+  margin-right: 10px;
+}
 @media screen and (max-width: 767px) {
   .Aheader {
     text-align: center;
   }
   .accordion {
     width: 90%;
+  }
+  .whyUsContainerDiv {
+    display: none;
   }
 }

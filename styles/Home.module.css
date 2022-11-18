@@ -374,6 +374,7 @@
 
 /* FOOTER */
 .footerbg {
+  margin-top: 40px;
   color: white;
   background-color: #171717;
   height: auto;

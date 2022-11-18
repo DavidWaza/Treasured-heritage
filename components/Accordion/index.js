@@ -1,8 +1,7 @@
-import Accordion from './Accordion';
-import Abtstyles from '../../styles/About.module.css'
+import Accordion from "./Accordion";
+import Abtstyles from "../../styles/About.module.css";
 
 const AccordionArr = () => {
-
   const accordionData = [
     {
       id: 1,

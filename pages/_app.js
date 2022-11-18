@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
     <>
       {/* <Navbar /> */}
       <Component {...pageProps} />
-      <WhiteSpace />
+      {/* <WhiteSpace /> */}
       <ScrollTo />
       <Footer />
     </>
