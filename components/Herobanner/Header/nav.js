@@ -60,7 +60,7 @@ const BigNav = () => {
           </li>
           <li className={styles.portal}>
             <Link href="/portal">
-              <p className="text-white p-0">portal</p>
+              <p className={styles.portalText}>portal</p>
             </Link>
           </li>
         </ul>
