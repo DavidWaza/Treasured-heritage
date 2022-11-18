@@ -505,7 +505,7 @@
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .noticeButton {
     margin-top: -8px;
     padding-bottom: 36px;

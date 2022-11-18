@@ -16,7 +16,7 @@ const About = () => {
         <p className="text-center text-white text-7xl font-bold tracking-wider animate__animated animate__shakeY">
           About Us
         </p>
-        <p className="text-center text-white text-2xl tracking-wide">
+        <p>
           <q>
             An investment in knowledge pays the best interest. – Benjamin
             Franklin
@@ -130,13 +130,13 @@ const About = () => {
           <Col>
             <div className="relative">
               <div className={Abtstyles.CBg}>
-                <div className="flex justify-center">
+                <div className={Abtstyles.CBgTitle}>
                   <p className="text-white mt-10 text-3xl font-bold">
                     Why Choose Us?
                   </p>
                 </div>
-                <div className="flex justify-center">
-                  <p className="text-white text-xl text-center w-3/5">
+                <div className={Abtstyles.CBgContent}>
+                  <p>
                     We are poised to build a total child that is spiritually,
                     morally and academically sound, exuding self confidence that
                     can make the child compete favourably with his/her
