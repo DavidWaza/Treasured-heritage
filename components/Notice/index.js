@@ -1,7 +1,5 @@
 import styles from "../../styles/Home.module.css";
 import { Col, Row } from "react-bootstrap";
-import BackButton from "../../public/img/buttonBk.png";
-import FrontButton from "../../public/img/buttonFk.png";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -26,7 +24,7 @@ export const Notice = () => {
                     <button className={`flex mt-12 cursor-pointer ${styles.noticeButton}`}>
                       <div className=" relative">
                         <Image
-                          src={BackButton}
+                          src="/buttonBk.png"
                           alt="back"
                           height={49}
                           width={150}
@@ -34,7 +32,7 @@ export const Notice = () => {
                       </div>
                       <div className="flex absolute mt-1.5">
                         <Image
-                          src={FrontButton}
+                          src="/buttonFk.png"
                           alt="front"
                           height={45}
                           width={140}

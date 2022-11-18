@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Launch from "../../public/img/Launch.png";
 import styles from "../../styles/Home.module.css";
 
 const ScrollTo = () => {
@@ -28,7 +27,7 @@ const ScrollTo = () => {
         <span className={styles.iconPosition}>
           {showTopBtn && (
             <Image
-              src={Launch}
+              src="/Launch.png"
               alt="launch"
               height={200}
               width={200}

@@ -3,9 +3,6 @@ import { FooterArr } from "./footerArr";
 import styles from "../../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import FaceBook from "../../public/img/fb.png";
-import Instagram from "../../public/img/ig.png";
-import Twitter from "../../public/img/tw.png";
 
 const fbURL = "https://web.facebook.com/profile.php?id=100063690275152";
 
@@ -38,17 +35,17 @@ const Footer = () => {
           <div className="flex justify-center space-x-10 mt-5">
             <div className="cursor-pointer">
               <Link href={fbURL}>
-                <Image src={FaceBook} alt="fb" />
+                <Image src="/fb.png" alt="fb" width={30} height={30} />
               </Link>
             </div>
             <div className="cursor-pointer">
               <Link href="/">
-                <Image src={Instagram} alt="ig" />
+                <Image src="/ig.png" alt="ig"  width={30} height={30} />
               </Link>
             </div>
             <div className="cursor-pointer">
               <Link href="/">
-                <Image src={Twitter} alt="tw" />
+                <Image src="/tw.png" alt="tw"  width={30} height={30} />
               </Link>
             </div>
           </div>

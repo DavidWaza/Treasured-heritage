@@ -1,10 +1,8 @@
-import { useState } from "react";
+
 import { Col, Container, Row } from "react-bootstrap";
 import Abtstyles from "../styles/About.module.css";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
-import Background from "../public/img/bgimg.png";
-import Principal from "../public/img/Headmis.png";
 import { StaffArr, whyUsArr } from "../components/DataArr/Data";
 import AccordionArr from "../components/Accordion/index";
 import Link from "next/link";
@@ -110,9 +108,9 @@ const About = () => {
             </Col>
             <Col sm={4}>
               <div className="relative flex justify-center mt-10">
-                <Image src={Background} alt="background" />
-                <div className="absolute right-2">
-                  <Image src={Principal} alt="principal" />
+                <Image src="/bgimg.png" alt="background" width={200} height={200}/>
+                <div className="absolute -mt-10 left-5">
+                  <Image src="/Headmis.png" alt="principal" width={250} height={250}/>
                 </div>
               </div>
               <span className="flex justify-center mt-3">

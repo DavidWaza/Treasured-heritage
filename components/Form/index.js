@@ -1,8 +1,6 @@
 import { useForm, ValidationError } from "@formspree/react";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
-import ButtonBack from "../../public/img/buttonBk.png";
-import EnrollButton from "../../public/img/rec6.png";
 
 const Form = () => {
   const [state, handleSubmit] = useForm("xgeqarov");
@@ -54,10 +52,10 @@ const Form = () => {
           />
           <div className="relative flex justify-center mt-2">
             <button type="submit" disabled={state.submitting}>
-              <Image src={ButtonBack} alt="submit" height={50} width={150} />
+              <Image src="/buttonBk.png" alt="submit" height={50} width={150} />
               <div className="absolute top-2">
                 <Image
-                  src={EnrollButton}
+                  src="/rec6.png"
                   alt="submit"
                   height={50}
                   width={150}
