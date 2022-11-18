@@ -1,26 +1,22 @@
 
 
-import LightBrain from "../../public/img/about/lightbrain.png";
-import Congress from "../../public/img/about/congress.png";
-import Safety from "../../public/img/about/safety.png";
-
 import Student from "../../public/img/event/student.png";
 import Bug from "../../public/img/event/bug.png";
 
 export const whyUsArr = [
   {
     id: 1,
-    icon: Congress,
+    icon:"/congress.png",
     field: "Experienced Teachers",
   },
   {
     id: 2,
-    icon: LightBrain,
+    icon: "/lightbrain.png",
     field: "Fun Learning Environment",
   },
   {
     id: 3,
-    icon: Safety,
+    icon: "/safety.png",
     field: "School Safety",
   },
 ];

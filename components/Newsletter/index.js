@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
 import { Col, Row, Container } from "react-bootstrap";
 import Image from "next/image";
-import NewsletterPng from "../../public/img/news.png";
 
 const placeholder = "waza@example.com";
 
@@ -34,7 +32,12 @@ const Newsletter = () => {
       <Row>
         <Col sm={6}>
           <div className={styles.NewsletterPng}>
-            <Image src={NewsletterPng} alt="alt" height={300} width={300} />
+            <Image
+              src="https://res.cloudinary.com/ddwkojhaj/image/upload/w_500,c_scale/v1668755860/news_tqusof.png"
+              alt="alt"
+              height={300}
+              width={300}
+            />
           </div>
         </Col>
         <Col sm={6}>

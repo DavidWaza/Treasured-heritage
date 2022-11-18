@@ -232,7 +232,7 @@
 }
 .AbtTitle {
   position: absolute;
-  top: 25%;
+  top: 22%;
   right: 10%;
   font-family: "Montserrat", sans-serif;
   font-size: 25px;
@@ -244,8 +244,7 @@
 
 /* PROGRAMS */
 .programWrapper {
-  background-color:#F3F3F3;
-  ;
+  background-color: #f3f3f3;
 }
 .programText > h2 {
   font-family: "Montserrat", sans-serif;
@@ -344,7 +343,7 @@
 
 /* CONTACTPAGE */
 .contactBg {
-  background: url("../public/img/contactBg.png");
+  background: url("https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto,w_500,c_scale/v1668755422/contactBg_qymlzm.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -536,5 +535,12 @@
     left: 0;
     text-align: center;
     font-size: 25px !important;
+  }
+  .newsLettertext {
+    text-align: center;
+  }
+  .newsletterInputBg, .newsletterButton {
+    display: flex;
+    justify-content: center;
   }
 }

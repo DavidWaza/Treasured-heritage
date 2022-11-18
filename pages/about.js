@@ -3,21 +3,13 @@ import { Col, Container, Row } from "react-bootstrap";
 import Abtstyles from "../styles/About.module.css";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
-import RightQuote from "../public/img/about/rightQuote.png";
-import LeftQuote from "../public/img/about/leftQuote.png";
 import Background from "../public/img/bgimg.png";
 import Principal from "../public/img/Headmis.png";
-import Spiral from "../public/img/about/doodleSpiral.svg";
-import ballBoy from "../public/img/about/boyball.png";
 import { StaffArr, whyUsArr } from "../components/DataArr/Data";
+import AccordionArr from "../components/Accordion/index";
+
 
 const About = () => {
-  const [showMore, setShowMore] = useState(false);
-
-
-  const showMoreData =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula tellus id mi posuere, eget congue enim finibus. Duis at ante vitae erat mattis tincidunt a vitae dui. Maecenas suscipit erat sit amet metus egestas rhoncus at sed sem. Praesent vehicula nunc eu lectus scelerisque lobortis. Praesent bibendum magna vitae diam iaculis cursus. Maecenas purus leo, eleifend id urna id, tincidunt pulvinar urna. Vivamus at mattis massa. Curabitur ut volutpat nibh.";
-
   return (
     <>
       <div className={Abtstyles.hero}>
@@ -32,12 +24,33 @@ const About = () => {
         </p>
       </div>
       <Container>
-        <Row className="pb-10 pt-10">
+        <Row>
+          <div className={Abtstyles.welcomeSection}>
+            <p>Welcome to Treasure Heritage School</p>
+            <p>
+              It is my pleasure to welcome you to our website. We are
+              particularly delighted that you have created time to visit this
+              site. This site is the official platform for the dissemination of
+              information to the general public and to members of the Treasured
+              Heritage School community in particular. We have made the site
+              very interactive where you can access every information on THS,
+              and also express your views about us. It is my sincere belief that
+              after this visit, you will have a very positive view about us.{" "}
+            </p>
+            <p>
+              And we hope this will not be your last. We look forward to hearing
+              from you very soon Yours in the affairs of moulding lives.
+            </p>
+          </div>
+
+        </Row>
+        <Row>
+        <AccordionArr />
+        </Row>
+        <Row>
           <Col>
-            <div
-              className={`${Abtstyles.Aheader} flex justify-end mt-10 font-bolder text-2xl`}
-            >
-              Our Mission & Vision
+            <div className={Abtstyles.Aheader}>
+              <p>Our Mission & Vision</p>
             </div>
           </Col>
           <Row>
@@ -45,7 +58,12 @@ const About = () => {
               <div className={Abtstyles.missionStatement}>
                 <p className="mt-10">What we aim to achieve</p>
                 <p>
-                  <Image src={LeftQuote} alt="right quote" />
+                  <Image
+                    src="/rightQuote.png"
+                    alt="right quote"
+                    width={30}
+                    height={30}
+                  />
                   <span className="font-bold italic">We</span> provide a sound{" "}
                   <span className="font-bold">Montessori</span> system of
                   education required for the acquisition of relevant knowledge
@@ -61,7 +79,12 @@ const About = () => {
                   faith with godly character
                 </p>
                 <div className="flex justify-center mt-5">
-                  <Image src={Spiral} alt="spiral" />
+                  <Image
+                    src="/doodleSpiral.svg"
+                    alt="spiral"
+                    width={50}
+                    height={50}
+                  />
                 </div>
                 <div className={Abtstyles.missionStatement}>
                   <p className="flex justify-end mt-5">
@@ -75,7 +98,12 @@ const About = () => {
                       <span className="font-bold italic">A</span> Citadel where
                       leaders with high spiritual, moral and intellectual values
                       are raised.
-                      <Image src={RightQuote} alt="left quote" />
+                      <Image
+                        src="/leftQuote.png"
+                        alt="left quote"
+                        width={30}
+                        height={30}
+                      />
                     </p>
                   </div>
                 </div>
@@ -127,7 +155,12 @@ const About = () => {
                 {whyUsArr.map((obj) => (
                   <Col sm={4} key={obj.id}>
                     <div className="flex justify-center mt-4">
-                      <Image src={obj.icon} alt="icons-summ" />
+                      <Image
+                        src={obj.icon}
+                        alt="icons-summ"
+                        width={50}
+                        height={50}
+                      />
                     </div>
                     <div className="text-center mt-2 font-bold">
                       <p>{obj.field}</p>
@@ -136,42 +169,7 @@ const About = () => {
                 ))}
               </Row>
             </div>
-            <Row>
-              <Col>
-                <div className="flex justify-end scale-50 mt-10">
-                  <Image src={ballBoy} alt="ball boy" />
-                </div>
-              </Col>
-            </Row>
-          </div>
-        </Row>
-        <Row>
-          <div className={`pb-5 ${Abtstyles.staffContainer}`}>
-            <div>
-              <p className="text-center font-bold text-xl tracking-wide pt-5">
-                Meet Our Staff
-              </p>
-              <p className="text-center tracking-wide font-bold">
-                about our team
-              </p>
-            </div>
-            <div>
-            </div>
-            <Row>
-              <Col sm={12}>
-                {showMore ? showMoreData : `${showMoreData.substring(0, 0)}`}
-                <div
-                  className={
-                    showMore
-                      ? `${Abtstyles.buttonCollapse}`
-                      : `${Abtstyles.buttonShowMore}`
-                  }
-                  onClick={() => setShowMore(!showMore)}
-                >
-                  {showMore ? "Show less" : "Show more"}
-                </div>
-              </Col>
-            </Row>
+            <Row></Row>
           </div>
         </Row>
       </Container>
