@@ -19,12 +19,15 @@ const About = () => {
                 part of the world.
               </p>
             </div>
+            <div className={styles.fanboy}>
             <Image
               src="https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto/v1668638477/casual_hndg5x.png"
               alt="fanboy"
               width={100}
               height={100}
             />
+            </div>
+          
           </Col>
           <Col sm={4}>
             <p className={styles.AbtTitle}>About Us</p>

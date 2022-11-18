@@ -632,6 +632,9 @@
     display: block;
     z-index: 1;
   }
+  .AbtTitle {
+    display: none;
+  }
   .noticeButton {
     margin-top: -8px;
     padding-bottom: 36px;
@@ -680,5 +683,9 @@
     top: 10px;
     left: 37%;
     color: #fff;
+  }
+  .fanboy {
+    display: flex;
+    justify-content: center;
   }
 }

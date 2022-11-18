@@ -47,7 +47,7 @@ const BigNav = () => {
             <Link href="/about">About THS</Link>
           </li>
           <li>
-            <Link href="/program">About THS</Link>
+            <Link href="/program">Program</Link>
           </li>
           <li>
             <Link href="/event">Event</Link>
