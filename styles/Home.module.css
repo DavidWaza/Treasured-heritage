@@ -345,7 +345,7 @@
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.25px;
   font-size: 18px;
-  width: 400px;
+  /* width: 400px; */
   padding-bottom: 10%;
   margin: auto;
 }
@@ -373,7 +373,6 @@
   font-size: 1.2em;
   text-align: center;
 }
-
 
 .myCarousel {
   width: 510px;
@@ -811,5 +810,8 @@
   .fanboy {
     display: flex;
     justify-content: center;
+  }
+  .myCarousel {
+    width: 250px;
   }
 }
