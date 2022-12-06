@@ -1,22 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
 
+/* HERO */
 .hero {
   background-image: url("https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto/v1668756600/about1_hvpomm.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 70vh;
   padding-bottom: 40px;
 }
-.hero > p:nth-child(1) {
-  padding-top: 7%;
+
+.hero>p:nth-child(1) {
+  padding-top: 15%;
 }
-.hero > p:nth-child(2) {
+
+.hero>p:nth-child(2) {
   text-align: center;
   font-size: 1.4rem;
   color: #f1f1f1;
   padding: 0px 10%;
   font-family: "Poppins", sans-serif;
 }
+
+/* ACCORDION */
 .accordion {
   width: 100%;
   margin: 2rem auto;
@@ -46,15 +52,31 @@
   color: #878787;
   transition: all 1.5s ease-out;
 }
-.Aheader > p {
+
+.Aheader>p {
   font-family: "Poppins", sans-serif;
   margin-top: 22px;
   font-size: 20px;
   font-weight: bold;
 }
-.missionStatement > p:nth-child(1) {
+
+/* MISSONSTATEMENT */
+.missionStatement>p:nth-child(1) {
   font-weight: bold;
 }
+
+.listType>li {
+  list-style-type: circle;
+  list-style-position: outside;
+  margin-left: 20px;
+}
+
+/* VISIONSTATEMENT */
+.visionStatment {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .CBg {
   background-image: url("https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto/v1668756599/about2_pqh0d7.png");
   background-position: center;
@@ -64,10 +86,12 @@
   padding-bottom: 80px;
   position: relative;
 }
-.CBgTitle > p {
+
+.CBgTitle>p {
   text-align: center;
 }
-.CBgContent > p {
+
+.CBgContent>p {
   text-align: center;
   padding: 0px 10%;
   font-size: 18px;
@@ -75,59 +99,65 @@
   letter-spacing: 0.25px;
   color: #f1f1f1;
 }
+
 .welcomeSection {
   margin-top: 10%;
 }
-.welcomeSection > p:nth-child(1) {
+
+.welcomeSection>p:nth-child(1) {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: clamp(1.8rem, 10vw, 28px);
   line-height: 30px;
   letter-spacing: 0.25px;
 }
-.welcomeSection > p:nth-child(2) {
+
+.welcomeSection>p:nth-child(2) {
   font-family: "Poppins", sans-serif;
   font-weight: light;
   font-size: 1.1rem;
   line-height: 30px;
   letter-spacing: 0.25px;
 }
-.welcomeSection > p:nth-child(3) {
+
+.welcomeSection>p:nth-child(3) {
   font-family: "Poppins", sans-serif;
   font-weight: light;
   font-size: 1.1rem;
   line-height: 30px;
   letter-spacing: 0.25px;
 }
+
 .accordion-button {
   background-color: #b0acac !important;
 }
 
 .whyUsContainerDiv {
-  position: absolute;
   background-color: #fff;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  transform: translate(50%, -50%);
+  width: 70%;
   border-radius: 20px;
+  z-index: 1;
+  margin: -5% auto;
 }
+
 .whyUsImg {
   display: flex;
   justify-content: center;
   padding-top: 20px;
 }
+
 .whyUsTitle {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 15px;
   text-align: center;
 }
+
 .otherLinks {
-  height: 30vh;
   background-color: #fff;
 }
-.otherLinks > p {
+
+.otherLinks>p {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -136,56 +166,71 @@
   margin-top: 15vh;
   color: black;
 }
+
 .buttonLinksGrp {
-  margin-top: -20px;
   display: flex;
+  gap: 1em;
   justify-content: center;
 }
+
 .buttonLinks {
-  padding: 7px 12px;
+  padding: 7px 16px;
   background-color: black;
   color: white;
   border-radius: 30px;
   font-size: 12px;
-  margin-right: 10px;
 }
+
 @media screen and (max-width: 768px) {
-  .hero > p:nth-child(1) {
+  .hero>p:nth-child(1) {
     font-size: 30px;
   }
-  .hero > p:nth-child(2) {
+
+  .hero>p:nth-child(2) {
     font-size: 18px;
   }
+
   .Aheader {
     text-align: center;
   }
+
   .accordion {
     width: 90%;
   }
+
   .whyUsContainerDiv {
     display: none;
   }
-  .CBgContent > p {
+
+  .CBgContent>p {
     text-align: justify;
     padding: 0px 20px;
   }
-  .CBgTitle > p {
+
+  .CBgTitle>p {
     text-align: justify;
     padding: 0px 20px;
   }
+
   .welcomeSection {
     padding: 0px 30px;
   }
-  .welcomeSection > p:nth-child(1) {
+
+  .welcomeSection>p:nth-child(1) {
     font-size: 1.1rem;
   }
+  .buttonLinksGrp {
+    display: inline-block;
+  }
 }
+
 @media screen and (width: 820px) {
 
-  .hero > p:nth-child(2) {
+  .hero>p:nth-child(2) {
     text-align: center;
   }
 }
+
 @media screen and (width: 912px) {
   .hero {
     height: 30vh;

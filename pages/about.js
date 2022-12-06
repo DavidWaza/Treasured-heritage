@@ -1,4 +1,3 @@
-
 import { Col, Container, Row } from "react-bootstrap";
 import Abtstyles from "../styles/About.module.css";
 import styles from "../styles/Home.module.css";
@@ -54,63 +53,51 @@ const About = () => {
             <Col sm={8}>
               <div className={Abtstyles.missionStatement}>
                 <p className="mt-10">What we aim to achieve</p>
-                <p>
-                  <Image
-                    src="/leftQuote.png"
-                    alt="right quote"
-                    width={20}
-                    height={20}
-                  />
-                  <span className="font-bold italic">We</span> provide a sound{" "}
-                  <span className="font-bold">Montessori</span> system of
-                  education required for the acquisition of relevant knowledge
-                  and skills.
-                </p>
-                <p>
-                  {" "}
-                  <span className="font-bold italic">Groom</span> children that
-                  can compete favourably on a global level.
-                </p>
-                <p>
-                  <span className="font-bold italic">Develop</span> children of
-                  faith with godly character
-                </p>
-                <div className="flex justify-center mt-5">
-                  <Image
-                    src="/doodleSpiral.svg"
-                    alt="spiral"
-                    width={50}
-                    height={50}
-                  />
-                </div>
+                <ul className={` w-96 pb-10 ${Abtstyles.listType}`}>
+                  <li>
+                    We provide a sound Montessori system of education required
+                    for the acquisition of relevant knowledge and skills.
+                  </li>
+                  <li>
+                    Groom children that can compete favourably on a global
+                    level.
+                  </li>
+                  <li>Develope children of faith with godly character</li>
+                </ul>
                 <div className={Abtstyles.missionStatement}>
-                  <p className="flex justify-end mt-5">
+                  <p className="flex justify-center mt-5">
                     Where we see ourselves in the near future
                   </p>
-                  <div className="flex justify-end">
-                    <p>
-                      <span className="font-bold italic">To</span> be among the
-                      foremost providers of all-round qualitative education in
-                      Nigeria. <br />
-                      <span className="font-bold italic">A</span> Citadel where
-                      leaders with high spiritual, moral and intellectual values
-                      are raised.
-                      <Image
-                        src="/rightQuote.png"
-                        alt="left quote"
-                        width={20}
-                        height={0}
-                      />
-                    </p>
-                  </div>
+                  <ul className={` w-96 m-auto pl-7 pb-10 ${Abtstyles.listType}`}>
+                    <li>
+                      To be among the foremost providers of all-round
+                      qualitative education in Nigeria.
+                    </li>
+                    <li>
+                      A Citadel
+                      where leaders with high spiritual, moral and intellectual
+                      values are raised.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </Col>
             <Col sm={4}>
               <div className="relative flex justify-center mt-10">
-                <Image src="/bgimg.png" alt="background" width={200} height={200}/>
+                <Image
+                  src="/bgimg.png"
+                  alt="background"
+                  width={200}
+                  height={200}
+                  classNam="md:hidden"
+                />
                 <div className="absolute -mt-10 left-5">
-                  <Image src="/Headmis.png" alt="principal" width={250} height={250}/>
+                  <Image
+                    src="/Headmis.png"
+                    alt="principal"
+                    width={250}
+                    height={250}
+                  />
                 </div>
               </div>
               <span className="flex justify-center mt-3">
@@ -168,7 +155,7 @@ const About = () => {
         </Row>
         <Row>
           <div className={Abtstyles.otherLinks}>
-            <p>Other Links</p>
+            <p>Popular Links:</p>
           </div>
           <div className={Abtstyles.buttonLinksGrp}>
             <Link href="/event">
