@@ -41,6 +41,9 @@ const Newsletter = () => {
           </div>
         </Col>
         <Col sm={6}>
+          <div className={styles.newsLetterIcon}>
+            <Image src="/Vector.png" alt="" width={50} height={50} />
+          </div>
           <div className={styles.newsLettertext}>
             <p>Subscribe to our newsletter</p>
             <p>Be the first to get latest updates on your email</p>

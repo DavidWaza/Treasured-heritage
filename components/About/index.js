@@ -7,7 +7,7 @@ const About = () => {
     <div className={styles.abtWrapper}>
       <Container>
         <Row>
-          <Col sm={8}>
+          <Col sm={7}>
             <div className={styles.abtHeader}>
               <p>Who we are</p>
               <p>
@@ -29,9 +29,11 @@ const About = () => {
             </div>
           
           </Col>
-          <Col sm={4}>
+          <Col sm={5}>
             <p className={styles.AbtTitle}>About Us</p>
-            <div className={styles.abtImg}></div>
+            <div className={styles.abtImgContainer}>
+              <Image src="/image.png" alt="alt" width={300} height={300} />
+            </div>
           </Col>
         </Row>
       </Container>

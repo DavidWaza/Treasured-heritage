@@ -46,22 +46,32 @@ const BigNav = () => {
           <li>
             <Link href="/about">About THS</Link>
           </li>
-          <li>
-            <Link href="/program">Program</Link>
+          {/* <li>
+            <Link href="/program">Coming soon</Link>
           </li>
           <li>
-            <Link href="/event">Event</Link>
-          </li>
+            <Link href="/event">Coming soon</Link>
+          </li> */}
           <li>
             <Link href="/gallery">Gallery</Link>
           </li>
           <li>
             <Link href="/contact">Contact</Link>
           </li>
-          <li className={styles.portal}>
-            <Link href="/portal">
-              <p className={styles.portalText}>portal</p>
-            </Link>
+          <li>
+            <div className={styles.enrolButtonContainer}>
+              <div className={styles.buttonBackPosition}>
+                <Image src="/buttonBk.png" alt="alt" width={150} height={100} />
+              </div>
+              <div className={styles.buttonFrontPosition}>
+                <Link href="/">
+                  <Image src="/rec6.png" alt="alt" width={150} height={100} />{" "}
+                </Link>
+                <div className={` ml-7 ${styles.buttonText}`}>
+                  <p>Portal</p>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
