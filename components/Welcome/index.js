@@ -8,9 +8,13 @@ const Welcome = () => {
       <Container>
         <Row>
           <div className={styles.welcomeHeader}>WELCOME NOTE</div>
-          <Col sm={4}></Col>
+          <Col sm={4}>
+            <div className="relative flex justify-center mt-12">
+              <Image src="/Headmis.png" alt="" width={350} height={350} />
+            </div>
+          </Col>
           <Col sm={8}>
-            <div className={styles.welcomeTitle}>
+            <div className={` mt- 7 ${styles.welcomeTitle}`}>
               <p>THS Welcomes you</p>
               <p>
                 It is my pleasure to welcome you to our website. We are

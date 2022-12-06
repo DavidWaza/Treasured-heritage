@@ -72,6 +72,10 @@
   display: none;
 }
 
+.mobileButton {
+  display: none;
+}
+
 
 /* HEROBANNER */
 
@@ -341,6 +345,9 @@
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.25px;
   font-size: 18px;
+  width: 400px;
+  padding-bottom: 10%;
+  margin: auto;
 }
 
 /* TESTIMONIALS */
@@ -446,6 +453,7 @@
 .formSpree {
   display: flex;
   justify-content: center;
+  padding: 0px 30px;
 }
 
 .formSpree>form>label {
@@ -523,6 +531,7 @@
   margin-bottom: -10%;
   padding-top: 10%;
 }
+
 .newsletterBg {
   background-color: #efefef;
   background: rgba(239, 239, 239, 0.6);
@@ -658,6 +667,15 @@
     display: block;
     z-index: 1;
   }
+
+  .mobileButton {
+    display: inline-block;
+  }
+
+  .desktopButton {
+    display: none;
+  }
+
   .enrolButtonContainer {
     width: 150px;
     margin: 20% auto;
@@ -665,6 +683,11 @@
 
   .imageBackground {
     display: none;
+  }
+
+  .welcomeHeader {
+    text-align: center;
+    margin-top: 10%;
   }
 
   .heroContent>p:nth-child(1) {
@@ -690,6 +713,19 @@
   .noticeButton {
     margin-top: -8px;
     padding-bottom: 36px;
+  }
+
+  .welcomeTitle>p:nth-child(1) {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .welcomeTitle>p:nth-child(2) {
+    text-align: center;
+  }
+
+  .welcomeTitle>p:nth-child(3) {
+    text-align: center;
   }
 
   .welcomeTitle>p:nth-child(4) {
@@ -723,6 +759,10 @@
     left: 0;
     text-align: center;
     font-size: 25px !important;
+  }
+
+  .abtImgContainer {
+    display: none;
   }
 
   .newsLettertext {

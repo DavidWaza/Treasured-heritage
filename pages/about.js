@@ -56,10 +56,10 @@ const About = () => {
                 <p className="mt-10">What we aim to achieve</p>
                 <p>
                   <Image
-                    src="/rightQuote.png"
+                    src="/leftQuote.png"
                     alt="right quote"
-                    width={30}
-                    height={30}
+                    width={20}
+                    height={20}
                   />
                   <span className="font-bold italic">We</span> provide a sound{" "}
                   <span className="font-bold">Montessori</span> system of
@@ -96,10 +96,10 @@ const About = () => {
                       leaders with high spiritual, moral and intellectual values
                       are raised.
                       <Image
-                        src="/leftQuote.png"
+                        src="/rightQuote.png"
                         alt="left quote"
-                        width={30}
-                        height={30}
+                        width={20}
+                        height={0}
                       />
                     </p>
                   </div>
@@ -149,7 +149,7 @@ const About = () => {
           <div className={Abtstyles.whyUsContainerDiv}>
             <Row>
               {whyUsArr.map((obj) => (
-                <Col sm={4} key={obj.id}>
+                <Col sm={4} lg={4} md={4} key={obj.id}>
                   <div className={Abtstyles.whyUsImg}>
                     <Image
                       src={obj.icon}
