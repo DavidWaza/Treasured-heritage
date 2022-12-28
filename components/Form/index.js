@@ -26,7 +26,12 @@ const Form = () => {
               <label htmlFor="name" className="text-white">
                 Your Name
               </label>
-              <input id="name" type="name" name="name" />
+              <input
+                id="name"
+                type="name"
+                name="name"
+                className="input input-secondary input-block"
+              />
               <ValidationError
                 prefix="Name"
                 field="name"
@@ -35,7 +40,12 @@ const Form = () => {
               <label htmlFor="email" className="text-white">
                 Your Email Address
               </label>
-              <input id="email" type="email" name="email" />
+              <input
+                id="email"
+                type="email"
+                name="email"
+                className="input input-secondary input-block"
+              />
               <ValidationError
                 prefix="Email"
                 field="email"
@@ -44,7 +54,12 @@ const Form = () => {
               <label htmlFor="subject" className="text-white">
                 Subject
               </label>
-              <input id="subject" type="subject" name="subject" />
+              <input
+                id="subject"
+                type="subject"
+                name="subject"
+                className="input input-secondary input-block"
+              />
               <ValidationError
                 prefix="Subject"
                 field="subject"
@@ -56,7 +71,7 @@ const Form = () => {
               <textarea
                 id="message"
                 name="message"
-                className="pl-1 w-100 h-20 rounded-md"
+                className="pl-1 w-100 h-20 rounded-md textarea textarea-secondary textarea-block"
               />
               <ValidationError
                 prefix="Message"
