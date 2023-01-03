@@ -10,10 +10,7 @@ const GalleryImg = (props) => {
         <Image
           src={props.src}
           alt={props.alt}
-          srcSet={props.srcSet}
-          sizes={props.sizes}
-          width={props.width}
-          height={props.height}
+          fill
         />
       </div>
       <div className={styles.coverTitle}>

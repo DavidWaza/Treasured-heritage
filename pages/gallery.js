@@ -32,10 +32,6 @@ const GalleryAPI = () => {
           <Col sm={6} md={4} lg={4}>
             <GalleryImg
               src="https://res.cloudinary.com/ddwkojhaj/image/upload/v1672741696/314490512_553405696792435_1842189972391891263_n.jpg_juvmr9.jpg"
-              srcSet="/static/image@2x.jpg 2x, /static/image@3x.jpg 3x"
-              sizes="(max-width: 600px) 100vw, 50vw"
-              width="100%"
-              height="50%"
               alt="pic"
               title="Election Day"
               link="/post/[id]" 
