@@ -1,13 +1,25 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
+import { motion } from "framer-motion";
 
 const Welcome = () => {
   return (
     <>
       <Container>
         <Row>
-          <div className={styles.welcomeHeader}>WELCOME NOTE</div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              duration: 0.5,
+              ease: [0.9, 0.71, 0.7, 1.01],
+            }}
+            className={styles.welcomeHeader}
+          >
+            WELCOME NOTE
+          </motion.div>
           <Col sm={4}>
             <div className="relative flex justify-center mt-12">
               <Image src="/Headmis.png" alt="" width={350} height={350} />
@@ -15,8 +27,26 @@ const Welcome = () => {
           </Col>
           <Col sm={8}>
             <div className={` mt- 7 ${styles.welcomeTitle}`}>
-              <p>THS Welcomes you</p>
-              <p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.6,
+                  ease: [0.9, 0.71, 0.7, 1.01],
+                }}
+              >
+                THS Welcomes you
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.7,
+                  ease: [0.9, 0.71, 0.7, 1.01],
+                }}
+              >
                 It is my pleasure to welcome you to our website. We are
                 particularly delighted that you have created time to visit this
                 site. This site is the official platform for the dissemination
@@ -26,15 +56,44 @@ const Welcome = () => {
                 on THS, and also express your views about us. It is my sincere
                 belief that after this visit, you will have a very positive view
                 about us.{" "}
-              </p>
-              <p>
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.7,
+                  ease: [0.9, 0.71, 0.7, 1.01],
+                }}
+              >
                 And we hope this will not be your last. We look forward to
                 hearing from you very soon Yours in the affairs of moulding
                 lives.
-              </p>
-              <p>Martina George - Bominuru(Mrs)</p>
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.6,
+                  duration: 0.8,
+                  ease: [0.9, 0.71, 0.7, 1.01],
+                }}
+              >
+                Martina George - Bominuru(Mrs)
+              </motion.p>
               <hr />
-              <p className={styles.title}>Proprietress</p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.6,
+                  duration: 0.9,
+                  ease: [0.9, 0.71, 0.7, 1.01],
+                }}
+                className={styles.title}
+              >
+                Proprietress
+              </motion.p>
             </div>
           </Col>
         </Row>

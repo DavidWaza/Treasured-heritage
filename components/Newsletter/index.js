@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
 import { Col, Row, Container } from "react-bootstrap";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const placeholder = "waza@example.com";
 
@@ -31,25 +32,71 @@ const Newsletter = () => {
     <Container className={styles.newsletterBg}>
       <Row>
         <Col sm={6}>
-          <div className={styles.NewsletterPng}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              duration: 0.6,
+              ease: [0.9, 0.71, 0.7, 1.01],
+            }}
+            className={styles.NewsletterPng}
+          >
             <Image
               src="https://res.cloudinary.com/ddwkojhaj/image/upload/w_500,c_scale/v1668755860/news_tqusof.png"
               alt="alt"
               height={300}
               width={300}
             />
-          </div>
+          </motion.div>
         </Col>
         <Col sm={6}>
-          <div className={styles.newsLetterIcon}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              duration: 0.7,
+              ease: [0.9, 0.71, 0.7, 1.01],
+            }}
+            className={styles.newsLetterIcon}
+          >
             <Image src="/Vector.png" alt="" width={50} height={50} />
-          </div>
-          <div className={styles.newsLettertext}>
-            <p>Subscribe to our newsletter</p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              duration: 0.6,
+              ease: [0.9, 0.71, 0.7, 1.01],
+            }}
+            className={styles.newsLettertext}
+          >
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                delay: 0.5,
+                duration: 0.7,
+                ease: [0.9, 0.71, 0.7, 1.01],
+              }}
+            >
+              Subscribe to our newsletter
+            </motion.p>
             <p>Be the first to get latest updates on your email</p>
-          </div>
+          </motion.div>
           <form onSubmit={handleSubmit}>
-            <div className={styles.newsletterInputBg}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                delay: 0.6,
+                duration: 0.4,
+                ease: [0.9, 0.71, 0.7, 1.01],
+              }}
+              className={styles.newsletterInputBg}
+            >
               <input
                 value={state.email}
                 type="text"
@@ -58,8 +105,17 @@ const Newsletter = () => {
                 placeholder={placeholder}
                 onChange={handleChange}
               ></input>
-            </div>
-            <div className={styles.newsletterButton}>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                delay: 0.6,
+                duration: 0.6,
+                ease: [0.9, 0.71, 0.7, 1.01],
+              }}
+              className={styles.newsletterButton}
+            >
               <button
                 className={
                   isValid
@@ -72,7 +128,7 @@ const Newsletter = () => {
               >
                 {!isValid ? "Fill the form" : "Subscribe"}
               </button>
-            </div>
+            </motion.div>
           </form>
         </Col>
       </Row>

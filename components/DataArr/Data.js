@@ -58,4 +58,25 @@ export const EventDayArr = [
   },
 ];
 
+export const GalleryPage = [
+  {
+    id: 1,
+    src: "https://res.cloudinary.com/ddwkojhaj/image/upload/v1672689474/320654448_689975459286163_7574266468164963625_n.jpg_vm0qro.jpg",
+    title:"Christmas carol",
+    as: "/post/Christmas carol"
+  },
+  {
+    id: 2,
+    src: "https://res.cloudinary.com/ddwkojhaj/image/upload/v1672741696/314490512_553405696792435_1842189972391891263_n.jpg_juvmr9.jpg",
+    title:"Election Day",
+    as: "/post/Election day"
+  },
+  {
+    id: 3,
+    src: "https://res.cloudinary.com/ddwkojhaj/image/upload/v1672742640/313277613_540602051406133_4753692865514991676_n.jpg_a9ske2.jpg",
+    title:"Cereal Day",
+    as: "/post/Cereal day"
+  }
+]
+
 

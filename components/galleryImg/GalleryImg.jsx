@@ -11,6 +11,8 @@ const GalleryImg = (props) => {
           src={props.src}
           alt={props.alt}
           fill
+          objectPosition="center"
+          objectSize="cover"
         />
       </div>
       <div className={styles.coverTitle}>
