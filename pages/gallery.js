@@ -14,7 +14,7 @@ const GalleryAPI = () => {
           <Col>
             <section>
               <div className={styles.Herogallery}>
-                <h1>Gallery</h1>
+                <h1>THS Gallery</h1>
               </div>
             </section>
           </Col>
