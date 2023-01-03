@@ -21,7 +21,7 @@ const Herobanner = () => {
                 <Link href="/">
                   <Image src="/rec6.png" alt="alt" width={150} height={100} />{" "}
                 </Link>
-                <div className={styles.buttonText}>
+                <div className={`${styles.buttonText}`}>
                   <p>Enroll Now</p>
                 </div>
               </div>
