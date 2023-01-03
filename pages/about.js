@@ -68,15 +68,16 @@ const About = () => {
                   <p className="flex justify-center mt-5">
                     Where we see ourselves in the near future
                   </p>
-                  <ul className={` w-96 m-auto pl-7 pb-10 ${Abtstyles.listType}`}>
+                  <ul
+                    className={` w-96 m-auto pl-7 pb-10 ${Abtstyles.listType}`}
+                  >
                     <li>
                       To be among the foremost providers of all-round
                       qualitative education in Nigeria.
                     </li>
                     <li>
-                      A Citadel
-                      where leaders with high spiritual, moral and intellectual
-                      values are raised.
+                      A Citadel where leaders with high spiritual, moral and
+                      intellectual values are raised.
                     </li>
                   </ul>
                 </div>
@@ -89,7 +90,7 @@ const About = () => {
                   alt="background"
                   width={200}
                   height={200}
-                  classNam="md:hidden"
+                  className="md:hidden"
                 />
                 <div className="absolute -mt-10 left-5">
                   <Image

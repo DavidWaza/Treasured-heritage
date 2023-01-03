@@ -1,9 +1,12 @@
 import styles from "../styles/Home.module.css";
 import { Col, Row, Container } from "react-bootstrap";
-// import Image from 'next/image'
+import Gallery from "react-photo-gallery";
+import Carousel, { Modal, ModalGateway } from "react-images";
+import { useCallback, useState } from "react";
+import { photos } from "../components/Photos/photos";
+import GalleryImg from "../components/galleryImg/GalleryImg";
 
-const Gallery = ({ galleryPhotos }) => {
-  console.log(galleryPhotos);
+const GalleryAPI = () => {
   return (
     <>
       <Container fluid>
@@ -14,14 +17,39 @@ const Gallery = ({ galleryPhotos }) => {
                 <h1>Gallery</h1>
               </div>
             </section>
-            <Row className="mt-5">
-              {galleryPhotos.map((photo) => (
-                <Col sm={4} key={photo.id}>
-                  <img src={photo.url} alt="photo"  />
-                  <p>{photo.title}</p>
-                </Col>
-              ))}
-            </Row>
+          </Col>
+        </Row>
+        <Row className="g-3">
+          <Col sm={6} md={4} lg={4}>
+            <GalleryImg
+              src="https://res.cloudinary.com/ddwkojhaj/image/upload/v1672689474/320654448_689975459286163_7574266468164963625_n.jpg_vm0qro.jpg"
+              alt="pic"
+              title="Christmas carol"
+              link="/post/[id]" 
+              as= "/post/christmas carol"
+            />
+          </Col>
+          <Col sm={6} md={4} lg={4}>
+            <GalleryImg
+              src="https://res.cloudinary.com/ddwkojhaj/image/upload/v1672741696/314490512_553405696792435_1842189972391891263_n.jpg_juvmr9.jpg"
+              srcSet="/static/image@2x.jpg 2x, /static/image@3x.jpg 3x"
+              sizes="(max-width: 600px) 100vw, 50vw"
+              width="100%"
+              height="50%"
+              alt="pic"
+              title="Election Day"
+              link="/post/[id]" 
+              as= "/post/Election Day"
+            />
+          </Col>
+          <Col sm={6} md={4} lg={4}>
+            <GalleryImg
+              src="https://res.cloudinary.com/ddwkojhaj/image/upload/v1672742640/313277613_540602051406133_4753692865514991676_n.jpg_a9ske2.jpg"
+              alt="pic"
+              title="Cereal Day"
+              link="/post/[id]" 
+              as= "/post/Election Day"
+            />
           </Col>
         </Row>
       </Container>
@@ -29,15 +57,17 @@ const Gallery = ({ galleryPhotos }) => {
   );
 };
 
-export default Gallery;
+export default GalleryAPI;
 
-export const getStaticProps = async () => {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/photos?_limit=8`);
-  const galleryPhotos = await res.json();
+// export const getStaticProps = async () => {
+//   const res = await fetch(
+//     `https://jsonplaceholder.typicode.com/photos?_limit=8`
+//   );
+//   const galleryPhotos = await res.json();
 
-  return {
-    props: {
-      galleryPhotos,
-    },
-  };
-};
+//   return {
+//     props: {
+//       galleryPhotos,
+//     },
+//   };
+// };
