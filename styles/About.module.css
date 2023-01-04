@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
 
 /* HERO */
 .hero {
@@ -19,7 +21,7 @@
   font-size: 1.4rem;
   color: #f1f1f1;
   padding: 0px 10%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 
 /* ACCORDION */
@@ -53,11 +55,60 @@
   transition: all 1.5s ease-out;
 }
 
-.Aheader>p {
-  font-family: "Poppins", sans-serif;
-  margin-top: 22px;
-  font-size: 20px;
+.row>p {
+  display: flex;
+  flex-direction: row;
+  font-family: "Heebo", sans-serif;
+  margin-top: 20%;
+  font-size: 1.5rem;
   font-weight: bold;
+}
+
+.rowReverseved>p {
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: "Heebo", sans-serif;
+  margin-top: 20%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.listTypeReverse {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.listTypeReverse>li {
+  list-style-type: circle;
+  list-style-position: outside;
+  margin-top: 10px;
+  align-items: flex-end;
+  margin-left: 20%;
+}
+
+.mainTitle {
+  font-family: "Heebo", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.principalImgShadow {
+  position: relative;
+  top: 10%;
+  left: 40%;
+  height: 300px;
+  width: 300px;
+}
+
+.principalImg {
+  position: relative;
+  top: 0%;
+  left: -3%;
+  height: 300px;
+  width: 300px;
 }
 
 /* MISSONSTATEMENT */
@@ -68,7 +119,7 @@
 .listType>li {
   list-style-type: circle;
   list-style-position: outside;
-  margin-left: 20px;
+  margin-top: 10px;
 }
 
 /* VISIONSTATEMENT */
@@ -102,10 +153,11 @@
 
 .welcomeSection {
   margin-top: 10%;
+  padding: 0px 9rem;
 }
 
 .welcomeSection>p:nth-child(1) {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Heebo", sans-serif;
   font-weight: bold;
   font-size: clamp(1.8rem, 10vw, 28px);
   line-height: 30px;
@@ -113,7 +165,7 @@
 }
 
 .welcomeSection>p:nth-child(2) {
-  font-family: "Poppins", sans-serif;
+  font-family: "Heebo", sans-serif;
   font-weight: light;
   font-size: 1.1rem;
   line-height: 30px;
@@ -121,17 +173,36 @@
 }
 
 .welcomeSection>p:nth-child(3) {
-  font-family: "Poppins", sans-serif;
+  font-family: "Heebo", sans-serif;
   font-weight: light;
   font-size: 1.1rem;
   line-height: 30px;
   letter-spacing: 0.25px;
 }
 
+.accordionWrapper {
+  padding: 0px 9rem;
+}
+
 .accordion-button {
   background-color: #b0acac !important;
 }
-
+.principalDetails {
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  margin-top: 10%;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom-color: #727272;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.principalPosition {
+  font-family: "Heebo", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+}
 .whyUsContainerDiv {
   background-color: #fff;
   width: 70%;
@@ -147,7 +218,7 @@
 }
 
 .whyUsTitle {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Heebo", sans-serif;
   font-weight: bold;
   font-size: 15px;
   text-align: center;
@@ -159,7 +230,7 @@
 
 .otherLinks>p {
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Heebo", sans-serif;
   font-weight: bold;
   font-size: 20px;
   letter-spacing: 0.25px;
@@ -190,12 +261,28 @@
     font-size: 18px;
   }
 
-  .Aheader {
-    text-align: center;
+  .listTypeReverse>li {
+    margin: 0;
+  }
+
+  .accordionWrapper {
+    padding: 0;
   }
 
   .accordion {
     width: 90%;
+  }
+
+  .row,
+  .rowReverseved {
+    padding: 0px 2rem;
+  }
+  .principalImgShadow {
+    display: none;
+  }
+
+  .mainTitle {
+    display: none;
   }
 
   .whyUsContainerDiv {
@@ -219,6 +306,7 @@
   .welcomeSection>p:nth-child(1) {
     font-size: 1.1rem;
   }
+
   .buttonLinksGrp {
     display: inline-block;
   }

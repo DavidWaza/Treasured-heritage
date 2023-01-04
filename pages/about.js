@@ -2,8 +2,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import Abtstyles from "../styles/About.module.css";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
-import { StaffArr, whyUsArr } from "../components/DataArr/Data";
+import { whyUsArr } from "../components/DataArr/Data";
 import AccordionArr from "../components/Accordion/index";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 const About = () => {
@@ -23,8 +24,26 @@ const About = () => {
       <Container>
         <Row>
           <div className={Abtstyles.welcomeSection}>
-            <p>Welcome to Treasure Heritage School</p>
-            <p>
+            <motion.p
+              intial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                delay: 0.5,
+                duration: 0.6,
+                ease: [0.9, 0.71, 0.7, 1.01],
+              }}
+            >
+              Welcome to Treasure Heritage School
+            </motion.p>
+            <motion.p
+              intial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                delay: 0.6,
+                duration: 0.6,
+                ease: [0.9, 0.71, 0.7, 1.01],
+              }}
+            >
               It is my pleasure to welcome you to our website. We are
               particularly delighted that you have created time to visit this
               site. This site is the official platform for the dissemination of
@@ -33,82 +52,91 @@ const About = () => {
               very interactive where you can access every information on THS,
               and also express your views about us. It is my sincere belief that
               after this visit, you will have a very positive view about us.{" "}
-            </p>
-            <p>
+            </motion.p>
+            <motion.p
+              intial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                delay: 0.5,
+                duration: 0.5,
+                ease: [0.9, 0.71, 0.7, 1.01],
+              }}
+            >
               And we hope this will not be your last. We look forward to hearing
               from you very soon Yours in the affairs of moulding lives.
-            </p>
+            </motion.p>
           </div>
         </Row>
         <Row>
-          <AccordionArr />
+          <div
+            intial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              delay: 0.6,
+              duration: 0.7,
+              ease: [0.9, 0.71, 0.7, 1.01],
+            }}
+            className={Abtstyles.accordionWrapper}
+          >
+            <AccordionArr />
+          </div>
         </Row>
         <Row>
-          <Col>
-            <div className={Abtstyles.Aheader}>
-              <p>Our Mission & Vision</p>
+          <Col sm={6} md={6}>
+            <div className={Abtstyles.row}>
+              <p>What we aim to achieve</p>
+              <ul className={Abtstyles.listType}>
+                <li>
+                  Provide a sound Montessori system of education required for
+                  the acquisiton of relevant knowledge and skills.
+                </li>
+                <li>
+                  Groom children that can compete favourably on a global level
+                </li>
+                <li>Develop children of faith with godly character</li>
+              </ul>
+            </div>
+            <div className={Abtstyles.rowReverseved}>
+              <p>Where we see ourselves in the near future</p>
+              <ul className={Abtstyles.listTypeReverse}>
+                <li>
+                  To be among the foremost providers of all-round qualitative
+                  education in Nigeria
+                </li>
+                <li>
+                  A citadel where leaders with high spiritual, moral and
+                  intellectual values are raised
+                </li>
+              </ul>
             </div>
           </Col>
-          <Row>
-            <Col sm={8}>
-              <div className={Abtstyles.missionStatement}>
-                <p className="mt-10">What we aim to achieve</p>
-                <ul className={` w-96 pb-10 ${Abtstyles.listType}`}>
-                  <li>
-                    We provide a sound Montessori system of education required
-                    for the acquisition of relevant knowledge and skills.
-                  </li>
-                  <li>
-                    Groom children that can compete favourably on a global
-                    level.
-                  </li>
-                  <li>Develope children of faith with godly character</li>
-                </ul>
-                <div className={Abtstyles.missionStatement}>
-                  <p className="flex justify-center mt-5">
-                    Where we see ourselves in the near future
-                  </p>
-                  <ul
-                    className={` w-96 m-auto pl-7 pb-10 ${Abtstyles.listType}`}
-                  >
-                    <li>
-                      To be among the foremost providers of all-round
-                      qualitative education in Nigeria.
-                    </li>
-                    <li>
-                      A Citadel where leaders with high spiritual, moral and
-                      intellectual values are raised.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </Col>
-            <Col sm={4}>
-              <div className="relative flex justify-center mt-10">
+          <Col sm={6} md={6}>
+            <p className={Abtstyles.mainTitle}>Our Mission & Vision</p>
+            <div className={Abtstyles.principalImgShadow}>
+              <Image
+                src="/bgimg.png"
+                fill
+                objectPosition="center"
+                objectSize="cover"
+                alt="shadow"
+              />
+              <div className={Abtstyles.principalImg}>
                 <Image
-                  src="/bgimg.png"
-                  alt="background"
-                  width={200}
-                  height={200}
-                  className="md:hidden"
+                  src="/Headmis.png"
+                  fill
+                  objectPosition="center"
+                  objectSize="cover"
+                  alt="img"
                 />
-                <div className="absolute -mt-10 left-5">
-                  <Image
-                    src="/Headmis.png"
-                    alt="principal"
-                    width={250}
-                    height={250}
-                  />
-                </div>
               </div>
-              <span className="flex justify-center mt-3">
-                <p className={styles.psudoName}>
-                  Martina George - Bominuru(Mrs)
-                </p>
-              </span>
-              <p className="flex justify-center">Proprietress</p>
-            </Col>
-          </Row>
+              <p className={Abtstyles.principalDetails}>
+                Martina George - Bominuru(Mrs)
+              </p>
+              <p className={Abtstyles.principalPosition}>
+                Propritress
+              </p>
+            </div>
+          </Col>
         </Row>
       </Container>
       <Container fluid>
