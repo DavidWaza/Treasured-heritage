@@ -1,0 +1,75 @@
+.calendar-root {
+    --grid-gap: 2px;
+    --grid-height: 700px;
+    --text-color-light: rgba(0, 0, 0, 0.4);
+    --text-color-primary: rgba(0, 0, 0, 0.7);
+    --grid-background-color: rgb(211, 205, 198);
+    --grid-foreground-color: white;
+    --space-sm: 4px;
+    --space-md: 8px;
+    --space-lg: 16px;
+    width: 100%;
+  }
+  
+  /* | Sun | Mon | Tue | Wed | Thu | Fri | Sat  */
+  .dayOfWeekHeaderCell {
+    color: var(--text-color-primary);
+    background-color: var(--grid-foreground-color);
+    padding: var(--space-md) 0;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .daysOfWeek,
+  .daysGrid {
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: var(--grid-gap);
+    grid-row-gap: var(--grid-gap);
+  }
+  
+  .daysGrid {
+    height: var(--grid-height);
+    position: relative;
+    border: var(--grid-gap) solid var(--grid-background-color);
+    background-color: var(--grid-background-color);
+  }
+  
+  .dayGridItemContainer {
+    position: relative;
+    background-color: var(--grid-foreground-color);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dayGridItemContainer:not(.currentMonth) .dayGridItemHeader {
+    color: var(--text-color-light);
+  }
+  
+  /* Position the day label within the day cell */
+  .dayGridItemContainer .dayGridItemHeader {
+    color: var(--text-color-primary);
+    padding: var(--space-md);
+    padding-bottom: 0;
+    flex-shrink: 0;
+    font-weight: bold;
+  }
+  
+  .dayGridItemContainer > .dayContentWrapper {
+    flex: 1;
+    min-height: 0;
+    position: relative;
+  }
+  
+  .navigationHeader {
+    display: flex;
+  }
+  
+  .navigationHeader > * {
+    margin-right: var(--space-md);
+  }
+  
