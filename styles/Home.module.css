@@ -851,6 +851,9 @@
   .myCarousel {
     width: 250px;
   }
+  .noticeText {
+    text-align: center;
+  }
 
   @media (width: 820px) {
     .heroContent>p:nth-child(1) {
