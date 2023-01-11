@@ -4,14 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 const Herobanner = () => {
   return (
-    <div className={styles.herobanner}>
-      <Container>
+    <div className={` hero is-link is-primary`}>
+      <Container className="hero-body">
         <Row>
           <Col sm={6} md={6} lg={6}>
             <div className={styles.heroContent}>
-              <p>Admission</p>
-              <p>open for 2023 - 2024</p>
-              <p>Creche | Pre school | Nursery school | Grade school</p>
+              <p className="title">Admission</p>
+              <p className="subtitle">open for 2023 - 2024</p>
+              <p className="subtitle">Creche | Pre school | Nursery school | Grade school</p>
             </div>
             <div className={styles.enrolButtonContainer}>
               <div className={styles.buttonBackPosition}>

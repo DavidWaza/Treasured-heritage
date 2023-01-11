@@ -38,7 +38,7 @@ export const Notice = () => {
                           width={140}
                         />
                       </div>
-                      <div className="absolute ml-6 mt-3 tracking-wider font-bold">
+                      <div className="absolute ml-5 mt-3 tracking-wider font-bold">
                         <p className="text-white">Enroll Now</p>
                       </div>
                     </button>
