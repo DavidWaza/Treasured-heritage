@@ -10,7 +10,7 @@ const Herobanner = () => {
           <Col sm={6} md={6} lg={6}>
             <div className={styles.heroContent}>
               <p>Admission</p>
-              <p>open for 2023 - 2024</p>
+              <p>Open for 2023 - 2024</p>
               <p>Creche | Pre school | Nursery school | Grade school</p>
             </div>
             <div className={styles.enrolButtonContainer}>

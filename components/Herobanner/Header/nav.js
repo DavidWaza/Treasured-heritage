@@ -55,22 +55,22 @@ const BigNav = () => {
           <li className="pt-3">
             <Link href="/calender">Calender</Link>
           </li>
-            <div className={styles.mobileButton}>
-              <Link href="/portal">Portal</Link>
+          <div className={styles.mobileButton}>
+            <Link href="/portal">Portal</Link>
+          </div>
+          <div className={`relative mr-5 ${styles.desktopButton}`}>
+            <div className={` ${styles.buttonBackPosition}`}>
+              <Image src="/buttonBk.png" alt="alt" width={150} height={100} />
             </div>
-            <div className={`relative mr-5 ${styles.desktopButton}`}>
-              <div className={` ${styles.buttonBackPosition}`}>
-                <Image src="/buttonBk.png" alt="alt" width={150} height={100} />
-              </div>
-              <div className={styles.buttonFrontPosition}>
-                <Link href="/">
-                  <Image src="/rec6.png" alt="alt" width={150} height={100} />{" "}
-                </Link>
+            <div className={styles.buttonFrontPosition}>
+              <Link href="/portal">
+                <Image src="/rec6.png" alt="alt" width={150} height={100} />{" "}
                 <div className={` ml-7 ${styles.buttonText}`}>
                   <p>Portal</p>
                 </div>
-              </div>
+              </Link>
             </div>
+          </div>
         </ul>
       </div>
     </nav>
