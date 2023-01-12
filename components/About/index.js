@@ -47,23 +47,6 @@ const About = () => {
                 part of the world.
               </motion.p>
             </div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{
-                delay: 0.6,
-                duration: 0.9,
-                ease: [0.9, 0.71, 0.7, 1.01],
-              }}
-              className={styles.fanboy}
-            >
-              <Image
-                src="https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto/v1668638477/casual_hndg5x.png"
-                alt="fanboy"
-                width={100}
-                height={100}
-              />
-            </motion.div>
           </Col>
           <Col sm={5}>
             <p className={styles.AbtTitle}>About Us</p>

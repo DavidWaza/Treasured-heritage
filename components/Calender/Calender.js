@@ -70,6 +70,7 @@ export default function Calendar({
     onYearAndMonthChange([nextYear, nextMonth]);
   };
 
+
   return (
     <div className={styles.calendarRoot}>
       <div className={styles.navigationHeader}>
@@ -138,6 +139,6 @@ CalendarDayHeader.propTypes = {
 };
 export function CalendarDayHeader({ calendarDayObject }) {
   return (
-    <div className="day-grid-item-header">{calendarDayObject.dayOfMonth}</div>
+    <div className={styles.dayGridItemHeader}>{calendarDayObject.dayOfMonth}</div>
   );
 }

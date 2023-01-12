@@ -4,14 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 const Herobanner = () => {
   return (
-    <div className={` hero is-link is-primary`}>
+    <div className={styles.herobanner}>
       <Container className="hero-body">
         <Row>
           <Col sm={6} md={6} lg={6}>
             <div className={styles.heroContent}>
-              <p className="title">Admission</p>
-              <p className="subtitle">open for 2023 - 2024</p>
-              <p className="subtitle">Creche | Pre school | Nursery school | Grade school</p>
+              <p>Admission</p>
+              <p>open for 2023 - 2024</p>
+              <p>Creche | Pre school | Nursery school | Grade school</p>
             </div>
             <div className={styles.enrolButtonContainer}>
               <div className={styles.buttonBackPosition}>
@@ -29,7 +29,7 @@ const Herobanner = () => {
           </Col>
           <Col sm={6} md={6} lg={6}>
             <div className={styles.imageBackground}>
-              <Image src="/herogirl.png" alt="bg" width={300} height={300} />
+              <Image src="/herogirl.png" alt="bg" width={350} height={350} />
             </div>
           </Col>
         </Row>
