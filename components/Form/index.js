@@ -93,7 +93,9 @@ const Form = () => {
                       height={50}
                       width={150}
                     />
-                    <p className="text-white top-3 right-12 absolute">Submit</p>
+                    <p className="text-white top-3 right-12 absolute tracking-wide font-bold">
+                      Submit
+                    </p>
                   </div>
                 </button>
               </div>
