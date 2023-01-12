@@ -39,7 +39,7 @@ const BigNav = () => {
             : `${styles.navigationMenu}`
         }
       >
-        <ul>
+        <ul className={styles.shift}>
           <li className="pt-3">
             <Link href="/">Home</Link>
           </li>
@@ -55,11 +55,10 @@ const BigNav = () => {
           <li className="pt-3">
             <Link href="/calender">Calender</Link>
           </li>
-          <li>
             <div className={styles.mobileButton}>
               <Link href="/portal">Portal</Link>
             </div>
-            <div className={`relative ${styles.desktopButton}`}>
+            <div className={`relative mr-5 ${styles.desktopButton}`}>
               <div className={` ${styles.buttonBackPosition}`}>
                 <Image src="/buttonBk.png" alt="alt" width={150} height={100} />
               </div>
@@ -72,7 +71,6 @@ const BigNav = () => {
                 </div>
               </div>
             </div>
-          </li>
         </ul>
       </div>
     </nav>

@@ -32,6 +32,7 @@
 
 .navigationMenu {
   margin-left: auto;
+
 }
 
 .navigationMenu ul {
@@ -42,6 +43,7 @@
 .navigationMenu li {
   list-style-type: none;
   margin: 0 1rem;
+  display: inline-block;
 }
 
 .navigationMenu li a {
@@ -50,6 +52,46 @@
   display: block;
   width: 100%;
   color: #212121;
+  padding: 4px 10px;
+}
+
+.navigation li a::after,
+.navigation li a::before {
+  transition: all .5s;
+}
+
+.shift li a {
+  position: relative;
+  z-index: 1;
+}
+
+.shift li a:hover {
+  color: #fff;
+}
+
+.shift li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #bd0075;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 1px;
+}
+
+.shift li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
 }
 
 .hamburger {
@@ -243,7 +285,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: light;
   letter-spacing: 0.25px;
-  font-size:18px;
+  font-size: 18px;
 }
 
 .welcomeTitle>p:nth-child(4) {
@@ -732,6 +774,7 @@
     width: 150px;
     margin: 20% auto;
   }
+
   .imageBackground {
     display: none;
   }
@@ -835,9 +878,11 @@
   .portal {
     display: none;
   }
+
   .myCarousel {
     width: 250px;
   }
+
   .noticeText {
     text-align: center;
   }

@@ -96,7 +96,7 @@
   cursor: pointer;
   background-color: #f8f8f8;
 }  
-.prevNavArrowButton, .nextNavArrowButton {
+.prevNavArrowButton {
   font-family: 'Heebo', sans-serif;
   font-size: 1.2em;
   text-transform: capitalize;
@@ -106,13 +106,21 @@
   margin-left: 5px;
   transition: all 3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+.nextNavArrowButton {
+  font-family: 'Heebo', sans-serif;
+  border: 2px solid #BE0076;
+  border-top-right-radius: 7px;
+  margin-left: 5px;
+  padding: 4px 20px;
+  font-size: 1.2em;
+}
 
 /* month select, year select */
 .monthSelect, .yearSelect {
   border: 2px solid #BE0076;
   background-color: #f8f8f8;
+  cursor: pointer;
   font-weight: bold;
-  border-top-right-radius: 7px;
   margin-left: 5px;
   padding: 0px 3px;
 }
