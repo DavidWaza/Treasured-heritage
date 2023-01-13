@@ -119,10 +119,13 @@
   background-image: url('/bg.png');
   background-position: center;
   background-size: cover;
-  height: 70vh;
+  height: 500px;
 }
 
 .imageBackground {
+  position: relative;
+  height: 450px;
+  width: 350px;
   margin-top: 5%;
   margin-left: 20%;
 }
@@ -133,14 +136,14 @@
 }
 
 .heroContent>p:nth-child(1) {
-  font-size: 5em;
+  font-size: clamp(2.5em, 10vw, 5em);
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   letter-spacing: 0.077em;
 }
 
 .heroContent>p:nth-child(2) {
-  font-size: 2em;
+  font-size: clamp(1.4em, 10vw, 2em);
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   letter-spacing: 0.077em;
@@ -148,7 +151,7 @@
 }
 
 .heroContent>p:nth-child(3) {
-  font-size: 1em;
+  font-size: clamp(.8em, 10vw, 1em);
   font-family: "Montserrat", sans-serif;
   font-weight: light;
   letter-spacing: 0.067em;
@@ -792,18 +795,14 @@
   }
 
   .heroContent>p:nth-child(1) {
-    font-size: 2.5em;
     text-align: center;
   }
 
   .heroContent>p:nth-child(2) {
-    font-size: 1.5em;
-    margin-top: 20px;
     text-align: center;
   }
 
   .heroContent>p:nth-child(3) {
-    font-size: 1em;
     text-align: center;
   }
 
@@ -893,16 +892,20 @@
   .noticeText {
     text-align: center;
   }
+}
 
-  @media (width: 820px) {
-    .heroContent>p:nth-child(1) {
-      font-size: 50px;
-    }
+@media only screen and (width:768px) {
+  .imageBackground {
+    height: 350px;
+    width: 300px;
+    margin-top: 30%;
   }
+}
 
-  @media (width: 912px) {
-    .heroContent>p:nth-child(1) {
-      font-size: 50px;
-    }
+@media screen and (min-width: 820px) and (max-width:1024px) {
+  .imageBackground {
+    height: 350px;
+    width: 300px;
+    margin-top: 40%;
   }
 }

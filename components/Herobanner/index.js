@@ -29,7 +29,7 @@ const Herobanner = () => {
           </Col>
           <Col sm={6} md={6} lg={6}>
             <div className={styles.imageBackground}>
-              <Image src="/herogirl.png" alt="bg" width={350} height={350} />
+              <Image src="/herogirl.png" alt="bg" fill />
             </div>
           </Col>
         </Row>
