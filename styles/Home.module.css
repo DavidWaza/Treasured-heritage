@@ -125,7 +125,7 @@
 .imageBackground {
   position: relative;
   height: 450px;
-  width: 350px;
+  width: 330px;
   margin-top: 5%;
   margin-left: 20%;
 }
@@ -897,7 +897,7 @@
 @media only screen and (width:768px) {
   .imageBackground {
     height: 350px;
-    width: 300px;
+    width: 250px;
     margin-top: 30%;
   }
 }
@@ -905,7 +905,12 @@
 @media screen and (min-width: 820px) and (max-width:1024px) {
   .imageBackground {
     height: 350px;
-    width: 300px;
+    width: 250px;
     margin-top: 40%;
+  }
+}
+@media only screen and (width:1024px) {
+  .imageBackground {
+    margin-top: 20% !important;
   }
 }
