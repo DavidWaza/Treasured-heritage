@@ -723,6 +723,111 @@
   padding-top: 10%;
 }
 
+.galleryImg {
+  background-image: url("/creche.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+}
+
+.card {
+  --background: #fff;
+  --background-image: #fff, rgba(0, 107, 175, 0.2);
+  --text-color: #666;
+  --text-headline: #000;
+  --card-shadow: #0082ff;
+  --card-height: 350px;
+  --card-width: 100%;
+  --card-radius: 8px;
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --header-height: 97px;
+  --blend-mode: overlay;
+  --transition: 0.15s;
+  --font-size: 18px;
+  --subtitle-font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cardBody {
+  margin-top: 20%;
+  display: grid;
+  grid-auto-rows: calc(var(--card-height) - var(--header-height)) auto;
+  background: var(--background);
+  height: var(--card-height);
+  width: var(--card-width);
+  border-radius: var(--card-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: var(--shadow, 0 4px 4px 0 rgba(0, 0, 0, 0.02));
+  transition: transform var(--transition), box-shadow var(--transition);
+  transform: scale(var(--scale, 1)) translateZ(0);
+}
+.cardBody:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
+
+.cardBodyCover {
+  --c-border: var(--card-radius) var(--card-radius) 0 0;
+  --c-width: 500px;
+  --c-height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.cardBodyCover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--c-width);
+  height: var(--c-height);
+  border-radius: var(--c-border);
+  background: linear-gradient(to bottom right, var(--background-image));
+  mix-blend-mode: var(--blend-mode);
+  opacity: var(--opacity-bg, 1);
+  transition: opacity var(--transition) linear;
+}
+
+.cardBodyCoverImage {
+  width: var(--c-width);
+  height: var(--c-height);
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: all 0.5s ease;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, var(--x-y1, 100% 90%), var(--x-y2, 67% 83%), var(--x-y3, 33% 90%), var(--x-y4, 0% 85%));
+  clip-path: polygon(0% 0%, 100% 0%, var(--x-y1, 100% 90%), var(--x-y2, 67% 83%), var(--x-y3, 33% 90%), var(--x-y4, 0% 85%));
+}
+.cardBodyCoverImage:hover {
+  filter: grayscale(20%);
+}
+.cardBodyHeader {
+  height: var(--header-height);
+  background: var(--background);
+  padding: 0 10px 10px 10px;
+}
+
+.cardBodyHeaderTitle {
+  color: var(--text-headline);
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: var(--font-size);
+  font-family: "Heebo", sans-serif;
+}
+
+.cardBodyHeaderSubtitle {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: var(--subtitle-font-size);
+  font-family: "Heebo", sans-serif;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 767px) {
   .hamburger {
@@ -771,6 +876,7 @@
     text-transform: capitalize;
     font-family: "Heebo", sans-serif;
   }
+
   .mobileButton>a {
     color: #000;
     text-decoration: none;
@@ -909,6 +1015,7 @@
     margin-top: 40%;
   }
 }
+
 @media only screen and (width:1024px) {
   .imageBackground {
     margin-top: 20% !important;

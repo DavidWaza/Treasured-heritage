@@ -3,6 +3,7 @@ import styles from "../../../styles/Home.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
+
 const BigNav = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
@@ -47,7 +48,7 @@ const BigNav = () => {
             <Link href="/about">About THS</Link>
           </li>
           <li className="pt-3">
-            <Link href="/gallery">Gallery</Link>
+            <Link href="/gallery">Events Gallery</Link>
           </li>
           <li className="pt-3">
             <Link href="/contact">Contact</Link>
