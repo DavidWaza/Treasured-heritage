@@ -65,7 +65,7 @@ const ContactPage = () => {
                       />
                     </div>
                     <div className="absolute ml-12 mt-3 tracking-wider font-bold">
-                      <p className="text-white">call</p>
+                      <p className="text-white">Call</p>
                     </div>
                   </button>
                 </div>

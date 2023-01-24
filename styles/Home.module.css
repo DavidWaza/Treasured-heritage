@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&family=Josefin+Sans:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@300;400;700&display=swap');
 
 .inputForm {
   display: flex;
@@ -46,7 +44,7 @@
 }
 
 .navigationMenu li a {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   display: block;
   width: 100%;
@@ -137,14 +135,14 @@
 
 .heroContent>p:nth-child(1) {
   font-size: clamp(2.5em, 10vw, 5em);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Bree Serif', serif;
   font-weight: bold;
   letter-spacing: 0.077em;
 }
 
 .heroContent>p:nth-child(2) {
   font-size: clamp(1.4em, 10vw, 2em);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Bree Serif', serif;
   font-weight: bold;
   letter-spacing: 0.077em;
   margin-top: -20px;
@@ -152,7 +150,7 @@
 
 .heroContent>p:nth-child(3) {
   font-size: clamp(.8em, 10vw, 1em);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Bree Serif', serif;
   font-weight: light;
   letter-spacing: 0.067em;
 }
@@ -176,7 +174,7 @@
   position: absolute;
   top: 0;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   left: 12px;
 }
@@ -185,7 +183,7 @@
   padding: 10px;
   background-color: #a0457b;
   color: #f1f1f1;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-top: -7%;
   margin-right: 10px;
   margin-left: 10px;
@@ -253,7 +251,7 @@
 }
 
 .noticeText {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.1rem;
   letter-spacing: 0.25px;
   color: #ffffff;
@@ -262,7 +260,7 @@
 
 /* WELCOME NOTES */
 .welcomeHeader {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Bree Serif', serif;
   font-weight: bold;
   font-size: 2rem;
   margin-top: 2rem;
@@ -270,28 +268,28 @@
 }
 
 .welcomeTitle>p:nth-child(1) {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.25px;
   font-weight: bold;
   font-size: 20px;
 }
 
 .welcomeTitle>p:nth-child(2) {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: light;
   letter-spacing: 0.25px;
   font-size: 18px;
 }
 
 .welcomeTitle>p:nth-child(3) {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: light;
   letter-spacing: 0.25px;
   font-size: 18px;
 }
 
 .welcomeTitle>p:nth-child(4) {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.25px;
   font-weight: bold;
   font-size: 21px;
@@ -303,7 +301,7 @@
 }
 
 .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 20px;
   margin-left: 15%;
@@ -325,7 +323,7 @@
 }
 
 .abtHeader {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   letter-spacing: 0.25px;
   font-size: 20px;
@@ -333,8 +331,8 @@
 }
 
 .abtHeader>p:nth-child(2) {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.25px;
   line-height: 30px;
@@ -350,7 +348,7 @@
   position: absolute;
   top: 22%;
   right: 10%;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Bree Serif', serif;
   font-size: 25px;
   font-weight: bold;
   letter-spacing: 0.25px;
@@ -364,27 +362,26 @@
 }
 
 .programText>h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Bree Serif',serif;
   font-weight: bold;
 }
 
 .programText>h5 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.25px;
   line-height: 40px;
 }
 
 .progHeader>h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Bree Serif',serif;
   font-weight: bold;
 }
 
 .progHeader>p {
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.25px;
   font-size: 18px;
-  /* width: 400px; */
   padding-bottom: 10%;
   margin: auto;
 }
@@ -400,16 +397,16 @@
 
 .testimonialHeader>p:nth-child(1) {
   color: #efefef;
-  font-family: "Poppins", sans-serif;
+  font-family: "Bree Serif",serif;
   font-weight: bold;
   font-size: 2em;
 }
 
 .testimonialHeader>P:nth-child(2) {
   color: #efefef;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: center;
 }
 
@@ -420,7 +417,7 @@
 
 .myCarousel>p {
   color: #efefef;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
   text-align: justify;
 }
@@ -430,7 +427,7 @@
   color: #f1f1f1;
   width: 20px;
   margin-right: 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
 }
 
@@ -438,7 +435,7 @@
   content: "”";
   color: #f1f1f1;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
   line-height: 0;
 }
@@ -446,7 +443,7 @@
 .myCarousel>p:nth-child(2) {
   display: flex;
   justify-content: flex-end;
-  font-family: inherit;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -454,7 +451,7 @@
 .myCarousel>p:last-child {
   display: flex;
   justify-content: flex-end;
-  font-family: inherit;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* SCROLL TO TOP */
@@ -547,7 +544,7 @@
 }
 
 .footerItems {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 200px;
   margin: 0 auto;
   letter-spacing: 0.035em;
@@ -585,7 +582,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #f9f9f9;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 3.5rem;
   letter-spacing: 0.04rem;
 }
@@ -605,7 +602,7 @@
 
 .coverTitle {
   font-size: 2.1rem;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   border-bottom-color: #bd0075;
   border-bottom-width: 5px;
   border-style: solid;
@@ -654,7 +651,7 @@
 .newsLettertext>p:nth-child(1) {
   font-size: 2.2rem;
   font-weight: bold;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 0.07rem;
 }
 
@@ -662,7 +659,7 @@
   font-size: 1rem;
   font-weight: normal;
   color: #727272;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: -10px 0px;
   letter-spacing: 0.07rem;
 }
@@ -688,7 +685,7 @@
 }
 
 .subButton {
-  font-family: "poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 70%;
   background-color: #bd0075;
   color: #ffffff;
@@ -698,7 +695,7 @@
 }
 
 .subButtonDisabled {
-  font-family: "poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 70%;
   color: #ffffff;
   padding: 10px 20px;
@@ -719,7 +716,7 @@
 }
 
 .successBg>p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 2rem;
   padding-top: 10%;
@@ -824,19 +821,19 @@
   font-weight: 700;
   margin-bottom: 8px;
   font-size: var(--font-size);
-  font-family: "Heebo", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .cardBodyHeaderSubtitle {
   color: var(--text-color);
   font-weight: 500;
   font-size: var(--subtitle-font-size);
-  font-family: "Heebo", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* POST */
 .postTitle {
-  font-family: "Heebo", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 25px;
   text-align: center;
   margin-top: 5%;
@@ -863,14 +860,16 @@
 }
 
 .fullCalender>h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Bree Serif', serif !important;
   font-weight: 700;
 }
 
-.calenderLink, .newsletterLink {
+.calenderLink,
+.newsletterLink {
   margin-top: 10%;
   margin-bottom: 10%;
 }
+
 .newsletterLink {
   float: right;
 }
@@ -880,7 +879,7 @@
   text-decoration: underline !important;
   font-size: 15px;
   font-weight: 400;
-  font-family: "Heebo", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 12px 25px;
   border: 2px solid #d89b0b;
@@ -901,6 +900,7 @@
   top: 3px;
   right: 11px;
 }
+
 .calLinkdownload:hover {
   background-color: #e6e4e4;
   opacity: 0.7;
@@ -954,7 +954,7 @@
     justify-content: center;
     font-weight: bold;
     text-transform: capitalize;
-    font-family: "Heebo", sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
 
   .mobileButton>a {
@@ -1078,10 +1078,12 @@
   .noticeText {
     text-align: center;
   }
+
   .calenderLink {
     display: flex;
     margin: 10% auto;
   }
+
   .newsletterLink {
     display: flex;
     margin: 0 auto;
