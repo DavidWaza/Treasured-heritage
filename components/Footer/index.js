@@ -33,19 +33,19 @@ const Footer = () => {
         </Row>
         <Row>
           <div className="flex justify-center space-x-10 mt-5">
-            <div className="cursor-pointer">
+            <div className={styles.socialIcons}>
               <Link href={fbURL}>
-                <Image src="/fb.png" alt="fb" width={30} height={30} />
+                <Image src="/fb-50.png" alt="fb" width={30} height={30} />
               </Link>
             </div>
-            <div className="cursor-pointer">
+            <div className={styles.socialIcons}>
               <Link href="/">
-                <Image src="/ig.png" alt="ig"  width={30} height={30} />
+                <Image src="/ig-50.png" alt="ig"  width={30} height={30} />
               </Link>
             </div>
-            <div className="cursor-pointer">
+            <div className={styles.socialIcons}>
               <Link href="/">
-                <Image src="/tw.png" alt="tw"  width={30} height={30} />
+                <Image src="/twitter-50.png" alt="tw"  width={30} height={30} />
               </Link>
             </div>
           </div>
