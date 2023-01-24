@@ -575,6 +575,8 @@
   background-color: #727272;
   height: 50vh;
   overflow: hidden;
+  border-bottom: 7px solid #bd0075;
+
 }
 
 .Herogallery>h1 {
@@ -846,10 +848,25 @@
   height: 500px;
   border: none;
 }
+
+/* CALENDER */
+.calenderBanner {
+  background-image: url("https://scontent.flos5-1.fna.fbcdn.net/v/t39.30808-6/325427020_2090308651162223_2208857078062030357_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeE0Nndwany4PDK-TNy2FqvLhqM5TTUen7OGozlNNR6fsyf4GBAL4xWtcQlqZpXHST-XTuxCxFqZ7SBTFp8es_5T&_nc_ohc=hOPgYT_X0U8AX9MJZCX&_nc_zt=23&_nc_ht=scontent.flos5-1.fna&oh=00_AfCb3bi6br0Iw5aVnm8mOAjYK51McgQrqKNTfJ1-ueZ6Ug&oe=63D3D6B9");
+  background-size: cover;
+  height: 500px;
+  border-bottom: 7px solid #bd0075;
+  background-attachment: fixed;
+}
+
 .fullCalender {
-  margin-top: 10%;
+  margin-top: 5%;
   color: #000;
 }
+.fullCalender>h1{
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+}
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 767px) {

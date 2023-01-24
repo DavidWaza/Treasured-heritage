@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
+  border-bottom: 7px solid #E4E678;
 }
 
 .hero>p:nth-child(1) {
