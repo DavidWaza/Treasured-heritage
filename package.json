@@ -10,6 +10,10 @@
   },
   "dependencies": {
     "@formspree/react": "^2.4.0",
+    "@fullcalendar/core": "^6.0.3",
+    "@fullcalendar/daygrid": "^6.0.3",
+    "@fullcalendar/interaction": "^6.0.3",
+    "@fullcalendar/react": "^6.0.4",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.1",
     "bulma": "^0.9.4",

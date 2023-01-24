@@ -54,7 +54,7 @@ const BigNav = () => {
             <Link href="/contact">Contact</Link>
           </li>
           <li className="pt-3">
-            <Link href="/calender">Calender</Link>
+            <Link href="calender">Calender</Link>
           </li>
           <div className={styles.mobileButton}>
             <Link href="/portal">Portal</Link>

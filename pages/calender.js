@@ -1,29 +1,37 @@
+import React from "react";
+import FullCalendar from "@fullcalendar/react"; // must go before plugins
+import dayGridPlugin from "@fullcalendar/daygrid"; // a plugin!
+import { Container, Col, Row } from "react-bootstrap";
+import styles from '../styles/Home.module.css'
 
-  // import EventCalendar  from 'react-event-calendar';
+const Events = [
+    {
+        title: "Stay at home",
+        date: "2023-01-01"
+    },
+    {
+        title: "Founders Day",
+        date: "2023-01-02"
+    }
+]
+
 
 const Calender = () => {
-const events = [
-    {
-        start: '2015-07-20',
-        end: '2015-07-02',
-        eventClasses: 'optionalEvent',
-        title: 'test event',
-        description: 'This is a test description of an event',
-    },
-    {
-        start: '2015-07-19',
-        end: '2015-07-25',
-        title: 'test event',
-        description: 'This is a test description of an event',
-        data: 'you can add what ever random data you may want to use later',
-    },
-];
-
-{/* <EventCalendar 
-    month={7}
-    year={2015}
-    events={events} 
-    /> */}
-}
-
+  return (
+    <Container>
+      <Row>
+        <Col>
+          <div className={styles.fullCalender}>
+            <FullCalendar
+              plugins={[dayGridPlugin]}
+              initialView="dayGridMonth"
+              weekends={true}
+              events={Events}
+            />
+          </div>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
 export default Calender;

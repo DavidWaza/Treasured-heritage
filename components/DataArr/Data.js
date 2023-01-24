@@ -60,17 +60,17 @@ export const EventDayArr = [
 
 export const GalleryImage = [
   {
-    id: 1,
-    src: "https://res.cloudinary.com/ddwkojhaj/image/upload/v1672689474/320654448_689975459286163_7574266468164963625_n.jpg_vm0qro.jpg",
-    title:"Christmas Carol",
-    as: "/post/Christmas Carol",
-    category: "Album"
+    id:1,
+    src:"https://res.cloudinary.com/ddwkojhaj/image/upload/w_500,c_scale/v1674210570/325475674_853105949270077_1498460086895287754_n.jpg_thwb3a.jpg",
+    title:"Super Hero Day",
+    as: "/post/SuperHero Day",
+    category:"Album"
   },
   {
     id: 2,
-    src: "https://res.cloudinary.com/ddwkojhaj/image/upload/v1672741696/314490512_553405696792435_1842189972391891263_n.jpg_juvmr9.jpg",
-    title:"Election Day",
-    as: "/post/Election day",
+    src: "https://res.cloudinary.com/ddwkojhaj/image/upload/v1672689474/320654448_689975459286163_7574266468164963625_n.jpg_vm0qro.jpg",
+    title:"Christmas Carol",
+    as: "/post/Christmas Carol",
     category: "Album"
   },
   {
@@ -79,7 +79,14 @@ export const GalleryImage = [
     title:"Cereal Day",
     as: "/post/Cereal day",
     category: "Album"
-  }
+  },
+  {
+    id: 4,
+    src: "https://res.cloudinary.com/ddwkojhaj/image/upload/v1672741696/314490512_553405696792435_1842189972391891263_n.jpg_juvmr9.jpg",
+    title:"Election Day",
+    as: "/post/Election day",
+    category: "Album"
+  },
 ]
 
 
