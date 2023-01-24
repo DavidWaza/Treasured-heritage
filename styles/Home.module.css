@@ -862,11 +862,51 @@
   margin-top: 5%;
   color: #000;
 }
-.fullCalender>h1{
+
+.fullCalender>h1 {
   font-family: "Heebo", sans-serif;
   font-weight: 700;
 }
 
+.calenderLink, .newsletterLink {
+  margin-top: 10%;
+}
+.newsletterLink {
+  float: right;
+}
+
+.calLinkdownload {
+  color: #000;
+  text-decoration: underline !important;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Heebo", sans-serif;
+  text-transform: uppercase;
+  padding: 12px 25px;
+  border: 2px solid #d89b0b;
+  border-radius: 2px;
+  background-color: #fff;
+  transition: all .3s ease;
+}
+
+.calLinkdownload::before {
+  content: "";
+  background-image: url('/link-30.png');
+  background-size: contain;
+  display: inline-block;
+  padding-top: 20px;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 3px;
+  right: 11px;
+}
+.calLinkdownload:hover {
+  background-color: #e6e4e4;
+  opacity: 0.7;
+  transition: all .3s ease;
+  border: 2px solid #e6e4e4;
+}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 767px) {
