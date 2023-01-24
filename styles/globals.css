@@ -23,12 +23,10 @@ body {
   background-color: none !important;
   border-color: #BE0076 !important;
   height: 50px !important;
-  text-align: center !important;
-  padding-top: 15px!important;
   font-family: "Heebo", sans-serif !important;
   color: #BE0076 !important;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
 }
 .fc-event-title-container::before {
   content: "";
