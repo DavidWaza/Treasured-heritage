@@ -855,7 +855,6 @@
   background-size: cover;
   height: 500px;
   border-bottom: 7px solid #bd0075;
-  background-attachment: fixed;
 }
 
 .fullCalender {
@@ -864,12 +863,13 @@
 }
 
 .fullCalender>h1 {
-  font-family: "Heebo", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 
 .calenderLink, .newsletterLink {
   margin-top: 10%;
+  margin-bottom: 10%;
 }
 .newsletterLink {
   float: right;
@@ -1077,6 +1077,16 @@
 
   .noticeText {
     text-align: center;
+  }
+  .calenderLink {
+    display: flex;
+    margin: 10% auto;
+  }
+  .newsletterLink {
+    display: flex;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10%;
   }
 }
 

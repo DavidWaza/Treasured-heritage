@@ -64,7 +64,7 @@ const Events = [
     date: "2023-03-10",
   },
   {
-    title: "international \n Women's Day",
+    title: "international Women's Day",
     date: "2023-03-08",
   },
   {
@@ -133,7 +133,10 @@ const Calender = () => {
               <Row>
                 <Col sm={6}>
                   <button className={styles.calenderLink}>
-                    <Link href="file:///C:/Users/waza/Downloads/GRACE%20TERM%20NEWSLETTER-10.pdf">
+                    <Link
+                      href="https://res.cloudinary.com/ddwkojhaj/image/upload/v1674575716/GRACE_TERM_NEWSLETTER-10_aeehpa.pdf"
+                      target="/blank"
+                    >
                       <p className={styles.calLinkdownload}>
                         2023-2024 calender
                       </p>
@@ -142,7 +145,10 @@ const Calender = () => {
                 </Col>
                 <Col sm={6}>
                   <button className={styles.newsletterLink}>
-                    <Link href="file:///C:/Users/waza/Downloads/GRACE%20TERM%20NEWSLETTER-10.pdf">
+                    <Link
+                      href="file:///C:/Users/waza/Downloads/GRACE%20TERM%20NEWSLETTER-10.pdf"
+                      target="/blank"
+                    >
                       <p className={styles.calLinkdownload}>
                         download Newsletter
                       </p>
