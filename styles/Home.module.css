@@ -867,9 +867,10 @@
   color: #000;
 }
 
-.fullCalender>h1 {
+.fullCalender>h2 {
   font-family: 'Bree Serif', serif !important;
   font-weight: 700;
+  color: #bd0075;
 }
 
 .calenderLink,
@@ -914,6 +915,7 @@
   opacity: 0.7;
   transition: all .3s ease;
   border: 2px solid #e6e4e4;
+  text-decoration: none !important;
 }
 
 
