@@ -94,7 +94,7 @@ export const TableHead = [
   },
   {
     id: 2,
-    title: "WEEK",
+    title: "WEEK(s)",
   },
   {
     id: 3,

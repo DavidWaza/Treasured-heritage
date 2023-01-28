@@ -896,8 +896,14 @@
   border: 2px solid #e6e4e4;
   text-decoration: none !important;
 }
-
-
+.tableStyles{
+  font-family: "Bree Serif", serif;
+  font-size: var(--secondaryFontSize);
+}
+/* .tableStyles>td {
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--tetiaryFontSize);
+} */
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 767px) {
