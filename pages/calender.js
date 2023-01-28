@@ -4,7 +4,6 @@ import dayGridPlugin from "@fullcalendar/daygrid"; // a plugin!
 import { Container, Col, Row } from "react-bootstrap";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import Image from "next/image";
 
 const Events = [
   {
@@ -20,7 +19,7 @@ const Events = [
     date: "2023-02-10",
   },
   {
-    title: "1st C.A/Skill Practice (Pre-school / Grade School)",
+    title: `1st C.A/Skill Practice(Pre-school / Grade School)`,
     date: "2023-02-06",
   },
   {

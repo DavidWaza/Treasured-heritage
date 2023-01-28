@@ -20,7 +20,7 @@ const Program = () => {
         <Row>
           <Col>
             <div className={styles.programText}>
-              <motion.h2
+              <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{
@@ -31,8 +31,8 @@ const Program = () => {
                 className="text-center"
               >
                 Our Programs
-              </motion.h2>
-              <motion.h5
+              </motion.p>
+              <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{
@@ -43,7 +43,7 @@ const Program = () => {
                 className="text-center"
               >
                 What we offer
-              </motion.h5>
+              </motion.p>
             </div>
           </Col>
         </Row>
@@ -75,9 +75,9 @@ const Program = () => {
                 }}
                 className={styles.progHeader}
               >
-                <h4 className="text-center text-xl font-bold mt-3">
+                <p className={`text-center text-xl font-bold mt-3 ${styles.schoolTypeText}`}>
                   {schoolType}
-                </h4>
+                </p>
                 <p className="text-bold">{slug}</p>
               </motion.div>
             </Col>

@@ -1,5 +1,6 @@
 // import { useState, useEffect } from "react";
 import Head from "next/head";
+import styles from "../styles/Home.module.css"
 import About from "../components/About";
 import Herobanner from "../components/Herobanner";
 import Program from "../components/Programs";
@@ -24,14 +25,16 @@ export default function Home() {
           href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
         />
       </Head>
-      <Herobanner />
-      <Notice />
-      <Welcome />
-      <About />
-      <Program />
-      <ContactPage />
-      <Testimonial />
-      <Newsletter />
+      <div className={styles.homeBody}>
+        <Herobanner />
+        <Notice />
+        <Welcome />
+        <About />
+        <Program />
+        <ContactPage />
+        <Testimonial />
+        <Newsletter />
+      </div>
     </>
   );
 }

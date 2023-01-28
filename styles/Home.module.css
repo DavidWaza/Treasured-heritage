@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@300;400;700&display=swap');
 
+.homeBody {
+  --heroFontPrimary: clamp(2.5em, 10vw, 7em);
+  --heroFontSecondary: clamp(1.4em, 10vw, 2em);
+  --heroFontTetiary: clamp(.8em, 10vw, 1.2em);
+  --primaryFontSize: 30px;
+  --secondaryFontSize: 20px;
+  --tetiaryFontSize: 18px;
+
+}
+
 .inputForm {
   display: flex;
   justify-content: center;
@@ -129,28 +139,28 @@
 }
 
 .heroContent {
-  padding-top: 20%;
+  padding-top: 10%;
   color: #fff;
 }
 
 .heroContent>p:nth-child(1) {
-  font-size: clamp(2.5em, 10vw, 5em);
+  font-size: var(--heroFontPrimary);
   font-family: 'Bree Serif', serif;
   font-weight: bold;
   letter-spacing: 0.077em;
 }
 
 .heroContent>p:nth-child(2) {
-  font-size: clamp(1.4em, 10vw, 2em);
-  font-family: 'Bree Serif', serif;
+  font-size: var(--heroFontSecondary);
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   letter-spacing: 0.077em;
   margin-top: -20px;
 }
 
 .heroContent>p:nth-child(3) {
-  font-size: clamp(.8em, 10vw, 1em);
-  font-family: 'Bree Serif', serif;
+  font-size: var(--heroFontTetiary);
+  font-family: 'Open Sans', sans-serif;
   font-weight: light;
   letter-spacing: 0.067em;
 }
@@ -199,49 +209,6 @@
   margin-top: 10px;
 }
 
-.boy {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  transform: scale(0.69) translate(-40%, -16.5%);
-}
-
-.doodleOne {
-  position: absolute;
-  top: 9%;
-}
-
-.doodleTwo {
-  position: absolute;
-  top: 14%;
-  margin-left: -10px;
-}
-
-.doodleThree {
-  position: absolute;
-  top: 18%;
-  margin-left: -25px;
-}
-
-.doodleFour {
-  position: absolute;
-  top: 9%;
-  right: 30%;
-}
-
-.doodleFive {
-  position: absolute;
-  top: 14%;
-  right: 30%;
-  margin-right: -10px;
-}
-
-.doodleSix {
-  position: absolute;
-  top: 18%;
-  right: 30%;
-  margin-right: -10px;
-}
 
 /* NOTICE */
 .noticeBg {
@@ -252,7 +219,7 @@
 
 .noticeText {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.1rem;
+  font-size: var(--tetiaryFontSize);
   letter-spacing: 0.25px;
   color: #ffffff;
   padding: 6%;
@@ -260,9 +227,10 @@
 
 /* WELCOME NOTES */
 .welcomeHeader {
+  /* font-family: 'Bree Serif', serif; */
   font-family: 'Bree Serif', serif;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: var(--primaryFontSize);
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -271,28 +239,28 @@
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.25px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: var(--secondaryFontSize);
 }
 
 .welcomeTitle>p:nth-child(2) {
   font-family: 'Open Sans', sans-serif;
   font-weight: light;
   letter-spacing: 0.25px;
-  font-size: 18px;
+  font-size: var(--tetiaryFontSize);
 }
 
 .welcomeTitle>p:nth-child(3) {
   font-family: 'Open Sans', sans-serif;
   font-weight: light;
   letter-spacing: 0.25px;
-  font-size: 18px;
+  font-size: var(--tetiaryFontSize);
 }
 
 .welcomeTitle>p:nth-child(4) {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.25px;
   font-weight: bold;
-  font-size: 21px;
+  font-size: var(--tetiaryFontSize);
   color: rgb(137, 35, 98);
 }
 
@@ -303,7 +271,7 @@
 .title {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: var(--tetiaryFontSize);
   margin-left: 15%;
 }
 
@@ -326,16 +294,14 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   letter-spacing: 0.25px;
-  font-size: 20px;
+  font-size: var(--secondaryFontSize);
   margin-top: 40%;
 }
 
 .abtHeader>p:nth-child(2) {
   font-family: 'Open Sans', sans-serif;
+  font-size: var(--tetiaryFontSize);
   font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.25px;
-  line-height: 30px;
 }
 
 .abtImgContainer {
@@ -349,7 +315,7 @@
   top: 22%;
   right: 10%;
   font-family: 'Bree Serif', serif;
-  font-size: 25px;
+  font-size: var(--primaryFontSize);
   font-weight: bold;
   letter-spacing: 0.25px;
   line-height: 20px;
@@ -361,31 +327,35 @@
   background-color: #f3f3f3;
 }
 
-.programText>h2 {
-  font-family: 'Bree Serif',serif;
+.programText>p:nth-child(1) {
+  font-family: 'Bree Serif', serif;
   font-weight: bold;
+  font-size: var(--primaryFontSize);
 }
 
-.programText>h5 {
+.programText>p:nth-child(2) {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.25px;
   line-height: 40px;
+  font-weight: 700;
+  font-size: var(--secondaryFontSize);
 }
 
-.progHeader>h4 {
-  font-family: 'Bree Serif',serif;
-  font-weight: bold;
-}
-
-.progHeader>p {
+.progHeader>p:nth-child(1) {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.25px;
-  font-size: 18px;
+  font-size: var(--secondaryFontSize);
   padding-bottom: 10%;
   margin: auto;
 }
-
+.progHeader>p:nth-child(2) {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: var(--tetiaryFontSize);
+  margin-top: -7%;
+  margin-bottom: 7%;
+}
 /* TESTIMONIALS */
 .testimonialWrapper {
   background-color: #A0457B;
@@ -397,16 +367,16 @@
 
 .testimonialHeader>p:nth-child(1) {
   color: #efefef;
-  font-family: "Bree Serif",serif;
+  font-family: 'Bree Serif', serif;
   font-weight: bold;
-  font-size: 2em;
+  font-size: var(--primaryFontSize);
 }
 
 .testimonialHeader>P:nth-child(2) {
   color: #efefef;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: var(--tetiaryFontSize);
   text-align: center;
 }
 
@@ -417,8 +387,8 @@
 
 .myCarousel>p {
   color: #efefef;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--tetiaryFontSize);
   text-align: justify;
 }
 
@@ -427,15 +397,14 @@
   color: #f1f1f1;
   width: 20px;
   margin-right: 10px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
 }
 
 .myCarousel p:nth-child(1)::before {
   content: "”";
   color: #f1f1f1;
-  font-size: 26px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   line-height: 0;
 }
@@ -443,7 +412,7 @@
 .myCarousel>p:nth-child(2) {
   display: flex;
   justify-content: flex-end;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -451,7 +420,8 @@
 .myCarousel>p:last-child {
   display: flex;
   justify-content: flex-end;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 /* SCROLL TO TOP */
@@ -508,7 +478,14 @@
   padding-bottom: 30px;
   border-radius: 20px;
 }
-
+.contactBg>p:nth-child(1) {
+  font-family: "Bree Serif", serif;
+  font-size: var(--primaryFontSize);
+}
+.contactBg>p:nth-child(2) {
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--secondaryFontSize);
+}
 .formSpree {
   display: flex;
   justify-content: center;
@@ -540,15 +517,14 @@
   height: auto;
   padding-top: 50px;
   padding-bottom: 30px;
-  text-align: justify;
 }
 
 .footerItems {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   width: 200px;
   margin: 0 auto;
   letter-spacing: 0.035em;
-  font-size: 0.88em;
+  font-size: var(--secondaryFontSize);
   line-height: 18px;
   padding: 12px;
 }
@@ -562,9 +538,11 @@
   text-decoration: none;
   color: #f9f9f9;
 }
+
 .socialIcons {
   transition: all .3s ease;
 }
+
 .socialIcons:hover {
   transform: scale(1.1);
   transition: all .3s ease;
@@ -657,14 +635,14 @@
 }
 
 .newsLettertext>p:nth-child(1) {
-  font-size: 2.2rem;
+  font-size:var(--primaryFontSize);
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.07rem;
 }
 
 .newsLettertext>p:nth-child(2) {
-  font-size: 1rem;
+  font-size: var(--tetiaryFontSize);
   font-weight: normal;
   color: #727272;
   font-family: "Open Sans", sans-serif;
@@ -684,7 +662,7 @@
 
 .newsletterInput::placeholder {
   color: #8f8f8f;
-  font-size: 0.9rem;
+  font-size: var(--tetiaryFontSize);
   letter-spacing: 0.07rem;
 }
 
@@ -694,6 +672,7 @@
 
 .subButton {
   font-family: "Open Sans", sans-serif;
+  font-size: var(--tetiaryFontSize);
   width: 70%;
   background-color: #bd0075;
   color: #ffffff;
