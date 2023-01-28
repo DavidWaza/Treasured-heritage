@@ -6,6 +6,7 @@ import { TableHead, TableData } from "../components/DataArr/Data";
 const Calender = () => {
   return (
     <>
+    <div className={styles.calenderBanner}></div>
       <Container>
         <Row>
           <Col>
@@ -38,7 +39,7 @@ const Calender = () => {
                 </button>
               </Col>
             </Row>
-            <Table striped bordered hover variant="dark">
+            <Table striped bordered hover >
               <thead>
                 <tr>
                   {TableHead.map((x) => (
