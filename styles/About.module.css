@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@300;400;700&display=swap');
 
+
+/* ROOT */
+.homeBody {
+  --heroFontPrimary: clamp(2.5em, 10vw, 5em);
+  --heroFontSecondary: clamp(1.4em, 10vw, 2em);
+  --heroFontTetiary: clamp(.8em, 10vw, 1.2em);
+  --primaryFontSize: 30px;
+  --secondaryFontSize: 20px;
+  --tetiaryFontSize: 18px;
+}
+
 /* HERO */
 .hero {
   background-image: url("https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto/v1668756600/about1_hvpomm.png");
@@ -13,21 +24,23 @@
 .hero>p:nth-child(1) {
   padding-top: 15%;
   text-align: center;
-  font-size: 3em;
+  font-size: var(--heroFontPrimary);
   font-family: 'Bree Serif',serif;
 }
 
 .hero>p:nth-child(2) {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: var(--heroFontTetiary);
   color: #f1f1f1;
   font-family: "Open Sans", sans-serif;
+  font-size: var(--secondaryFontSize);
 }
 
 /* ACCORDION */
 .accordion {
   width: 100%;
   margin: 2rem auto;
+  transition: all .6s ease;
 }
 
 .accordionTitle {
@@ -38,21 +51,25 @@
   font-weight: bold;
   margin-top: 10px;
   font-family: "Open Sans", sans-serif;
+  transition: all .6s ease;
 }
 
 .accordionTitle:hover {
-  background-color: #f1f1f1;
+  background-color: #A0457B;
+  color: #fff;
+  transition: all .6s ease;
 }
 
 .accordionTitle,
 .accordionContent {
   padding: 1rem;
+  transition: all .6s ease;
 }
 
 .accordionContent {
   background-color: #f1f1f1;
   color: #878787;
-  transition: all 1.5s ease-out;
+  transition: all .6s ease;
 }
 
 .row>p {
@@ -60,16 +77,16 @@
   flex-direction: row;
   font-family: "Open Sans", sans-serif;
   margin-top: 20%;
-  font-size: 1.5rem;
+  font-size: var(--secondaryFontSize);
   font-weight: bold;
 }
 
 .rowReverseved>p {
   display: flex;
   flex-direction: row-reverse;
-  font-family: "Heebo", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-top: 20%;
-  font-size: 1.5rem;
+  font-size: var(--secondaryFontSize);
   font-weight: bold;
 }
 
@@ -85,11 +102,13 @@
   margin-top: 10px;
   align-items: flex-end;
   margin-left: 15%;
+  font-size: var(--tetiaryFontSize);
+  font-family: "Open Sans", sans-serif;
 }
 
 .mainTitle {
   font-family: "Bree Serif",serif;
-  font-size: 1.4rem;
+  font-size: var(--secondaryFontSize);
   font-weight: bold;
   display: flex;
   flex-direction: row-reverse;
@@ -120,6 +139,8 @@
   list-style-type: circle;
   list-style-position: outside;
   margin-top: 10px;
+  font-size: var(--tetiaryFontSize);
+  font-family: "Open Sans", sans-serif;
 }
 
 /* VISIONSTATEMENT */
@@ -160,7 +181,7 @@
 .welcomeSection>p:nth-child(1) {
   font-family: "Bree Serif",serif;
   font-weight: bold;
-  font-size: clamp(1.8rem, 10vw, 28px);
+  font-size: var(--primaryFontSize);
   line-height: 30px;
   letter-spacing: 0.25px;
 }
@@ -168,7 +189,7 @@
 .welcomeSection>p:nth-child(2) {
   font-family: "Open Sans", sans-serif;
   font-weight: light;
-  font-size: 1.1rem;
+  font-size: var(--secondaryFontSize);
   line-height: 30px;
   letter-spacing: 0.25px;
 }
@@ -176,7 +197,7 @@
 .welcomeSection>p:nth-child(3) {
   font-family: "Open Sans", sans-serif;
   font-weight: light;
-  font-size: 1.1rem;
+  font-size: var(--secondaryFontSize);
   line-height: 30px;
   letter-spacing: 0.25px;
 }
@@ -190,6 +211,7 @@
 }
 .principalDetails {
   font-family: "Open Sans", sans-serif;
+  font-size: var(--tetiaryFontSize);
   font-weight: bold;
   margin-top: 10%;
   text-align: center;
@@ -200,6 +222,7 @@
 }
 .principalPosition {
   font-family: "Open Sans", sans-serif;
+  font-size: var(--tetiaryFontSize);
   font-weight: 600;
   text-align: center;
 }
@@ -220,7 +243,7 @@
 .whyUsTitle {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: var(--tetiaryFontSize);
   text-align: center;
 }
 
