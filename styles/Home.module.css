@@ -125,9 +125,8 @@
 
 .herobanner {
   background-image: url('https://res.cloudinary.com/ddwkojhaj/image/upload/v1675122723/Background_pan4gp.png');
-  background-position: 30% 10%;
+  background-position: center;
   background-size: cover;
-  
   height: 500px;
   width: 100%;
 }
