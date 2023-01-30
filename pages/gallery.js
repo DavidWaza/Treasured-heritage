@@ -9,7 +9,7 @@ const GalleryAPI = () => {
     <>
       <section>
         <div className={styles.Herogallery}>
-          <h1>THS Gallery Album</h1>
+          <p>THS Gallery Album</p>
         </div>
       </section>
       <Container>

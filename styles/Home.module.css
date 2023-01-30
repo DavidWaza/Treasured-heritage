@@ -125,9 +125,10 @@
 
 .herobanner {
   background-image: url('/bg.png');
-  background-position: center;
-  background-size: cover;
+  background-position: 30% 10%;
+  background-size: contain;
   height: 500px;
+  width: 100%;
 }
 
 .imageBackground {
@@ -562,15 +563,16 @@
 
 }
 
-.Herogallery>h1 {
+.Herogallery>p {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #f9f9f9;
-  font-family: "Open Sans", sans-serif;
-  font-size: 3.5rem;
-  letter-spacing: 0.04rem;
+  font-family: "Bree Serif", serif;
+  font-size: clamp(2.5em, 10vw, 4em);
+  font-weight: 800;
+  letter-spacing: 0.04rem
 }
 
 .coverImg {

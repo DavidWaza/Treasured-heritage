@@ -6,7 +6,6 @@ import { TableHead, TableData } from "../components/DataArr/Data";
 const Calender = () => {
   return (
     <>
-      <div className={styles.calenderBanner}></div>
       <Container>
         <Row>
           <Col>
