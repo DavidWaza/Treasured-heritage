@@ -902,6 +902,10 @@
   font-family: "Bree Serif", serif;
   font-size: var(--secondaryFontSize);
 }
+.GTC {
+  font-family: "Bree Serif", serif;
+  font-size: var(--primaryFontSize);
+}
 /* .tableStyles>td {
   font-family: "Open Sans", sans-serif;
   font-size: var(--tetiaryFontSize);
@@ -1088,6 +1092,12 @@
     margin: 0 auto;
     float: none;
     margin-bottom: 10%;
+  }
+  .fullCalender>h2{
+    text-align: center;
+  }
+  .GTC {
+    text-align: center;
   }
 }
 

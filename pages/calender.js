@@ -20,7 +20,7 @@ const Calender = () => {
                     target="/blank"
                     download="THS Calender"
                   >
-                    <p className={styles.calLinkdownload}>2023-2024 calender</p>
+                    <p className={styles.calLinkdownload}>Download 2023-2024 calender</p>
                   </Link>
                 </button>
               </Col>
@@ -36,6 +36,11 @@ const Calender = () => {
                     </p>
                   </Link>
                 </button>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+              <p className={styles.GTC}>Grace Term Calender (1st term)</p>
               </Col>
             </Row>
             <Table striped bordered hover>
