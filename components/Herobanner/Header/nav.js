@@ -66,7 +66,7 @@ const BigNav = () => {
             <div className={styles.buttonFrontPosition}>
               <Link href="/portal">
                 <Image src="/rec6.png" alt="alt" width={150} height={100} />{" "}
-                <div className={` ml-7 ${styles.buttonText}`}>
+                <div className={` ml-5 ${styles.buttonText}`}>
                   <p>Portal</p>
                 </div>
               </Link>
