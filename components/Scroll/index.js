@@ -7,7 +7,7 @@ const ScrollTo = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 3600) {
+      if (window.scrollY > 3900) {
         setShowTopBtn(true);
       } else {
         setShowTopBtn(false);
