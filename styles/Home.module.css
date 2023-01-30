@@ -124,9 +124,10 @@
 /* HEROBANNER */
 
 .herobanner {
-  background-image: url('/bg.png');
+  background-image: url('/background.png');
   background-position: 30% 10%;
-  background-size: contain;
+  background-size: cover;
+  
   height: 500px;
   width: 100%;
 }
@@ -134,9 +135,9 @@
 .imageBackground {
   position: relative;
   height: 450px;
-  width: 300px;
+  width: 450px;
   margin-top: 5%;
-  margin-left: 20%;
+  margin-left: 10%;
 }
 
 .heroContent {
