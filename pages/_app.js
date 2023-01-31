@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../styles/fonts.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../components/Herobanner/Header/nav";
 import Footer from "../components/Footer";
