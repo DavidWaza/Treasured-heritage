@@ -11,20 +11,8 @@ import { Notice } from "../components/Notice";
 import Testimonial from "../components/Testimonial";
 
 export default function Home() {
-  const Content = "college, high-school, school, mentossori";
-  const { Keyword } = "keyword";
   return (
     <>
-      <Head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" v />
-        <title>Treasured heritage school</title>
-        <meta name={Keyword} content={Content} />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-        />
-      </Head>
       <div className={styles.homeBody}>
         <Herobanner />
         <Notice />
