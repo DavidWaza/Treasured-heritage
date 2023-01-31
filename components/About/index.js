@@ -51,7 +51,12 @@ const About = () => {
           <Col sm={5}>
             <p className={styles.AbtTitle}>About Us</p>
             <div className={styles.abtImgContainer}>
-              <Image src="/image.png" alt="alt" width={300} height={300} />
+              <Image
+                src="https://res.cloudinary.com/ddwkojhaj/image/upload/v1675123406/Image_xe4qjt.png"
+                alt="alt"
+                width={300}
+                height={300}
+              />
             </div>
           </Col>
         </Row>
