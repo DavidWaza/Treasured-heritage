@@ -83,7 +83,7 @@
 .row>p {
   display: flex;
   flex-direction: row;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Bree Serif", serif;
   margin-top: 20%;
   font-size: var(--secondaryFontSize);
   font-weight: bold;
@@ -92,7 +92,7 @@
 .rowReverseved>p {
   display: flex;
   flex-direction: row-reverse;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Bree Serif", serif;
   margin-top: 20%;
   font-size: var(--secondaryFontSize);
   font-weight: bold;
@@ -291,6 +291,14 @@
     padding-top: 25%;
 
   }
+  .welcomeSection>p:nth-child(2) {
+    font-size: .9375rem;
+    line-height: 1.6875rem;
+  }
+  .welcomeSection>p:nth-child(3) {
+    font-size: .9375rem;
+    line-height: 1.6875rem;
+  }
 
   .hero>p:nth-child(2) {
     font-size: 18px;
@@ -299,10 +307,16 @@
 
   .listTypeReverse>li {
     margin: 0;
+    font-size: .9375rem;
+    line-height: 1.6875rem;
+  }
+  .listType>li{
+    font-size: .9375rem;
+    line-height: 1.6875rem;
   }
 
   .accordionWrapper {
-    padding: 0;
+    padding: 0px 20px;
   }
 
   .accordion {
@@ -311,7 +325,17 @@
 
   .row,
   .rowReverseved {
-    padding: 0px 2rem;
+    padding: 0px 1.3rem;
+  }
+  .row>p{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+  }
+  .rowReverseved>p{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
   }
   .principalImgShadow {
     display: none;
