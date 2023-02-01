@@ -278,6 +278,7 @@
   margin: 0 auto;
   letter-spacing: 0.06rem;
 }
+
 .headmisImg {
   top: 0%;
 }
@@ -326,6 +327,7 @@
   height: 10px;
   top: 10px;
 }
+
 .learnMore:hover::after {
   transition: all .3s ease-in-out;
   margin-left: 2px;
@@ -707,27 +709,25 @@
   margin-top: 20px;
 }
 
-.subButton {
+.subButton,
+.subButtonDisabled {
   font-family: "Open Sans", sans-serif;
   font-size: var(--tetiaryFontSize);
   width: 70%;
-  background-color: #bd0075;
   color: #ffffff;
   padding: 10px 20px;
   letter-spacing: 0.07rem;
   border-radius: 20px;
 }
 
+.subButton {
+  background-color: #bd0075;
+}
 .subButtonDisabled {
-  font-family: "Open Sans", sans-serif;
-  width: 70%;
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 20px;
   background-color: #8f8f8f;
-  letter-spacing: 0.07rem;
   cursor: no-drop !important;
 }
+
 
 /* SUCCESS */
 .successBg {
@@ -1049,15 +1049,22 @@
 
   .welcomeTitle>p:nth-child(2) {
     text-align: center;
+    font-size: .9375rem;
+    line-height: 1.6875rem;
+    padding: 0px 10px;
   }
 
   .welcomeTitle>p:nth-child(3) {
     text-align: center;
+    font-size: .9375rem;
+    line-height: 1.6875rem;
+    padding: 0px 10px;
   }
 
   .welcomeTitle>p:nth-child(4) {
-    font-size: 20px;
     text-align: center;
+    line-height: 1.6875rem;
+    font-size: 1.0234566rem;
   }
 
   .welcomeTitle>hr {
@@ -1070,15 +1077,43 @@
   }
 
   .abtHeader {
+    padding: 0px 10px;
     text-align: center;
+  }
+
+  .abtHeader>p:nth-child(2) {
+    font-size: .9375rem;
+    line-height: 1.6875rem;
+  }
+
+  .testimonialHeader>p:nth-child(1) {
+    font-size: 20px;
+    line-height: 1.9rem;
+  }
+
+  .testimonialHeader>p:nth-child(2) {
+    font-size: 15px;
+  }
+
+  .myCarousel>p:nth-child(1) {
+    font-size: .98rem;
+  }
+
+  .myCarousel>p:nth-child(2) {
+    font-size: .89rem;
+  }
+
+  .myCarousel>p:last-child {
+    font-size: .89rem;
+  }
+
+  .learnMore {
+    font-size: .9375rem;
+    line-height: 1.6875rem;
   }
 
   .abtImg {
     display: none;
-  }
-
-  .abtHeader {
-    font-size: 18px;
   }
 
   .AbtTitle {
@@ -1102,11 +1137,37 @@
     justify-content: center;
   }
 
-  .portal {
+  .newsLetterIcon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .newsLettertext>p:nth-child(1) {
+    font-size: 20px;
+  }
+
+  .newsLettertext>p:nth-child(2) {
+    font-size: 15px;
+  }
+
+  .newsletterInput::placeholder {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .subButtonDisabled,
+  .subButton {
+    font-size: 15px;
+  }
+  .footerItems {
+    text-align: center;
+  }
+
+  /* .portal {
     width: 50%;
     height: 20px;
     margin: 0 auto !important;
-  }
+  } */
 
   .portal {
     display: none;
@@ -1118,6 +1179,8 @@
 
   .noticeText {
     text-align: center;
+    font-size: 0.9875rem;
+    line-height: 1.6875rem;
   }
 
   .calenderLink {
@@ -1130,6 +1193,13 @@
     margin: 0 auto;
     float: none;
     margin-bottom: 10%;
+  }
+
+  .progHeader>p:nth-child(2) {
+    text-align: center;
+    font-size: .9375rem;
+    line-height: 1.6875rem;
+    padding: 0px 10px;
   }
 
   .fullCalender>h2 {

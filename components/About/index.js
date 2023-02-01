@@ -69,8 +69,8 @@ const About = () => {
               <Image
                 src="https://res.cloudinary.com/ddwkojhaj/image/upload/v1675123406/Image_xe4qjt.png"
                 alt="alt"
-                width={400}
-                height={400}
+                width={300}
+                height={300}
               />
             </div>
           </Col>
