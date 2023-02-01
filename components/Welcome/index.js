@@ -21,8 +21,13 @@ const Welcome = () => {
             WELCOME NOTE
           </motion.div>
           <Col sm={4}>
-            <div className="relative flex justify-center mt-12">
-              <Image src="/Headmis.png" alt="" width={350} height={350} />
+            <div className="relative ">
+              <div className="flex justify-center">
+                <Image src="/bgimg.png" alt="head" width={400} height={400} />
+              </div>
+              <div className={`absolute ${styles.headmisImg}`}>
+                <Image src="/Headmis.png" alt="head" width={350} height={350} />
+              </div>
             </div>
           </Col>
           <Col sm={8}>

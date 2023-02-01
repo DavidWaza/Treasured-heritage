@@ -1,5 +1,5 @@
 import styles from "../../styles/Home.module.css";
-import { Col, Row } from "react-bootstrap";
+import { Container,Col, Row } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,6 +9,7 @@ export const Notice = () => {
       <Row>
         <Col>
           <div className={styles.noticeBg}>
+            <Container>
             <Row>
               <Col sm={6}>
                 <div className={styles.noticeText}>
@@ -46,6 +47,8 @@ export const Notice = () => {
                 </div>
               </Col>
             </Row>
+            </Container>
+          
           </div>
         </Col>
       </Row>

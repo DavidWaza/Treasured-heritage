@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import styles from "../../styles/Home.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -46,6 +47,20 @@ const About = () => {
                 the child compete favourably with his/her contemporaries in any
                 part of the world.
               </motion.p>
+              <Link href="/about">
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{
+                    delay: 0.5,
+                    duration: 0.8,
+                    ease: [0.9, 0.71, 0.7, 1.01],
+                  }}
+                  className={styles.learnMore}
+                >
+                  Learn more
+                </motion.p>
+              </Link>
             </div>
           </Col>
           <Col sm={5}>
@@ -54,8 +69,8 @@ const About = () => {
               <Image
                 src="https://res.cloudinary.com/ddwkojhaj/image/upload/v1675123406/Image_xe4qjt.png"
                 alt="alt"
-                width={300}
-                height={300}
+                width={400}
+                height={400}
               />
             </div>
           </Col>

@@ -1,4 +1,3 @@
-
 .homeBody {
   --heroFontPrimary: clamp(2.5em, 10vw, 7em);
   --heroFontSecondary: clamp(1.4em, 10vw, 2em);
@@ -6,7 +5,7 @@
   --primaryFontSize: 30px;
   --secondaryFontSize: 20px;
   --tetiaryFontSize: 18px;
-
+  --sectionMargin: 7rem
 }
 
 .inputForm {
@@ -222,16 +221,15 @@
   font-size: var(--tetiaryFontSize);
   letter-spacing: 0.25px;
   color: #ffffff;
-  padding: 6%;
+  padding: 6% 0;
 }
 
 /* WELCOME NOTES */
 .welcomeHeader {
-  /* font-family: 'Bree Serif', serif; */
   font-family: 'Bree Serif', serif;
   font-weight: bold;
   font-size: var(--primaryFontSize);
-  margin-top: 2rem;
+  margin-top: var(--sectionMargin);
   margin-bottom: 2rem;
 }
 
@@ -280,6 +278,9 @@
   margin: 0 auto;
   letter-spacing: 0.06rem;
 }
+.headmisImg {
+  top: 0%;
+}
 
 /* ABOUT SECTION */
 .abtWrapper {
@@ -296,12 +297,38 @@
   letter-spacing: 0.25px;
   font-size: var(--secondaryFontSize);
   margin-top: 40%;
+  padding-top: 20px;
 }
 
 .abtHeader>p:nth-child(2) {
   font-family: 'Open Sans', sans-serif;
   font-size: var(--tetiaryFontSize);
   font-weight: 500;
+}
+
+.learnMore {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--tetiaryFontSize);
+  font-weight: 500;
+  padding-bottom: 30px;
+  color: #000;
+}
+
+.learnMore::after {
+  content: "";
+  position: absolute;
+  background-image: url("/rightCaret.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 10px;
+  top: 10px;
+}
+.learnMore:hover::after {
+  transition: all .3s ease-in-out;
+  margin-left: 2px;
 }
 
 .abtImgContainer {
@@ -324,7 +351,8 @@
 
 /* PROGRAMS */
 .programWrapper {
-  background-color: #f3f3f3;
+  background-color: #FFFFFF;
+  margin-top: var(--sectionMargin);
 }
 
 .programText>p:nth-child(1) {
@@ -349,6 +377,7 @@
   padding-bottom: 10%;
   margin: auto;
 }
+
 .progHeader>p:nth-child(2) {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
@@ -356,9 +385,12 @@
   margin-top: -7%;
   margin-bottom: 7%;
 }
+
 /* TESTIMONIALS */
 .testimonialWrapper {
   background-color: #A0457B;
+  margin-top: var(--sectionMargin);
+  margin-bottom: var(--sectionMargin);
 }
 
 .testimonialHeader {
@@ -478,14 +510,17 @@
   padding-bottom: 30px;
   border-radius: 20px;
 }
+
 .contactBg>p:nth-child(1) {
   font-family: "Bree Serif", serif;
   font-size: var(--primaryFontSize);
 }
+
 .contactBg>p:nth-child(2) {
   font-family: 'Open Sans', sans-serif;
   font-size: var(--secondaryFontSize);
 }
+
 .formSpree {
   display: flex;
   justify-content: center;
@@ -622,7 +657,8 @@
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-top: 60px;
+  margin-top: var(--sectionMargin);
+  margin-bottom: var(--sectionMargin);
 }
 
 .NewsletterPng {
@@ -636,7 +672,7 @@
 }
 
 .newsLettertext>p:nth-child(1) {
-  font-size:var(--primaryFontSize);
+  font-size: var(--primaryFontSize);
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.07rem;
@@ -897,14 +933,17 @@
   border: 2px solid #e6e4e4;
   text-decoration: none !important;
 }
-.tableStyles{
+
+.tableStyles {
   font-family: "Bree Serif", serif;
   font-size: var(--secondaryFontSize);
 }
+
 .GTC {
   font-family: "Bree Serif", serif;
   font-size: var(--primaryFontSize);
 }
+
 /* .tableStyles>td {
   font-family: "Open Sans", sans-serif;
   font-size: var(--tetiaryFontSize);
@@ -1092,9 +1131,11 @@
     float: none;
     margin-bottom: 10%;
   }
-  .fullCalender>h2{
+
+  .fullCalender>h2 {
     text-align: center;
   }
+
   .GTC {
     text-align: center;
   }

@@ -19,8 +19,8 @@ export default function Home() {
         <Welcome />
         <About />
         <Program />
+        <Testimonial /> 
         <ContactPage />
-        <Testimonial />
         <Newsletter />
       </div>
     </>
