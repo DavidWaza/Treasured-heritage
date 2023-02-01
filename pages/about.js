@@ -11,7 +11,7 @@ const About = () => {
     <>
       <div className={Abtstyles.homeBody}>
         <div className={Abtstyles.hero}>
-          <p className="text-center text-white text-7xl font-bold tracking-wider animate__animated animate__shakeY">
+          <p className="text-center text-white text-7xl font-bold">
             About Us
           </p>
           <p>

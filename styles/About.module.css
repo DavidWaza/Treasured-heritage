@@ -7,6 +7,7 @@
   --primaryFontSize: 30px;
   --secondaryFontSize: 20px;
   --tetiaryFontSize: 18px;
+  --sectionMargin: 10%;
 }
 
 /* HERO */
@@ -35,12 +36,16 @@
 }
 
 /* ACCORDION */
+.accordionWrapper
 .accordion {
   width: 100%;
-  margin: 2rem auto;
+  margin:  var(--sectionMargin) 0;
   transition: all .6s ease;
 }
 
+.accordionWrapper {
+  padding: 0px 9rem;
+}
 .accordionTitle {
   display: flex;
   cursor: pointer;
@@ -57,7 +62,12 @@
   color: #fff;
   transition: all .6s ease;
 }
-
+.accordionTitle:active {
+  background-color: #A0457B !important;
+}
+.accordionTitle:visited {
+  background-color: #A0457B;
+}
 .accordionTitle,
 .accordionContent {
   padding: 1rem;
@@ -155,6 +165,7 @@
   padding-top: 30px;
   padding-bottom: 80px;
   position: relative;
+  margin-top: var(--sectionMargin);
 }
 
 .CBgTitle>p {
@@ -200,10 +211,6 @@
   letter-spacing: 0.25px;
 }
 
-.accordionWrapper {
-  padding: 0px 9rem;
-}
-
 .accordion-button {
   background-color: #b0acac !important;
 }
@@ -247,6 +254,7 @@
 
 .otherLinks {
   background-color: #fff;
+  margin-top: var(--sectionMargin);
 }
 
 .otherLinks>p {
@@ -263,6 +271,7 @@
   display: flex;
   gap: 1em;
   justify-content: center;
+  margin-bottom:7%;
 }
 
 .buttonLinks {
