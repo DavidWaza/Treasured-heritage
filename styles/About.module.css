@@ -91,7 +91,7 @@
 
 .rowReverseved>p {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: center;
   font-family: "Bree Serif", serif;
   margin-top: 20%;
   font-size: var(--secondaryFontSize);
