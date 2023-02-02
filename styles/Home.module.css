@@ -65,39 +65,32 @@
   transition: all .5s;
 }
 
-.shift li a {
+.stroke li a {
+  display: inline-block;
   position: relative;
-  z-index: 1;
+  color:#000;
 }
-
-.shift li a:hover {
-  color: #fff;
-}
-
-.shift li a:after {
-  display: block;
+.stroke li a::after {
+  content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
   width: 100%;
-  height: 1px;
-  content: '.';
-  color: transparent;
-  background: #bd0075;
-  visibility: none;
-  opacity: 0;
-  z-index: -1;
-  border-radius: 1px;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:#bd0075;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out
+}
+.stroke li a:hover {
+  color: #666;
+}
+.stroke li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  opacity: 1;
 }
 
-.shift li a:hover:after {
-  opacity: 1;
-  visibility: visible;
-  height: 100%;
-}
 
 .hamburger {
   border: 0;

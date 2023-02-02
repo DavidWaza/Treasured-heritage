@@ -40,7 +40,7 @@ const BigNav = () => {
             : `${styles.navigationMenu}`
         }
       >
-        <ul className={styles.shift}>
+        <ul className={styles.stroke}>
           <li className="pt-3">
             <Link href="/">Home</Link>
           </li>
