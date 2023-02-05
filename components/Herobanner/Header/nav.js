@@ -1,8 +1,15 @@
-import { useState } from "react";
-import styles from "../../../styles/Home.module.css";
-import Link from "next/link";
-import Image from "next/image";
+import { useState } from 'react';
+import styles from '../../../styles/Home.module.css';
+import Link from 'next/link';
+import Image from 'next/image';
 
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About THS' },
+  { href: '/gallery', label: 'Events Gallery' },
+  { href: '/calender', label: 'Calender' },
+  { href: '/contact', label: 'Contact' },
+];
 
 const BigNav = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -41,23 +48,29 @@ const BigNav = () => {
         }
       >
         <ul className={styles.stroke}>
-          <li className="pt-3">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="pt-3">
-            <Link href="/about">About THS</Link>
-          </li>
-          <li className="pt-3">
-            <Link href="/gallery">Events Gallery</Link>
-          </li>
-          <li className="pt-3">
-            <Link href="calender">Calender</Link>
-          </li>
-          <li className="pt-3">
-            <Link href="/contact">Contact</Link>
-          </li>
+          {links.map(({ href, label }, index) => {
+            return (
+              <li className="pt-3" key={index+label}>
+                <Link
+                  href={href}
+                  onClick={() => {
+                    isNavExpanded && setIsNavExpanded(!isNavExpanded);
+                  }}
+                >
+                  {label}
+                </Link>
+              </li>
+            );
+          })}
           <div className={styles.mobileButton}>
-            <Link href="/portal">Portal</Link>
+            <Link
+              href="/portal"
+              onClick={() => {
+                isNavExpanded && setIsNavExpanded(!isNavExpanded);
+              }}
+            >
+              Portal
+            </Link>
           </div>
           <div className={`relative mr-5 ${styles.desktopButton}`}>
             <div className={` ${styles.buttonBackPosition}`}>
@@ -65,7 +78,7 @@ const BigNav = () => {
             </div>
             <div className={styles.buttonFrontPosition}>
               <Link href="/portal">
-                <Image src="/rec6.png" alt="alt" width={150} height={100} />{" "}
+                <Image src="/rec6.png" alt="alt" width={150} height={100} />{' '}
                 <div className={` ml-5 ${styles.buttonText}`}>
                   <p>Portal</p>
                 </div>

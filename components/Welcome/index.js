@@ -21,7 +21,7 @@ const Welcome = () => {
             WELCOME NOTE
           </motion.div>
           <Col sm={4}>
-            <div className="relative ">
+          <div className="relative w-1/2 md:w-full m-auto">
               <div className="flex justify-center">
                 <Image src="/bgimg.png" alt="head" width={400} height={400} />
               </div>
@@ -31,7 +31,7 @@ const Welcome = () => {
             </div>
           </Col>
           <Col sm={8}>
-            <div className={` mt- 7 ${styles.welcomeTitle}`}>
+            <div className={` ${styles.welcomeTitle}`}>
               <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}

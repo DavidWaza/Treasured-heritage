@@ -5,7 +5,8 @@
   --primaryFontSize: 30px;
   --secondaryFontSize: 20px;
   --tetiaryFontSize: 18px;
-  --sectionMargin: 7rem
+  --sectionMargin: 7rem;
+  --secondaryLetterSpacing: 0.047em;
 }
 
 .inputForm {
@@ -139,14 +140,14 @@
   font-size: var(--heroFontPrimary);
   font-family: 'Bree Serif', serif;
   font-weight: bold;
-  letter-spacing: 0.077em;
+  letter-spacing: var(--secondaryLetterSpacing);
 }
 
 .heroContent>p:nth-child(2) {
   font-size: var(--heroFontSecondary);
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  letter-spacing: 0.077em;
+  letter-spacing: var(--secondaryLetterSpacing);
   margin-top: -20px;
 }
 
@@ -154,7 +155,7 @@
   font-size: var(--heroFontTetiary);
   font-family: 'Open Sans', sans-serif;
   font-weight: light;
-  letter-spacing: 0.067em;
+  letter-spacing: var(--secondaryLetterSpacing);
 }
 
 .enrolButtonContainer {
@@ -212,7 +213,7 @@
 .noticeText {
   font-family: 'Open Sans', sans-serif;
   font-size: var(--tetiaryFontSize);
-  letter-spacing: 0.25px;
+  letter-spacing: var(--secondaryLetterSpacing);
   color: #ffffff;
   padding: 6% 0;
 }
@@ -228,7 +229,7 @@
 
 .welcomeTitle>p:nth-child(1) {
   font-family: 'Open Sans', sans-serif;
-  letter-spacing: 0.25px;
+  letter-spacing: var(--secondaryLetterSpacing);
   font-weight: bold;
   font-size: var(--secondaryFontSize);
 }
@@ -243,7 +244,7 @@
 .welcomeTitle>p:nth-child(3) {
   font-family: 'Open Sans', sans-serif;
   font-weight: light;
-  letter-spacing: 0.25px;
+  letter-spacing: var(--secondaryLetterSpacing);
   font-size: var(--tetiaryFontSize);
 }
 
@@ -276,6 +277,14 @@
   top: 0%;
 }
 
+.backgroundImage {
+  position: absolute;
+  height: 350px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
 /* ABOUT SECTION */
 .abtWrapper {
   background: url("https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto/v1668634984/Rectangle_24_ukra3h.png");
@@ -306,19 +315,20 @@
   font-size: var(--tetiaryFontSize);
   font-weight: 500;
   padding-bottom: 30px;
-  color: #000;
+  color:#bd0075;
 }
 
 .learnMore::after {
   content: "";
   position: absolute;
-  background-image: url("/rightCaret.png");
+  background-image: url("/rightCar.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 20px;
   height: 10px;
   top: 10px;
+  color: #bd0075;
 }
 
 .learnMore:hover::after {
@@ -328,13 +338,13 @@
 
 .abtImgContainer {
   position: absolute;
-  top: 35%;
+  top: 45%;
   right: 3%;
 }
 
 .AbtTitle {
   position: absolute;
-  top: 22%;
+  top: 27%;
   right: 10%;
   font-family: 'Bree Serif', serif;
   font-size: var(--primaryFontSize);
@@ -1067,6 +1077,10 @@
   .title {
     margin: 0;
     text-align: center;
+  }
+  
+  .backgroundImage {
+    transform: scale(0.79)
   }
 
   .abtHeader {
