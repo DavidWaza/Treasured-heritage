@@ -6,14 +6,20 @@ import AccordionArr from "../components/Accordion/index";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+const easyLink = [
+  { href: "/event", links: "Events" },
+  { href: "/admission", links: "Admission" },
+  { href: "/contact", links: "Contact" },
+  { href: "/gallery", links: "Gallery" },
+  { href: "/calender", links: "Calender" },
+];
+
 const About = () => {
   return (
     <>
       <div className={Abtstyles.homeBody}>
         <div className={Abtstyles.hero}>
-          <p className="text-center text-white text-7xl font-bold">
-            About Us
-          </p>
+          <p className="text-center text-white text-7xl font-bold">About Us</p>
           <p>
             <q>
               An investment in knowledge pays the best interest. – Benjamin
@@ -187,18 +193,15 @@ const About = () => {
               <p>Popular Links:</p>
             </div>
             <div className={Abtstyles.buttonLinksGrp}>
-              <Link href="/event">
-                <button className={Abtstyles.buttonLinks}>Events</button>
-              </Link>
-              <Link href="/admission">
-                <button className={Abtstyles.buttonLinks}>Admission</button>
-              </Link>
-              <Link href="/contact">
-                <button className={Abtstyles.buttonLinks}>Contact us</button>
-              </Link>
-              <Link href="/gallery">
-                <button className={Abtstyles.buttonLinks}>Gallery</button>
-              </Link>
+              {easyLink.map(({ href, links }, index) => {
+                return (
+                  <div key={index + links}>
+                    <Link href={href}>
+                      <button className={Abtstyles.buttonLinks}>{links}</button>
+                    </Link>
+                  </div>
+                )
+              })}
             </div>
           </Row>
         </Container>

@@ -62,11 +62,8 @@
   color: #fff;
   transition: all .6s ease;
 }
-.accordionTitle:active {
+.accordionTitle:focus {
   background-color: #A0457B !important;
-}
-.accordionTitle:visited {
-  background-color: #A0457B;
 }
 .accordionTitle,
 .accordionContent {
@@ -77,6 +74,11 @@
 .accordionContent {
   background-color: #f1f1f1;
   color: #878787;
+  transition: all .6s ease;
+}
+.accordionSelected {
+  background-color: #A0457B;
+  color: #fff;
   transition: all .6s ease;
 }
 
