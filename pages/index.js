@@ -1,5 +1,3 @@
-// import { useState, useEffect } from "react";
-import Head from "next/head";
 import styles from "../styles/Home.module.css"
 import About from "../components/About";
 import Herobanner from "../components/Herobanner";
