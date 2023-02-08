@@ -9,9 +9,9 @@ import Link from "next/link";
 const easyLink = [
   { href: "/event", links: "Events" },
   { href: "/admission", links: "Admission" },
-  { href: "/contact", links: "Contact" },
   { href: "/gallery", links: "Gallery" },
   { href: "/calender", links: "Calender" },
+  { href: "/contact", links: "Contact" },
 ];
 
 const About = () => {
