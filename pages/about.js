@@ -31,7 +31,7 @@ const About = () => {
           <Row>
             <div className={Abtstyles.welcomeSection}>
               <motion.p
-                intial={{ opacity: 0 }}
+                initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{
                   delay: 0.5,
@@ -42,7 +42,7 @@ const About = () => {
                 Welcome to Treasure Heritage School
               </motion.p>
               <motion.p
-                intial={{ opacity: 0 }}
+                initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{
                   delay: 0.6,
@@ -61,7 +61,7 @@ const About = () => {
                 about us.{" "}
               </motion.p>
               <motion.p
-                intial={{ opacity: 0 }}
+                initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{
                   delay: 0.5,
@@ -76,8 +76,8 @@ const About = () => {
             </div>
           </Row>
           <Row>
-            <div
-              intial={{ opacity: 0 }}
+            <motion.div
+              initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{
                 delay: 0.6,
@@ -87,36 +87,114 @@ const About = () => {
               className={Abtstyles.accordionWrapper}
             >
               <AccordionArr />
-            </div>
+            </motion.div>
           </Row>
           <Row>
             <Col sm={6} md={6}>
-              <div className={Abtstyles.row}>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.8,
+                  duration: 0.8,
+                  ease: [0.9, 0.71, 0.7, 1.01],
+                }}
+                className={Abtstyles.row}
+              >
                 <p>What we aim to achieve</p>
-                <ul className={Abtstyles.listType}>
-                  <li>
+                <motion.ul
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{
+                    delay: 0.8,
+                    duration: 0.8,
+                    ease: [0.9, 0.71, 0.7, 1.01],
+                  }}
+                  className={Abtstyles.listType}
+                >
+                  <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                      delay: 0.8,
+                      duration: 0.8,
+                      ease: [0.9, 0.71, 0.7, 1.01],
+                    }}
+                  >
                     Provide a sound Montessori system of education required for
-                    the acquisiton of relevant knowledge and skills.
-                  </li>
-                  <li>
-                    Groom children that can compete favourably on a global level
-                  </li>
-                  <li>Develop children of faith with godly character</li>
-                </ul>
-              </div>
-              <div className={Abtstyles.rowReverseved}>
+                    the acquisition of relevant knowledge and skills.
+                  </motion.li>
+                  <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                      delay: 0.8,
+                      duration: 0.8,
+                      ease: [0.9, 0.71, 0.7, 1.01],
+                    }}
+                  >
+                    Groom children that can compete favorably on a global level
+                  </motion.li>
+                  <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                      delay: 0.8,
+                      duration: 0.8,
+                      ease: [0.9, 0.71, 0.7, 1.01],
+                    }}
+                  >
+                    Develop children of faith with godly character
+                  </motion.li>
+                </motion.ul>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.8,
+                  duration: 0.8,
+                  ease: [0.9, 0.71, 0.7, 1.01],
+                }}
+                className={Abtstyles.rowReverseved}
+              >
                 <p>Where we see ourselves in the near future</p>
-                <ul className={Abtstyles.listTypeReverse}>
-                  <li>
+                <motion.ul
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{
+                    delay: 0.8,
+                    duration: 0.8,
+                    ease: [0.9, 0.71, 0.7, 1.01],
+                  }}
+                  className={Abtstyles.listTypeReverse}
+                >
+                  <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                      delay: 0.8,
+                      duration: 0.8,
+                      ease: [0.9, 0.71, 0.7, 1.01],
+                    }}
+                  >
                     To be among the foremost providers of all-round qualitative
                     education in Nigeria
-                  </li>
-                  <li>
+                  </motion.li>
+                  <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                      delay: 0.8,
+                      duration: 0.8,
+                      ease: [0.9, 0.71, 0.7, 1.01],
+                    }}
+                  >
                     A citadel where leaders with high spiritual, moral and
                     intellectual values are raised
-                  </li>
-                </ul>
-              </div>
+                  </motion.li>
+                </motion.ul>
+              </motion.div>
             </Col>
             <Col sm={6} md={6}>
               <p className={Abtstyles.mainTitle}>Our Mission & Vision</p>
@@ -148,23 +226,41 @@ const About = () => {
         <Container fluid>
           <Row>
             <Col>
-              <div className="relative">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.8,
+                  duration: 0.8,
+                  ease: [0.9, 0.71, 0.7, 1.01],
+                }}
+                className="relative"
+              >
                 <div className={Abtstyles.CBg}>
                   <div className={Abtstyles.CBgTitle}>
                     <p className="text-white mt-10 text-3xl font-bold">
                       Why Choose Us?
                     </p>
                   </div>
-                  <div className={Abtstyles.CBgContent}>
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                      delay: 0.8,
+                      duration: 0.8,
+                      ease: [0.9, 0.71, 0.7, 1.01],
+                    }}
+                    className={Abtstyles.CBgContent}
+                  >
                     <p>
                       We are poised to build a total child that is spiritually,
                       morally and academically sound, exuding self confidence
                       that can make the child compete favourably with his/her
                       contemporaries in any part of the world.
                     </p>
-                  </div>
+                  </motion.div>
                 </div>
-              </div>
+              </motion.div>
             </Col>
           </Row>
           <Row>
@@ -200,7 +296,7 @@ const About = () => {
                       <button className={Abtstyles.buttonLinks}>{links}</button>
                     </Link>
                   </div>
-                )
+                );
               })}
             </div>
           </Row>

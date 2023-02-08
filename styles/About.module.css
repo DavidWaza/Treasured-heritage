@@ -74,23 +74,22 @@
   transition: all .6s ease;
 }
 .accordionSelected {
-  background-color: #A0457B;
+  background-color: #BE0076;
   color: #fff;
   transition: all .6s ease;
 }
 
 .row>p {
-  display: flex;
   flex-direction: row;
   font-family: "Bree Serif", serif;
   margin-top: 20%;
+  margin-left: 14px;
   font-size: var(--secondaryFontSize);
   font-weight: bold;
 }
 
 .rowReverseved>p {
-  display: flex;
-  justify-content: center;
+  margin-left: 16%;
   font-family: "Bree Serif", serif;
   margin-top: 20%;
   font-size: var(--secondaryFontSize);
