@@ -22,7 +22,7 @@ const Welcome = () => {
           </motion.div>
           <Col sm={4}>
           <div className="relative w-1/2 md:w-full m-auto">
-                <Image src="/bgimg.png" alt="head" width={420} height={350} />
+                <Image src="/bgimg.png" alt="head" width={420} height={350} />git
               <div className={`absolute ${styles.headmisImg}`}>
                 <Image src="/Headmis.png" alt="head" width={410} height={350} />
               </div>
