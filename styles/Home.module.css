@@ -226,6 +226,9 @@
   margin-top: var(--sectionMargin);
   margin-bottom: 2rem;
 }
+.welcomeTitle {
+  padding: 0px 15px;
+}
 
 .welcomeTitle>p:nth-child(1) {
   font-family: 'Open Sans', sans-serif;
@@ -395,7 +398,7 @@
 .testimonialWrapper {
   background-color: #A0457B;
   margin-top: var(--sectionMargin);
-  margin-bottom: var(--sectionMargin);
+  margin-bottom: 25px;
 }
 
 .testimonialHeader {
@@ -775,7 +778,7 @@
   --subtitle-font-size: 13px;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
+  -ms-user-select: none;  
   user-select: none;
 }
 

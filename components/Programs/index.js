@@ -75,7 +75,7 @@ const Program = () => {
                 }}
                 className={styles.progHeader}
               >
-                <p className={`text-center text-xl font-bold mt-3 ${styles.schoolTypeText}`}>
+                <p className={`text-center text-xl font-bold mt-5 ${styles.schoolTypeText}`}>
                   {schoolType}
                 </p>
                 <p className="text-bold">{slug}</p>
