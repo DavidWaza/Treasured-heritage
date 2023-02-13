@@ -1219,15 +1219,7 @@
   }
 }
 
-@media only screen and (width:768px) {
-  .imageBackground {
-    height: 350px;
-    width: 250px;
-    margin-top: 30%;
-  }
-}
-
-@media screen and (min-width: 820px) and (max-width:1024px) {
+@media screen and (min-width: 768px) and (max-width:1024px) {
   .herobanner {
     height: 420px;
   }
