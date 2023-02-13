@@ -69,8 +69,9 @@
 .stroke li a {
   display: inline-block;
   position: relative;
-  color:#000;
+  color: #000;
 }
+
 .stroke li a::after {
   content: '';
   position: absolute;
@@ -79,13 +80,15 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color:#bd0075;
+  background-color: #bd0075;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out
 }
+
 .stroke li a:hover {
   color: #666;
 }
+
 .stroke li a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -116,24 +119,15 @@
 /* HEROBANNER */
 
 .herobanner {
-  background-image: url('https://res.cloudinary.com/ddwkojhaj/image/upload/v1675122723/Background_pan4gp.png');
-  background-position: center;
-  background-size: cover;
   height: 500px;
   width: 100%;
-}
-
-.imageBackground {
-  position: relative;
-  height: 450px;
-  width: 450px;
-  margin-top: 5%;
-  margin-left: 10%;
+  background-color: #ededed;
 }
 
 .heroContent {
-  padding-top: 10%;
+  padding-top: 5%;
   color: #fff;
+  margin-left: 10%;
 }
 
 .heroContent>p:nth-child(1) {
@@ -141,6 +135,7 @@
   font-family: 'Bree Serif', serif;
   font-weight: bold;
   letter-spacing: var(--secondaryLetterSpacing);
+  color: #bd0075;
 }
 
 .heroContent>p:nth-child(2) {
@@ -149,6 +144,7 @@
   font-weight: bold;
   letter-spacing: var(--secondaryLetterSpacing);
   margin-top: -20px;
+  color: #000;
 }
 
 .heroContent>p:nth-child(3) {
@@ -156,11 +152,13 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: light;
   letter-spacing: var(--secondaryLetterSpacing);
+  color: #000;
 }
 
 .enrolButtonContainer {
   margin-top: 30px;
   position: relative;
+  margin-left: 10%;
 }
 
 .buttonBackPosition {
@@ -226,6 +224,7 @@
   margin-top: var(--sectionMargin);
   margin-bottom: 2rem;
 }
+
 .welcomeTitle {
   padding: 0px 15px;
 }
@@ -318,7 +317,7 @@
   font-size: var(--tetiaryFontSize);
   font-weight: 500;
   padding-bottom: 30px;
-  color:#bd0075;
+  color: #bd0075;
 }
 
 .learnMore::after {
@@ -598,7 +597,7 @@
   background-position: 0% 50%;
   background-size: cover;
   position: relative;
-  background-color: #727272;
+  background-color: #ededed;
   height: 50vh;
   overflow: hidden;
   border-bottom: 7px solid #bd0075;
@@ -729,6 +728,7 @@
 .subButton {
   background-color: #bd0075;
 }
+
 .subButtonDisabled {
   background-color: #8f8f8f;
   cursor: no-drop !important;
@@ -778,7 +778,7 @@
   --subtitle-font-size: 13px;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;  
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -1022,21 +1022,18 @@
     display: none;
   }
 
-  .welcomeHeader {
+  .heroContent {
     text-align: center;
-    margin-top: 10%;
-  }
-
-  .heroContent>p:nth-child(1) {
-    text-align: center;
+    margin: 10% 0px 0px 0px ;
   }
 
   .heroContent>p:nth-child(2) {
-    text-align: center;
+    font-size: 1.2rem;
   }
 
-  .heroContent>p:nth-child(3) {
+  .welcomeHeader {
     text-align: center;
+    margin-top: 10%;
   }
 
   .AbtTitle {
@@ -1081,6 +1078,7 @@
     margin: 0;
     text-align: center;
   }
+
   .abtHeader {
     padding: 0px 10px;
     text-align: center;
@@ -1164,6 +1162,7 @@
   .subButton {
     font-size: 15px;
   }
+
   .footerItems {
     text-align: center;
   }
