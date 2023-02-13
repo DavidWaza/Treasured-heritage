@@ -119,13 +119,13 @@
 /* HEROBANNER */
 
 .herobanner {
-  height: 500px;
+  height: 600px;
   width: 100%;
   background-color: #ededed;
 }
 
 .heroContent {
-  padding-top: 5%;
+  padding-top: 13%;
   color: #fff;
   margin-left: 10%;
 }
@@ -1031,6 +1031,9 @@
   .heroContent>p:nth-child(2) {
     font-size: 1.2rem;
   }
+  .herobanner {
+    height: 450px;
+  }
 
   .welcomeHeader {
     text-align: center;
@@ -1225,6 +1228,12 @@
 }
 
 @media screen and (min-width: 820px) and (max-width:1024px) {
+  .herobanner {
+    height: 420px;
+  }
+  .heroContent>p:nth-child(1) {
+    font-size: 4.3rem;
+  }
   .imageBackground {
     height: 350px;
     width: 250px;

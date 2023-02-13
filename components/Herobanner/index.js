@@ -32,8 +32,8 @@ const Herobanner = () => {
               <Image
                 src="/frame.png"
                 alt="bg"
-                height={400}
-                width={480}
+                height={450}
+                width={540}
                 className="hidden md:block "
               />
             </div>
