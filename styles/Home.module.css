@@ -472,7 +472,7 @@
 .iconPosition {
   position: fixed;
   top: 27%;
-  right: 42%;
+  left: 90%;
   z-index: 20;
   cursor: pointer;
   animation: movebtn 3s ease-in-out infinite;

@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 const Herobanner = () => {
   return (
-    <div className={styles.herobanner}>
-      <Container fluid className="hero-body">
+    <div className={`${styles.herobanner}`}>
+      <Container fluid className="p-0">
         <Row>
           <Col sm={6} md={6} lg={6}>
             <div className={styles.heroContent}>
@@ -28,7 +28,7 @@ const Herobanner = () => {
             </div>
           </Col>
           <Col sm={6} md={6} lg={6}>
-            <div className=" flex justify-end p-0 -mt-12 ">
+            <div className=" flex justify-end p-0 ">
               <Image
                 src="/frame.png"
                 alt="bg"
