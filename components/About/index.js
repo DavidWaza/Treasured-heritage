@@ -69,8 +69,9 @@ const About = () => {
               <Image
                 src="https://res.cloudinary.com/ddwkojhaj/image/upload/v1675123406/Image_xe4qjt.png"
                 alt="alt"
-                width={300}
-                height={300}
+                width={400}
+                height={400}
+                className="lg:w-96 md:w-auto"
               />
             </div>
           </Col>

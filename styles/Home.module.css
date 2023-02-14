@@ -203,7 +203,7 @@
 
 /* NOTICE */
 .noticeBg {
-  background-color: #a0457b;
+  background-color: #BD0075;
   width: 100%;
   overflow: hidden;
 }
@@ -214,7 +214,9 @@
   font-size: var(--tetiaryFontSize);
   letter-spacing: var(--secondaryLetterSpacing);
   color: #ffffff;
-  padding: 4% 0;
+  padding-top: 20px;
+  font-size: 17px;
+  text-align: center;
 }
 
 /* WELCOME NOTES */
@@ -341,14 +343,14 @@
 
 .abtImgContainer {
   position: absolute;
-  top: 45%;
+  top: 35%;
   right: 3%;
 }
 
 .AbtTitle {
   position: absolute;
   top: 27%;
-  right: 10%;
+  right: 0%;
   font-family: 'Bree Serif', serif;
   font-size: var(--primaryFontSize);
   font-weight: bold;
@@ -382,7 +384,7 @@
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.25px;
   font-size: var(--secondaryFontSize);
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   margin: auto;
 }
 

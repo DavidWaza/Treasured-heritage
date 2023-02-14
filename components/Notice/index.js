@@ -14,7 +14,7 @@ export const Notice = () => {
               <Col sm={12}>
                 <div className={styles.noticeText}>
                   <p>
-                    <strong className="text-white">Motto:</strong>{" "}We are a caring community school focusing on inspiring the
+                    <strong className="text-white not-italic">Motto:</strong>{" "}We are a caring community school focusing on inspiring the
                     child through practical learning and embedding in all we do
                   </p>
                 </div>

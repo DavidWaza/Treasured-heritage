@@ -58,7 +58,7 @@ const Program = () => {
                   duration: 0.9,
                   ease: [0.9, 0.71, 0.7, 1.01],
                 }}
-                className="relative flex justify-center"
+                className="relative flex justify-center mt-10"
               >
                 <Image src="/bgshadow.png" alt="alt" width={210} height={210} />
                 <div className="absolute flex justify-center">
@@ -75,10 +75,14 @@ const Program = () => {
                 }}
                 className={styles.progHeader}
               >
-                <p className={`text-center text-xl font-bold mt-5 ${styles.schoolTypeText}`}>
+                <p
+                  className={`text-center text-xl font-bold mt-5 ${styles.schoolTypeText}`}
+                >
                   {schoolType}
                 </p>
-                <p className="text-bold">{slug}</p>
+                <p className="text-bold  lg:w-96 m-auto text-center -mt-12 md:w-auto">
+                  {slug}
+                </p>
               </motion.div>
             </Col>
           ))}
