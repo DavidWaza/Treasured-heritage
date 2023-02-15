@@ -80,7 +80,7 @@ const Program = () => {
                 >
                   {schoolType}
                 </p>
-                <p className="text-bold  lg:w-96 m-auto text-center -mt-12 md:w-auto">
+                <p className="text-bold  lg:w-3/4 m-auto text-center -mt-12 md:w-auto">
                   {slug}
                 </p>
               </motion.div>

@@ -398,7 +398,7 @@
 
 /* TESTIMONIALS */
 .testimonialWrapper {
-  background-color: #A0457B;
+  background-color: #F3F3F3;
   margin-top: var(--sectionMargin);
   margin-bottom: 25px;
 }
@@ -408,62 +408,34 @@
 }
 
 .testimonialHeader>p:nth-child(1) {
-  color: #efefef;
+  color: #171717;
   font-family: 'Bree Serif', serif;
   font-weight: bold;
   font-size: var(--primaryFontSize);
 }
 
 .testimonialHeader>P:nth-child(2) {
-  color: #efefef;
+  color: #171717;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: var(--tetiaryFontSize);
   text-align: center;
 }
 
-.myCarousel {
-  width: 510px;
-  margin: 3% auto;
+.testContainer {
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
-
-.myCarousel>p {
-  color: #efefef;
-  font-family: 'Open Sans', sans-serif;
-  font-size: var(--tetiaryFontSize);
-  text-align: justify;
-}
-
-.myCarousel p:nth-child(1)::before {
-  content: url('/left_quote.png');
-  color: #f1f1f1;
-  width: 20px;
-  margin-right: 10px;
-  font-family: 'Open Sans', sans-serif;
+.testContainer>p:nth-child(1){
   font-weight: 500;
-}
-
-.myCarousel p:nth-child(1)::before {
-  content: "”";
-  color: #f1f1f1;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
-  line-height: 0;
 }
-
-.myCarousel>p:nth-child(2) {
-  display: flex;
-  justify-content: flex-end;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
+.testContainer>p:nth-child(2){
+  font-weight: 800;
+  margin-left: 40%;
 }
-
-.myCarousel>p:last-child {
-  display: flex;
-  justify-content: flex-end;
-  font-family: 'Open Sans', sans-serif;
-
+.testContainer>p:nth-child(3){
+  margin-left: 40%;
 }
 
 /* SCROLL TO TOP */
@@ -1027,12 +999,13 @@
 
   .heroContent {
     text-align: center;
-    margin: 10% 0px 0px 0px ;
+    margin: 10% 0px 0px 0px;
   }
 
   .heroContent>p:nth-child(2) {
     font-size: 1.2rem;
   }
+
   .herobanner {
     height: 450px;
   }
@@ -1102,6 +1075,10 @@
 
   .testimonialHeader>p:nth-child(2) {
     font-size: 15px;
+  }
+
+  .testimonialCol {
+    width: auto;
   }
 
   .myCarousel>p:nth-child(1) {
@@ -1225,9 +1202,11 @@
   .herobanner {
     height: 420px;
   }
+
   .heroContent>p:nth-child(1) {
     font-size: 4.3rem;
   }
+
   .imageBackground {
     height: 350px;
     width: 250px;
