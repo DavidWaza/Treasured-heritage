@@ -31,7 +31,7 @@ const Testimonial = () => {
                   <br />
                   and also the spiritual life of the child.
                 </p>
-                <p>OSIFO PAULA</p>
+                <p>osifo paula</p>
                 <p>THS Parents</p>
               </div>
             </div>
