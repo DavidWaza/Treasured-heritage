@@ -39,7 +39,7 @@ const About = () => {
                   ease: [0.9, 0.71, 0.7, 1.01],
                 }}
               >
-                Welcome to Treasure Heritage School
+                Welcome to Treasured Heritage School
               </motion.p>
               <motion.p
                 initial={{ opacity: 0 }}
