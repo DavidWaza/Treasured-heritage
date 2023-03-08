@@ -2,44 +2,34 @@ import { Container, Row, Col } from "react-bootstrap";
 import styles from "../../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 const Herobanner = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 5000,
+    cssEase: "linear",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
-    <div className={`${styles.herobanner}`}>
-      <Container fluid className="p-0">
-        <Row>
-          <Col sm={6} md={6} lg={6}>
-            <div className={styles.heroContent}>
-              <p>Admission</p>
-              <p>Open for 2023 - 2024</p>
-              <p>Creche | Pre school | Nursery school | Grade school</p>
-            </div>
-            <div className={styles.enrolButtonContainer}>
-              <div className={styles.buttonBackPosition}>
-                <Image src="/buttonBk.png" alt="alt" width={150} height={100} />
-              </div>
-              <div className={styles.buttonFrontPosition}>
-                <Link href="/">
-                  <Image src="/rec6.png" alt="alt" width={150} height={100} />{" "}
-                </Link>
-                <div className={`${styles.buttonText}`}>
-                  <p>Enroll Now</p>
-                </div>
-              </div>
-            </div>
-          </Col>
-          <Col sm={6} md={6} lg={6}>
-            <div className=" flex justify-end p-0 ">
-              <Image
-                src="/frame.png"
-                alt="bg"
-                height={450}
-                width={540}
-                className="hidden md:block "
-              />
-            </div>
-          </Col>
-        </Row>
-      </Container>
+    <div className={styles.heroContainer}>
+      <Slider {...settings}>
+        <div className={`${styles.banner1} ${styles.overlay}`}>
+            <p>NUMERACY</p>
+        </div>
+        <div className={`${styles.banner2} ${styles.overlay}`}>
+            <p>UMBRELLA DAY</p>
+        </div>
+        <div className={`${styles.banner3} ${styles.overlay}`}>
+            <p>LITERACY</p>
+        </div>
+      </Slider>
     </div>
   );
 };

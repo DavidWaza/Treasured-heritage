@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 const Welcome = () => {
   return (
     <>
-      <Container>
-        <Row>
+      <Container className={styles.welcomWrapper}>
+        <Row className="">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -18,17 +18,14 @@ const Welcome = () => {
             }}
             className={styles.welcomeHeader}
           >
-            WELCOME NOTE
+            <p>WELCOME NOTE</p>
           </motion.div>
-          <Col sm={4}>
-          <div className="relative w-1/2 md:w-full m-auto">
-                <Image src="/bgimg.png" alt="head" width={420} height={350} />
-              <div className={`absolute ${styles.headmisImg}`}>
+          <Col sm={6}>
+              <div className={`w-1/2 md:w-full m-auto ${styles.headmisImg}`}>
                 <Image src="/Headmis.png" alt="head" width={410} height={350} />
               </div>
-            </div>
           </Col>
-          <Col sm={8}>
+          <Col sm={6}>
             <div className={` ${styles.welcomeTitle}`}>
               <motion.p
                 initial={{ opacity: 0 }}

@@ -77,7 +77,7 @@ const BigNav = () => {
               <Image src="/buttonBk.png" alt="alt" width={150} height={100} />
             </div>
             <div className={styles.buttonFrontPosition}>
-              <Link href="/portal">
+              <Link href="http://Dashboard.schoolx.ng/parent">
                 <Image src="/rec6.png" alt="alt" width={150} height={100} />{' '}
                 <div className={` ml-5 ${styles.buttonText}`}>
                   <p>Portal</p>
