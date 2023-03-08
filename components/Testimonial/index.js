@@ -24,7 +24,7 @@ const Testimonial = () => {
         </div>
         <Row>
           <Col sm={6}>
-            <div className="md:border-r border-current border-solid">
+            <div className="md:border-r border-white border-solid">
               <div className={styles.testContainer}>
                 <p>
                   It is a school that can build up the future of the child{" "}

@@ -67,7 +67,7 @@ const About = () => {
             <p className={styles.AbtTitle}>About Us</p>
             <div className={styles.abtImgContainer}>
               <Image
-                src="https://res.cloudinary.com/ddwkojhaj/image/upload/v1675123406/Image_xe4qjt.png"
+                src="/globe.png"
                 alt="alt"
                 width={400}
                 height={400}

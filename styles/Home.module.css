@@ -265,14 +265,14 @@
 }
 
 .welcomeTitle>p:nth-child(3) {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: light;
   letter-spacing: var(--secondaryLetterSpacing);
   font-size: var(--tetiaryFontSize);
 }
 
 .welcomeTitle>p:nth-child(4) {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 0.25px;
   font-weight: bold;
   font-size: var(--tetiaryFontSize);
@@ -284,8 +284,8 @@
 }
 
 .title {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   font-size: var(--tetiaryFontSize);
   margin-left: 15%;
 }
@@ -310,33 +310,36 @@
 
 /* ABOUT SECTION */
 .abtWrapper {
-  background: url("https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto/v1668634984/Rectangle_24_ukra3h.png");
+  background-image: url("/pat.png");
   padding-bottom: 50px;
-  background-position: 15% 0% !important;
+  background-color: #1E1E1E;
+  background-position: center;
   background-size: cover;
-  position: relative;
+  margin-top: 7%;
 }
 
 .abtHeader {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.25px;
-  font-size: var(--secondaryFontSize);
-  margin-top: 40%;
-  padding-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.035rem;
+  margin-top: 30%;
+  color: #fff;
+}
+.abtHeader>p:nth-child(1){
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .abtHeader>p:nth-child(2) {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;;
   font-size: var(--tetiaryFontSize);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .learnMore {
   position: relative;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: var(--tetiaryFontSize);
-  font-weight: 500;
+  font-weight: 700;
   padding-bottom: 30px;
   color: #bd0075;
 }
@@ -348,6 +351,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  font-weight: 700;
   width: 20px;
   height: 10px;
   top: 10px;
@@ -361,20 +365,21 @@
 
 .abtImgContainer {
   position: absolute;
-  top: 35%;
+  top: 25%;
   right: 3%;
 }
 
 .AbtTitle {
   position: absolute;
-  top: 27%;
+  top: 15%;
   right: 0%;
-  font-family: 'Bree Serif', serif;
+  /* font-family: 'Bree Serif', serif; */
   font-size: var(--primaryFontSize);
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 0.25px;
   line-height: 20px;
   display: inline-block;
+  color: #fff;
 }
 
 /* PROGRAMS */
@@ -416,7 +421,8 @@
 
 /* TESTIMONIALS */
 .testimonialWrapper {
-  background-color: #F3F3F3;
+  background-image: url("/pat.png");
+  background-color: #1E1E1E;
   margin-top: var(--sectionMargin);
   margin-bottom: 25px;
 }
@@ -426,15 +432,15 @@
 }
 
 .testimonialHeader>p:nth-child(1) {
-  color: #171717;
-  font-family: 'Bree Serif', serif;
-  font-weight: bold;
+  color: #fff;
+  font-family: 'Poppins', serif;
+  font-weight: 700;
   font-size: var(--primaryFontSize);
 }
 
 .testimonialHeader>P:nth-child(2) {
-  color: #171717;
-  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: var(--tetiaryFontSize);
   text-align: center;
@@ -447,21 +453,24 @@
 
 .testContainer>p:nth-child(1) {
   font-weight: 500;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color:#fff;
   text-transform: capitalize;
 }
 
 .testContainer>p:nth-child(2) {
-  font-weight: 800;
+  font-weight: 700;
   margin-left: 40%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color:#fff;
   text-transform: capitalize;
 
 }
 
 .testContainer>p:nth-child(3) {
   margin-left: 40%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color:#fff;
   text-transform: capitalize;
 
 }
