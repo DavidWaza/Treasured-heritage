@@ -7,6 +7,7 @@ import ContactPage from "../components/Contact";
 import Newsletter from "../components/Newsletter";
 import { Notice } from "../components/Notice";
 import Testimonial from "../components/Testimonial";
+import Events from "../components/Events";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Welcome />
         <About />
         <Program />
+        <Events />
         <Testimonial /> 
         <ContactPage />
         <Newsletter />
