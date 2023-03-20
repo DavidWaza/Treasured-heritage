@@ -1,7 +1,8 @@
 import { Container, Row, Col, Table } from "react-bootstrap";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import { TableHead, TableData } from "../components/DataArr/Data";
+import { TableData } from "../components/DataArr/Data";
+import EventData from "../components/Events/indexData";
 
 const Calender = () => {
   return (
@@ -20,7 +21,9 @@ const Calender = () => {
                     target="/blank"
                     download="THS Calender"
                   >
-                    <p className={styles.calLinkdownload}>Download 2023-2024 calender</p>
+                    <p className={styles.calLinkdownload}>
+                      Download 2023-2024 calender
+                    </p>
                   </Link>
                 </button>
               </Col>
@@ -40,29 +43,16 @@ const Calender = () => {
             </Row>
             <Row>
               <Col>
-              <p className={styles.GTC}>Grace Term Calender (1st term)</p>
+                <p className={styles.GTC}>Grace Term Calender (1st term)</p>
               </Col>
             </Row>
-            <Table striped bordered hover>
-              <thead>
-                <tr>
-                  {TableHead.map((x) => (
-                    <th key={x.id} className={styles.tableStyles}>
-                      {x.title}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {TableData.map((y) => (
-                  <tr key={y.id} className={styles.tableStyles}>
-                    <td>{y.date}</td>
-                    <td>{y.week}</td>
-                    <td>{y.activity}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </Table>
+            <Row className="g-5">
+              {TableData.map((y) => (
+                <Col sm={4} key={y.id}>
+                  <EventData day={y.day} date={y.date} activity={y.activity} />
+                </Col>
+              ))}
+            </Row>
           </Col>
         </Row>
       </Container>

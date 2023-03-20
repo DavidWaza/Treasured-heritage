@@ -9,10 +9,10 @@ const EventData = (props) => {
           <Row className="g-5">
             <Col sm={6} className={styles.eventDate}>
               <p>{props.day}</p>
-              <p>{props.month}</p>
+              <p>{props.date}</p>
             </Col>
             <Col sm={6} className={styles.eventName}>
-              <p>{props.name}</p>
+              <p>{props.activity}</p>
             </Col>
           </Row>
         </Container>

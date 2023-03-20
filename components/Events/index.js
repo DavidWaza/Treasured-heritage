@@ -15,15 +15,15 @@ const Events = () => {
             <Col sm={4}>
               <EventData
                 day="20"
-                month="March, 2023"
-                name="French Language Day"
+                date="March, 2023"
+                activity="French Language Day"
               />
             </Col>
             <Col sm={4}>
-              <EventData day="13" month="March, 2023" name="Revision" />
+              <EventData day="13" date="March, 2023" activity="Revision" />
             </Col>
             <Col sm={4}>
-              <EventData day="21" month="March, 2023" name="Examination" />
+              <EventData day="21" date="March, 2023" activity="Examination" />
             </Col>
           </Row>
           <Row>

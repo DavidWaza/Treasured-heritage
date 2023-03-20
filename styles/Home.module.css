@@ -440,12 +440,10 @@
 
 .eventDate {
   background-color: #bd0075;
-  padding: 0px;
 }
 
 .eventName {
   color: #fff;
-  font-size: 1.2rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   padding-top: 1.4rem;
@@ -455,18 +453,19 @@
 
 .eventDate>p:nth-child(1) {
   color: #fff;
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  padding-top: 1.2rem;
 }
 
 .eventDate>p:nth-child(2) {
-  text-align: center;
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 700;
+  text-align: center;
 
 }
 
