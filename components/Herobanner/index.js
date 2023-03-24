@@ -19,17 +19,15 @@ const Herobanner = () => {
   };
   return (
     <div className={styles.heroContainer}>
-      <Slider {...settings}>
-        <div className={`${styles.banner1} ${styles.overlay}`}>
-            <p>NUMERACY</p>
+      <div className={styles.banner1}>
+        <div className=" text-white">
+          <p className=" text-3xl">Welcome to </p>
+          <p className=" sm:text-7xl font-bold max-w-xl">
+            Treasured <span className="text-amber-400">Heritage</span> School
+          </p>
+          <p className="text-2xl mt-4">A Christian Montessori School</p>
         </div>
-        <div className={`${styles.banner2} ${styles.overlay}`}>
-            <p>UMBRELLA DAY</p>
-        </div>
-        <div className={`${styles.banner3} ${styles.overlay}`}>
-            <p>LITERACY</p>
-        </div>
-      </Slider>
+      </div>
     </div>
   );
 };
