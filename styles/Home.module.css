@@ -427,18 +427,21 @@
 
 }
 .crecheBanner:hover {
-  background:linear-gradient(69.35deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 1)99.45%),linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-  background-position: cover;
+  background:linear-gradient(69.35deg, rgba(0, 0, 0, .5)0%, rgba(0, 0, 0, .5)99.45%),linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/creche.jpg") no-repeat center;
+  background-position: center;
+  background-size: cover;
   transition: all 2s ease
 }
 .nurseryBanner:hover {
-  background:linear-gradient(69.35deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 1)99.45%),linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-  background-position: cover;
+  background:linear-gradient(69.35deg, rgba(0, 0, 0, .5)0%, rgba(0, 0, 0, .5)99.45%),linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),  url("/nursery.jpg") no-repeat center;
+  background-position: center;
+  background-size: cover;
   transition: all 2s ease
 }
 .gradeBanner:hover {
-  background:linear-gradient(69.35deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 1)99.45%),linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-  background-position: cover;
+  background:linear-gradient(69.35deg, rgba(0, 0, 0, .5)0%, rgba(0, 0, 0, .5)99.45%),linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),  url("/grade.jpg") no-repeat center;
+  background-position: center;
+  background-size: cover;
   transition: all 2s ease
 }
 /* EVENTS */
