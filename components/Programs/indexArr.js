@@ -11,14 +11,14 @@ export const ProgramArr = [
   {
     id: 2,
     image: "/preschool.png",
-    schoolType: "Nursery School",
+    schoolType: "Nursery",
     slug:
       " Here in THS, our Nursery class starts from age 4. We offer the Montessori system of education combined with the British, American and Nigerian curriculum.",
   },
   {
     id: 3,
     image: "/nurs.png",
-    schoolType: "Nursery School",
+    schoolType: "Primary",
     slug:
       " Here in THS, our Nursery class starts from age 4. We offer the Montessori system of education combined with the British, American and Nigerian curriculum.",
   },

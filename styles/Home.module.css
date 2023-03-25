@@ -182,9 +182,13 @@
 
 /* NOTICE */
 .noticeBg {
-  background-color: #BD0075;
+  background-color: #000;
+  background-image: url('/pat.png');
+  background-position: center;
+  background-size: cover;
   width: 100%;
   overflow: hidden;
+
 }
 
 .noticeText {
@@ -300,7 +304,7 @@
 .abtHeader {
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.035rem;
-  margin-top: 30%;
+  padding-top: 15%;
   color: #fff;
 }
 
@@ -311,7 +315,6 @@
 
 .abtHeader>p:nth-child(2) {
   font-family: 'Poppins', sans-serif;
-  ;
   font-size: var(--tetiaryFontSize);
   font-weight: 400;
 }
@@ -346,7 +349,7 @@
 
 .abtImgContainer {
   position: absolute;
-  top: 25%;
+  top: 15%;
   right: 3%;
 }
 
@@ -354,7 +357,7 @@
   position: absolute;
   top: 15%;
   right: 0%;
-  /* font-family: 'Bree Serif', serif; */
+  font-family: "Poppins", sans-serif;
   font-size: var(--primaryFontSize);
   font-weight: 700;
   letter-spacing: 0.25px;
@@ -370,7 +373,7 @@
 }
 
 .programText>p:nth-child(1) {
-  font-family: 'Bree Serif', serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: var(--primaryFontSize);
 }
@@ -379,33 +382,71 @@
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.25px;
   line-height: 40px;
-  font-weight: 700;
-  font-size: var(--secondaryFontSize);
-}
-
-.progHeader>p:nth-child(1) {
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.25px;
-  font-size: var(--secondaryFontSize);
-  padding-bottom: 5%;
-  margin: auto;
-}
-
-.progHeader>p:nth-child(2) {
-  font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: var(--tetiaryFontSize);
-  margin-top: -7%;
-  margin-bottom: 7%;
+  font-size: var(--secondaryFontSize);
 }
 
+.schoolType {
+  padding-top: 40%;
+  padding-left: 10%;
+  font-family: "Poppins", sans-serif;
+}
+
+.schoolType>p:nth-child(1) {
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.schoolType>p:nth-child(2) {
+  max-inline-size: 30ch;
+}
+
+.crecheBanner,
+.nurseryBanner,
+.gradeBanner {
+  height: 60vh;
+  background-color: #d89b0b;
+}
+
+.crecheBanner {
+  background: linear-gradient(69.35deg, rgba(189, 0, 117, .2)0%, rgba(0, 0, 0, .5)99.45%), linear-gradient(0deg, rgba(189, 0, 117, .5), rgba(0, 0, 0, .5)), url("/creche.jpg") no-repeat center;
+  background-size: cover;
+  transition: all 2s ease;
+}
+
+.nurseryBanner {
+  background: linear-gradient(69.35deg, rgba(216, 155, 11, .2)0%, rgba(216, 155, 11, .5)99.45%), linear-gradient(0deg, rgba(216, 155, 11, .5), rgba(0, 0, 0, .5)), url("/nursery.jpg") no-repeat center;
+  background-size: cover;
+  transition: opacity 0.5s ease-in-out
+}
+
+.gradeBanner {
+  background: linear-gradient(69.35deg, rgba(189, 0, 117, .2)0%, rgba(189, 0, 117, .5)99.45%), linear-gradient(0deg, rgba(189, 0, 117, .5), rgba(0, 0, 0, .5)), url("/grade.jpg") no-repeat center;
+  background-size: cover;
+  transition: all .4s ease;
+
+}
+.crecheBanner:hover {
+  background:linear-gradient(69.35deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 1)99.45%),linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+  background-position: cover;
+  transition: all 2s ease
+}
+.nurseryBanner:hover {
+  background:linear-gradient(69.35deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 1)99.45%),linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+  background-position: cover;
+  transition: all 2s ease
+}
+.gradeBanner:hover {
+  background:linear-gradient(69.35deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 1)99.45%),linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+  background-position: cover;
+  transition: all 2s ease
+}
 /* EVENTS */
 .eventWrapper {
-  background: linear-gradient(69.35deg, rgba(0, 0, 0, .5)0%, rgba(0, 0, 0, .5)99.45%), linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/hero.jpg") no-repeat center;
+  background: linear-gradient(69.35deg, rgba(0, 0, 0, .5)0%, rgba(0, 0, 0, .5)99.45%), linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/bg-over.jpg") no-repeat center;
   background-color: #E9E9E9;
+  background-size: cover;
   height: 50vh;
-  margin-top: 5%;
 }
 
 .eventHeader {
@@ -462,7 +503,7 @@
 .testimonialWrapper {
   background-image: url("/pat.png");
   background-color: #1E1E1E;
-  margin-top: var(--sectionMargin);
+  margin-top: 3%;
   margin-bottom: 25px;
 }
 
@@ -561,7 +602,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 70px;
+  margin-top: 3%;
   margin-bottom: 70px;
   height: auto;
   padding-top: 30px;
@@ -715,7 +756,6 @@
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-top: var(--sectionMargin);
   margin-bottom: var(--sectionMargin);
 }
 

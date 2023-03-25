@@ -16,7 +16,6 @@ const Program = () => {
       }}
       className={styles.programWrapper}
     >
-      <Container>
         <Row>
           <Col>
             <div className={styles.programText}>
@@ -47,47 +46,49 @@ const Program = () => {
             </div>
           </Col>
         </Row>
-        <Row className="mt-5 object-center">
-          {ProgramArr.map(({ id, image, schoolType, slug }) => (
-            <Col sm={6} key={id}>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{
-                  delay: 0.7,
-                  duration: 0.9,
-                  ease: [0.9, 0.71, 0.7, 1.01],
-                }}
-                className="relative flex justify-center mt-10"
-              >
-                <Image src="/bgshadow.png" alt="alt" width={210} height={210} />
-                <div className="absolute flex justify-center">
-                  <Image src={image} alt="creche" width={200} height={200} />
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{
-                  delay: 0.7,
-                  duration: 0.8,
-                  ease: [0.9, 0.71, 0.7, 1.01],
-                }}
-                className={styles.progHeader}
-              >
-                <p
-                  className={`text-center text-xl font-bold mt-5 ${styles.schoolTypeText}`}
-                >
-                  {schoolType}
+        <Row className=" g-0 mt-5 object-center">
+          <Col sm={4}>
+            <div className={styles.crecheBanner}>
+              <div className={styles.schoolType}>
+                <p className="text-white">Creche</p>
+                <p className="text-white">
+                  {" "}
+                  Our Creche is divided into two categories for effective
+                  service delivery that will make your baby experience a
+                  Minder/Child interaction such that the baby hardly misses the
+                  motherly attention.
                 </p>
-                <p className="text-bold  lg:w-3/4 m-auto text-center -mt-12 md:w-auto">
-                  {slug}
+              </div>
+            </div>
+          </Col>
+          <Col sm={4}>
+            <div className={styles.nurseryBanner}>
+              <div className={styles.schoolType}>
+                <p className="text-white">Nursery</p>
+                <p className="text-white">
+                  {" "}
+                  Here in THS, our Nursery class starts from age 4. We offer the
+                  Montessori system of education combined with the British,
+                  American and Nigerian curriculum.
                 </p>
-              </motion.div>
-            </Col>
-          ))}
+              </div>
+            </div>
+          </Col>
+          <Col sm={4}>
+            <div className={styles.gradeBanner}>
+              <div className={styles.schoolType}>
+                <p className="text-white">Grade</p>
+                <p className="text-white">
+                  {" "}
+                  Our Grades classes 1 to 5. In THS, the terminating class is
+                  Grade 5. Like in our Pre-School,we adopt a combination of both
+                  the Conventional and the Montessori methods of teaching. The
+                  age range for this level is from age 5 to age 11.
+                </p>
+              </div>
+            </div>
+          </Col>
         </Row>
-      </Container>
     </motion.div>
   );
 };
