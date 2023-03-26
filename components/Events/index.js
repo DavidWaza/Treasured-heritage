@@ -2,6 +2,7 @@ import styles from "../../styles/Home.module.css";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import EventData from "./indexData";
 import Link from "next/link";
+import Image from 'next/image'
 
 const Events = () => {
   return (
@@ -29,7 +30,27 @@ const Events = () => {
           <Row>
             <Col>
               <Link href="/calender">
-                <button className={styles.eventButton}>Show Events</button>
+              <div className="relative flex justify-center mt-6">
+                <button type="submit">
+                  <Image
+                    src="/buttonBk.png"
+                    alt="submit"
+                    height={50}
+                    width={150}
+                  />
+                  <div className="absolute top-2">
+                    <Image
+                      src="/rec6.png"
+                      alt="submit"
+                      height={50}
+                      width={150}
+                    />
+                    <p className="text-white top-3 left-6 absolute tracking-wide font-bold">
+                      Show Events
+                    </p>
+                  </div>
+                </button>
+              </div>
               </Link>
             </Col>
           </Row>
