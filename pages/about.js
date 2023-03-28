@@ -19,10 +19,12 @@ const About = () => {
     <>
       <div className={Abtstyles.homeBody}>
         <div className={Abtstyles.hero}>
-          <p className="text-center text-white text-7xl font-bold">About Us</p>
+          <p className="text-white text-7xl font-bold">
+            About <span className="text-amber-400">Us</span>
+          </p>
           <p>
             <q>
-              An investment in knowledge pays the best interest. – Benjamin
+              An investment in knowledge pays the best interest. <br />– Benjamin
               Franklin
             </q>
           </p>

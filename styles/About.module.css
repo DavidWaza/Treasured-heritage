@@ -1,4 +1,3 @@
-
 /* ROOT */
 .homeBody {
   --heroFontPrimary: clamp(2.5em, 10vw, 5em);
@@ -12,7 +11,7 @@
 
 /* HERO */
 .hero {
-  background-image: url("https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto/v1668756600/about1_hvpomm.png");
+  background: linear-gradient(69.35deg, rgba(0, 0, 0, .5)0%, rgba(0, 0, 0, .5)99.45%), linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/about_hero.jpg") no-repeat center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,30 +21,30 @@
 
 .hero>p:nth-child(1) {
   padding-top: 15%;
-  text-align: center;
   font-size: var(--heroFontPrimary);
-  font-family: 'Bree Serif',serif;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 10%;
 }
 
 .hero>p:nth-child(2) {
-  text-align: center;
   font-size: var(--heroFontTetiary);
   color: #f1f1f1;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: var(--secondaryFontSize);
+  padding-left: 10%;
 }
 
 /* ACCORDION */
-.accordionWrapper
-.accordion {
+.accordionWrapper .accordion {
   width: 100%;
-  margin:  var(--sectionMargin) 0;
+  margin: var(--sectionMargin) 0;
   transition: all .6s ease;
 }
 
 .accordionWrapper {
   padding: 0px 9rem;
 }
+
 .accordionTitle {
   display: flex;
   cursor: pointer;
@@ -62,6 +61,7 @@
   color: #fff;
   transition: all .6s ease;
 }
+
 .accordionTitle,
 .accordionContent {
   padding: 1rem;
@@ -73,6 +73,7 @@
   color: #878787;
   transition: all .6s ease;
 }
+
 .accordionSelected {
   background-color: #BE0076;
   color: #fff;
@@ -113,7 +114,7 @@
 }
 
 .mainTitle {
-  font-family: "Bree Serif",serif;
+  font-family: "Bree Serif", serif;
   font-size: var(--secondaryFontSize);
   font-weight: bold;
   display: flex;
@@ -186,7 +187,7 @@
 }
 
 .welcomeSection>p:nth-child(1) {
-  font-family: "Bree Serif",serif;
+  font-family: "Bree Serif", serif;
   font-weight: bold;
   font-size: var(--primaryFontSize);
   line-height: 30px;
@@ -212,6 +213,7 @@
 .accordion-button {
   background-color: #b0acac !important;
 }
+
 .principalDetails {
   font-family: "Open Sans", sans-serif;
   font-size: var(--tetiaryFontSize);
@@ -223,12 +225,14 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
+
 .principalPosition {
   font-family: "Open Sans", sans-serif;
   font-size: var(--tetiaryFontSize);
   font-weight: 600;
   text-align: center;
 }
+
 .whyUsContainerDiv {
   background-color: #fff;
   width: 70%;
@@ -269,7 +273,7 @@
   display: flex;
   gap: 1em;
   justify-content: center;
-  margin-bottom:7%;
+  margin-bottom: 7%;
 }
 
 .buttonLinks {
@@ -280,31 +284,44 @@
   font-size: 12px;
   transition: all .3s ease;
 }
+
 .buttonLinks:hover {
   background-color: #242424;
   transition: all .3s ease;
 }
-@media screen and (max-width: 768px) {
+
+/* MEDIA QUERIES */
+/* MOBILE */
+@media screen and (max-width: 767px) {
   .hero {
     height: 300px;
   }
-  .hero>p:nth-child(1) {
-    font-size: 2em;
-    padding-top: 25%;
 
-  }
-  .welcomeSection>p:nth-child(2) {
-    font-size: .9375rem;
-    line-height: 1.6875rem;
-  }
-  .welcomeSection>p:nth-child(3) {
-    font-size: .9375rem;
-    line-height: 1.6875rem;
+  .hero>p:nth-child(1) {
+    font-size: 1.7em;
+    padding-top: 25%;
+    text-align: center;
+    padding-left: 0;
+
   }
 
   .hero>p:nth-child(2) {
-    font-size: 18px;
-    padding: 0px 3rem;
+    font-size: 0.8rem;
+    padding-left: 0;
+    text-align: center;
+    max-inline-size: 25ch;
+    margin: 0 auto;
+
+  }
+
+  .welcomeSection>p:nth-child(2) {
+    font-size: .9rem;
+    line-height: 1.6875rem;
+  }
+
+  .welcomeSection>p:nth-child(3) {
+    font-size: .9375rem;
+    line-height: 1.6875rem;
   }
 
   .listTypeReverse>li {
@@ -312,7 +329,8 @@
     font-size: .9375rem;
     line-height: 1.6875rem;
   }
-  .listType>li{
+
+  .listType>li {
     font-size: .9375rem;
     line-height: 1.6875rem;
   }
@@ -329,16 +347,19 @@
   .rowReverseved {
     padding: 0px 1.3rem;
   }
-  .row>p{
+
+  .row>p {
     font-size: 18px;
     display: flex;
     justify-content: center;
   }
-  .rowReverseved>p{
+
+  .rowReverseved>p {
     font-size: 18px;
     display: flex;
     justify-content: center;
   }
+
   .principalImgShadow {
     display: none;
   }
@@ -373,23 +394,13 @@
     display: inline-block;
     text-align: center;
   }
+
   .buttonLinks {
     margin: 5px 0px;
   }
 }
 
-@media screen and (width: 820px) {
-  .hero {
-    height: 300px;
-  }
 
-  .hero>p:nth-child(2) {
-    text-align: center;
-  }
-}
+@media screen and (min-width: 1024px){
 
-@media screen and (width: 912px) {
-  .hero {
-    height: 300px;
-  }
 }

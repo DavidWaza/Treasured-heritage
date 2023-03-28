@@ -212,7 +212,7 @@
 }
 
 .welcomeHeader {
-  font-family: 'Bree Serif', serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: var(--primaryFontSize);
   margin-top: 1rem;
@@ -983,7 +983,7 @@
 }
 
 .fullCalender>h2 {
-  font-family: 'Bree Serif', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-weight: 700;
   color: #bd0075;
 }
@@ -1066,7 +1066,7 @@
   font-size: clamp(1em, 2rem + 1.5vw, 2.3em);
   ;
   color: #bd0075;
-  font-family: 'Bree Serif', serif;
+  font-family: 'Poppins', sans-serif;
   margin-top: -10%;
 }
 
