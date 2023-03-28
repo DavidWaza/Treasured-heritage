@@ -24,8 +24,8 @@ const About = () => {
           </p>
           <p>
             <q>
-              An investment in knowledge pays the best interest. <br />– Benjamin
-              Franklin
+              An investment in knowledge pays the best interest. <br />–
+              Benjamin Franklin
             </q>
           </p>
         </div>
@@ -201,13 +201,6 @@ const About = () => {
             <Col sm={6} md={6}>
               <p className={Abtstyles.mainTitle}>Our Mission & Vision</p>
               <div className={Abtstyles.principalImgShadow}>
-                <Image
-                  src="/bgimg.png"
-                  fill
-                  objectPosition="center"
-                  objectSize="cover"
-                  alt="shadow"
-                />
                 <div className={Abtstyles.principalImg}>
                   <Image
                     src="/Headmis.png"

@@ -7,6 +7,7 @@
   --secondaryFontSize: 20px;
   --tetiaryFontSize: 18px;
   --sectionMargin: 10%;
+  background-color: #F5F5F5;
 }
 
 /* HERO */
@@ -16,7 +17,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
-  border-bottom: 7px solid #E4E678;
+  border-bottom: 7px solid #FBBF24;
 }
 
 .hero>p:nth-child(1) {
@@ -82,7 +83,7 @@
 
 .row>p {
   flex-direction: row;
-  font-family: "Bree Serif", serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 20%;
   margin-left: 14px;
   font-size: var(--secondaryFontSize);
@@ -91,7 +92,7 @@
 
 .rowReverseved>p {
   margin-left: 16%;
-  font-family: "Bree Serif", serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 20%;
   font-size: var(--secondaryFontSize);
   font-weight: bold;
@@ -101,6 +102,8 @@
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+
 }
 
 .listTypeReverse>li {
@@ -110,11 +113,11 @@
   align-items: flex-end;
   margin-left: 15%;
   font-size: var(--tetiaryFontSize);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .mainTitle {
-  font-family: "Bree Serif", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: var(--secondaryFontSize);
   font-weight: bold;
   display: flex;
@@ -147,7 +150,7 @@
   list-style-position: outside;
   margin-top: 10px;
   font-size: var(--tetiaryFontSize);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* VISIONSTATEMENT */
@@ -169,14 +172,14 @@
 
 .CBgTitle>p {
   text-align: center;
-  font-family: "Bree Serif", serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .CBgContent>p {
   text-align: center;
   padding: 0px 10%;
   font-size: 18px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 0.25px;
   color: #f1f1f1;
 }
@@ -187,7 +190,8 @@
 }
 
 .welcomeSection>p:nth-child(1) {
-  font-family: "Bree Serif", serif;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
   font-weight: bold;
   font-size: var(--primaryFontSize);
   line-height: 30px;
@@ -195,7 +199,7 @@
 }
 
 .welcomeSection>p:nth-child(2) {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: light;
   font-size: var(--secondaryFontSize);
   line-height: 30px;
@@ -203,7 +207,7 @@
 }
 
 .welcomeSection>p:nth-child(3) {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: light;
   font-size: var(--secondaryFontSize);
   line-height: 30px;
@@ -215,8 +219,7 @@
 }
 
 .principalDetails {
-  font-family: "Open Sans", sans-serif;
-  font-size: var(--tetiaryFontSize);
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   margin-top: 10%;
   text-align: center;
@@ -255,7 +258,6 @@
 }
 
 .otherLinks {
-  background-color: #fff;
   margin-top: var(--sectionMargin);
 }
 
@@ -316,23 +318,23 @@
 
   .welcomeSection>p:nth-child(2) {
     font-size: .9rem;
-    line-height: 1.6875rem;
+    line-height: 1.3875rem;
+    text-align: center;
   }
 
   .welcomeSection>p:nth-child(3) {
     font-size: .9375rem;
-    line-height: 1.6875rem;
+    line-height: 1.3875rem;
+    text-align: center;
   }
 
   .listTypeReverse>li {
     margin: 0;
     font-size: .9375rem;
-    line-height: 1.6875rem;
   }
 
   .listType>li {
     font-size: .9375rem;
-    line-height: 1.6875rem;
   }
 
   .accordionWrapper {
@@ -373,13 +375,14 @@
   }
 
   .CBgContent>p {
-    text-align: justify;
+    text-align: center;
     padding: 0px 20px;
   }
 
   .CBgTitle>p {
-    text-align: justify;
+    text-align: center;
     padding: 0px 20px;
+    font-family: 'Poppins', sans-serif;
   }
 
   .welcomeSection {
@@ -401,6 +404,4 @@
 }
 
 
-@media screen and (min-width: 1024px){
-
-}
+@media screen and (min-width: 1024px) {}

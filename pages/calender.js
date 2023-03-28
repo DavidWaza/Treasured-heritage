@@ -6,7 +6,7 @@ import EventData from "../components/Events/indexData";
 
 const Calender = () => {
   return (
-    <>
+    <div className={styles.homeBody}>
       <Container>
         <Row>
           <Col>
@@ -56,7 +56,7 @@ const Calender = () => {
           </Col>
         </Row>
       </Container>
-    </>
+    </div>
   );
 };
 export default Calender;
