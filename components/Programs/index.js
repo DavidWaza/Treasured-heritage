@@ -27,7 +27,6 @@ const Program = () => {
                   duration: 0.7,
                   ease: [0.9, 0.71, 0.7, 1.01],
                 }}
-                className="text-center"
               >
                 Our Programs
               </motion.p>

@@ -6,10 +6,10 @@ import GalleryImg from "../components/galleryImg/GalleryImg";
 
 const GalleryAPI = () => {
   return (
-    <>
+    <div className={styles.homeBody}>
       <section>
         <div className={styles.Herogallery}>
-          <p>THS Gallery Album</p>
+          <p>THS <span className="text-amber-400">Gallery</span> Album</p>
         </div>
       </section>
       <Container>
@@ -28,7 +28,7 @@ const GalleryAPI = () => {
           ))}
         </Row>
       </Container>
-    </>
+    </div>
   );
 };
 

@@ -2,7 +2,7 @@
   --heroFontPrimary: clamp(2.5em, 10vw, 7em);
   --heroFontSecondary: clamp(1.4em, 10vw, 2em);
   --heroFontTetiary: clamp(.8em, 10vw, 1.2em);
-  --primaryFontSize: 30px;
+  --primaryFontSize: 3rem;
   --secondaryFontSize: 20px;
   --tetiaryFontSize: 18px;
   --sectionMargin: 7rem;
@@ -205,16 +205,15 @@
 
 /* WELCOME NOTES */
 .welcomWrapper {
-  margin-top: 10%;
-  box-shadow: 0px 0px 4px 4px rgba(189, 0, 117, 0.3);
-  border: 2px solid #BD0075;
-  border-radius: 20px;
-  backdrop-filter: blur(28.5px);
+  background-image: url('/06-paral.jpeg');
+  background-position: center;
+  background-size: cover;
 }
 
 .welcomeHeader {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Covered By Your Grace', cursive;
   font-weight: bold;
+  color: #bd0075;
   font-size: var(--primaryFontSize);
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -299,7 +298,6 @@
   background-color: #1E1E1E;
   background-position: center;
   background-size: cover;
-  margin-top: 7%;
 }
 
 .abtHeader {
@@ -358,22 +356,26 @@
   position: absolute;
   top: 15%;
   right: 0%;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Covered By Your Grace', cursive;
   font-size: var(--primaryFontSize);
   font-weight: 700;
   letter-spacing: 0.25px;
   line-height: 20px;
   display: inline-block;
-  color: #fff;
+  color: #d89b0b;
 }
 
 /* PROGRAMS */
 .programWrapper {
-  margin-top: var(--sectionMargin);
+  background-image: url('/06-paral.jpeg');
+  background-position: center;
+  background-size: cover;
+  padding-top: 2.5rem;
 }
 
 .programText>p:nth-child(1) {
-  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-family: 'Covered By Your Grace', cursive;
   font-weight: bold;
   font-size: var(--primaryFontSize);
 }
@@ -459,8 +461,8 @@
 .eventHeader {
   color: #fff;
   text-align: center;
-  font-size: 2rem;
-  font-family: "Poppins", sans-serif;
+  font-size: var(--primaryFontSize);
+  font-family: 'Covered By Your Grace', cursive;
   padding-top: 2rem;
   font-weight: 700;
 }
@@ -520,17 +522,18 @@
 
 .testimonialHeader>p:nth-child(1) {
   color: #fff;
-  font-family: 'Poppins', serif;
+  font-family: 'Covered By Your Grace', cursive;
   font-weight: 700;
   font-size: var(--primaryFontSize);
 }
 
 .testimonialHeader>P:nth-child(2) {
-  color: #fff;
+  color: #d89b0b;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: var(--tetiaryFontSize);
+  font-size: 1rem;
   text-align: center;
+  margin-top: -12px;
 }
 
 .testContainer {
@@ -549,7 +552,7 @@
   font-weight: 700;
   margin-left: 40%;
   font-family: 'Poppins', sans-serif;
-  color: #fff;
+  color: #bd0075;
   text-transform: capitalize;
 
 }
@@ -692,12 +695,11 @@
 
 /* GALLERY PAGE */
 .Herogallery {
-  background-image: url("../public/img/gallery.png");
-  background-position: 0% 50%;
+  background: linear-gradient(69.35deg, rgba(0, 0, 0, .5)0%, rgba(0, 0, 0, .5)99.45%), linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/hero.jpg") no-repeat center;
   background-size: cover;
   position: relative;
   background-color: #ededed;
-  height: 50vh;
+  height: 500px;
   overflow: hidden;
   border-bottom: 7px solid #bd0075;
 
@@ -706,10 +708,9 @@
 .Herogallery>p {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 10%;
   color: #f9f9f9;
-  font-family: "Bree Serif", serif;
+  font-family: "Poppins", sans-serif;
   font-size: clamp(2.5em, 10vw, 4em);
   font-weight: 800;
   letter-spacing: 0.04rem
@@ -762,7 +763,8 @@
   border-radius: 20px;
   width: 100%;
   padding-bottom: 20px;
-  margin-bottom: var(--sectionMargin);
+  /* margin-bottom: var(--sectionMargin); */
+  margin-bottom: 20px;
 }
 
 .NewsletterPng {
@@ -1223,8 +1225,15 @@
   }
 
   .abtHeader {
-    padding: 0px 10px;
+    padding: 0px 20px;
     text-align: center;
+  }
+
+  .abtHeader>p:nth-child(1) {
+    padding-top: 50px;
+    color: #d89b0b;
+    font-size: 3rem !important;
+    font-family: 'Covered By Your Grace', cursive;
   }
 
   .abtHeader>p:nth-child(2) {
@@ -1233,28 +1242,31 @@
   }
 
   .testimonialHeader>p:nth-child(1) {
-    font-size: 20px;
+    padding-top: 3rem;
+    font-size: 2.5rem;
     line-height: 1.9rem;
   }
 
   .testimonialHeader>p:nth-child(2) {
-    font-size: 15px;
+    font-size: 0.8rem;
+    margin-top: 3%;
   }
 
   .testimonialCol {
     width: auto;
   }
 
-  .myCarousel>p:nth-child(1) {
-    font-size: .98rem;
+  .testContainer>p:nth-child(1) {
+    padding: 0% 10%;
   }
 
-  .myCarousel>p:nth-child(2) {
-    font-size: .89rem;
+  .testContainer>p:nth-child(2) {
+    font-size: 1.267rem;
+    margin: 0;
   }
 
-  .myCarousel>p:last-child {
-    font-size: .89rem;
+  .testContainer>p:nth-child(3) {
+    margin: 0;
   }
 
   .learnMore {
@@ -1383,6 +1395,36 @@
     width: 80%;
   }
 
+  .testContainer>p:nth-child(1) {
+    padding: 0% 20%;
+  }
+
+  .testContainer>p:nth-child(2) {
+    margin: 0;
+  }
+
+  .testContainer>p:nth-child(3) {
+    margin: 0;
+  }
+
+  .crecheBanner,
+  .gradeBanner,
+  .nurseryBanner {
+    height: 450px;
+  }
+
+  .schoolType {
+    padding: 0%
+  }
+
+  .schoolType>p:nth-child(1) {
+    text-align: center;
+    padding-top: 32%;
+  }
+
+  .schoolType>p:nth-child(2) {
+    padding: 0 5%;
+  }
 }
 
 @media only screen and (width:1024px) {

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
 html,
 body {
   padding: 0;
@@ -7,20 +9,25 @@ body {
   background-color: #F5EDEB;
   height: 100vh;
 }
+
 * {
   text-decoration: none !important;
 }
+
 .fc .fc-col-header-cell-cushion {
   color: #000 !important
 }
+
 .fc .fc-daygrid-day-number {
   color: #000 !important
 }
+
 .fc-h-event {
   background-color: transparent !important;
   border-color: transparent !important;
 }
- .fc-event-title-container {
+
+.fc-event-title-container {
   background-color: none !important;
   border-color: #BE0076 !important;
   height: 50px !important;
@@ -28,15 +35,17 @@ body {
   color: #BE0076 !important;
   font-weight: 700;
 }
+
 .fc-event-title-container::before {
   content: "";
   display: inline-block;
   background-color: #BE0076;
-  border-radius:50%; 
+  border-radius: 50%;
   height: 7px;
   width: 7px;
   margin-right: 5px;
 }
+
 @media screen and (max-width: 820px) {
   .fc .fc-col-header-cell-cushion {
     margin: 0;
@@ -47,29 +56,34 @@ body {
     padding-top: calc(50% - 7px);
     color: inherit;
   }
+
   .fc .fc-daygrid-day-number {
     top: 21px !important;
     right: 15px !important;
   }
+
   .fc-event-title-container::before {
     height: 4px;
     width: 4px;
   }
+
   .fc-event-title-container {
     /* color:#fff !important; */
     display: none;
   }
-  .fc-event-title-container::before{
+
+  .fc-event-title-container::before {
     display: inline-block !important
   }
+
   .fc .fc-toolbar-title {
     font-size: 1.2em !important
   }
 
 }
-@media screen and (min-width: 820px) and (max-width:1024px) {
 
-}
+@media screen and (min-width: 820px) and (max-width:1024px) {}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
