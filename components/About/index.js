@@ -44,7 +44,7 @@ const About = () => {
                 that offers educational services from Creche to Grade levels. We
                 are poised to build a total child that is spiritually, morally
                 and academically sound, exuding self confidence that can make
-                the child compete favourably with his/her contemporaries in any
+                the child compete favorably with his/her contemporaries in any
                 part of the world.
               </motion.p>
               <Link href="/about">
