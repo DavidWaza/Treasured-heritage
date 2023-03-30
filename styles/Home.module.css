@@ -778,19 +778,20 @@
 }
 
 .newsLettertext>p:nth-child(1) {
-  font-size: var(--primaryFontSize);
+  font-size: 2rem;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.07rem;
 }
 
 .newsLettertext>p:nth-child(2) {
-  font-size: var(--tertiaryFontSize);
+  font-size: 1.2rem;
   font-weight: normal;
   color: #727272;
   font-family: "Poppins", sans-serif;
   margin: -10px 0px;
   letter-spacing: 0.07rem;
+  max-inline-size: 30ch;
 }
 
 .newsletterInputBg {
@@ -1424,6 +1425,14 @@
 
   .schoolType>p:nth-child(2) {
     padding: 0 5%;
+  }
+  .newsLettertext>p:nth-child(1) {
+    font-size: 1.6rem;
+  }
+  
+  .newsLettertext>p:nth-child(2) {
+    font-size: 1rem;
+    max-inline-size: 29ch;
   }
 }
 
