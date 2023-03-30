@@ -35,85 +35,43 @@
   padding-left: 10%;
 }
 
-/* ACCORDION */
-.accordionWrapper .accordion {
+
+/* MISSION && VISION */
+
+.misVisWrapper {
+  background-image: url('/08-paral.jpeg');
+  background-position: center;
+  background-size: cover;
+  margin-top: 7%;
+}
+
+.missionWrapper, .visionWrapper {
+  padding: 10% 0px;
   width: 100%;
-  margin: var(--sectionMargin) 0;
-  transition: all .6s ease;
+  mix-blend-mode: multiply;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
-.accordionWrapper {
-  padding: 0px 9rem;
+.missionWrapper {
+  background-color: #FBBF24;
 }
-
-.accordionTitle {
-  display: flex;
-  cursor: pointer;
-  background-color: #e2e2e2;
-  color: #878787;
-  font-weight: bold;
-  margin-top: 10px;
-  font-family: "Open Sans", sans-serif;
-  transition: all .6s ease;
-}
-
-.accordionTitle:hover {
-  background-color: #A0457B;
-  color: #fff;
-  transition: all .6s ease;
-}
-
-.accordionTitle,
-.accordionContent {
-  padding: 1rem;
-  transition: all .6s ease;
-}
-
-.accordionContent {
-  background-color: #f1f1f1;
-  color: #878787;
-  transition: all .6s ease;
-}
-
-.accordionSelected {
+.visionWrapper {
   background-color: #BE0076;
   color: #fff;
-  transition: all .6s ease;
 }
 
-.row>p {
-  flex-direction: row;
-  font-family: "Poppins", sans-serif;
-  margin-top: 20%;
-  margin-left: 14px;
-  font-size: var(--secondaryFontSize);
-  font-weight: bold;
+
+.MsH {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Covered By Your Grace', cursive;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.3);
+  padding-top: 10%;
 }
-
-.rowReverseved>p {
-  margin-left: 16%;
-  font-family: "Poppins", sans-serif;
-  margin-top: 20%;
-  font-size: var(--secondaryFontSize);
-  font-weight: bold;
-}
-
-.listTypeReverse {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  font-family: "Poppins", sans-serif;
-
-}
-
-.listTypeReverse>li {
-  list-style-type: circle;
-  list-style-position: outside;
-  margin-top: 10px;
-  align-items: flex-end;
-  margin-left: 15%;
-  font-size: var(--tetiaryFontSize);
-  font-family: "Poppins", sans-serif;
+.statement{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 10px 10%;
 }
 
 .mainTitle {
@@ -124,40 +82,7 @@
   flex-direction: row-reverse;
 }
 
-.principalImgShadow {
-  position: relative;
-  top: 10%;
-  left: 40%;
-  height: 300px;
-  width: 300px;
-}
 
-.principalImg {
-  position: relative;
-  top: 0%;
-  left: -3%;
-  height: 300px;
-  width: 300px;
-}
-
-/* MISSONSTATEMENT */
-.missionStatement>p:nth-child(1) {
-  font-weight: bold;
-}
-
-.listType>li {
-  list-style-type: circle;
-  list-style-position: outside;
-  margin-top: 10px;
-  font-size: var(--tetiaryFontSize);
-  font-family: "Poppins", sans-serif;
-}
-
-/* VISIONSTATEMENT */
-.visionStatment {
-  display: flex;
-  justify-content: flex-end;
-}
 
 .CBg {
   background-image: url("https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto/v1668756599/about2_pqh0d7.png");

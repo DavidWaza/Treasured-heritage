@@ -5,6 +5,8 @@ import { whyUsArr } from "../components/DataArr/Data";
 import AccordionArr from "../components/Accordion/index";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { AiOutlineBulb } from "react-icons/ai";
+import { IconContext } from "react-icons";
 
 const easyLink = [
   { href: "/event", links: "Events" },
@@ -14,6 +16,34 @@ const easyLink = [
   { href: "/contact", links: "Contact" },
 ];
 
+const missions = [
+  {
+    id: 1,
+    text: `Provide a sound Montessori system of education required for
+    the acquisition of relevant knowledge and skills.`,
+  },
+  {
+    id: 2,
+    text: `Groom children that can compete favorably on a global level `,
+  },
+  {
+    id: 3,
+    text: `Develop children of faith with godly character `,
+  },
+];
+
+const visions = [
+  {
+    id: 1,
+    text: ` To be among the foremost providers of all-round qualitative
+    education in Nigeria`,
+  },
+  {
+    id: 2,
+    text: `A citadel where leaders with high spiritual, moral and
+    intellectual values are raised `,
+  },
+];
 const About = () => {
   return (
     <>
@@ -77,129 +107,76 @@ const About = () => {
               </motion.p>
             </div>
           </Row>
-          <Row>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{
-                delay: 0.6,
-                duration: 0.7,
-                ease: [0.9, 0.71, 0.7, 1.01],
-              }}
-              className={Abtstyles.accordionWrapper}
-            >
-              <AccordionArr />
-            </motion.div>
-          </Row>
-          <Row>
-            <Col sm={6} md={6}>
+          <Row className={`pt-12 pb-12 pl-0 pr-0 ${Abtstyles.misVisWrapper}`}>
+            <Col sm={6}>
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{
-                  delay: 0.8,
-                  duration: 0.8,
+                  delay: 0.5,
+                  duration: 0.5,
                   ease: [0.9, 0.71, 0.7, 1.01],
-                }}
-                className={Abtstyles.row}
-              >
-                <p>What we aim to achieve</p>
-                <motion.ul
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{
-                    delay: 0.8,
-                    duration: 0.8,
-                    ease: [0.9, 0.71, 0.7, 1.01],
-                  }}
-                  className={Abtstyles.listType}
-                >
-                  <motion.li
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{
-                      delay: 0.8,
-                      duration: 0.8,
-                      ease: [0.9, 0.71, 0.7, 1.01],
-                    }}
-                  >
-                    Provide a sound Montessori system of education required for
-                    the acquisition of relevant knowledge and skills.
-                  </motion.li>
-                  <motion.li
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{
-                      delay: 0.8,
-                      duration: 0.8,
-                      ease: [0.9, 0.71, 0.7, 1.01],
-                    }}
-                  >
-                    Groom children that can compete favorably on a global level
-                  </motion.li>
-                  <motion.li
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{
-                      delay: 0.8,
-                      duration: 0.8,
-                      ease: [0.9, 0.71, 0.7, 1.01],
-                    }}
-                  >
-                    Develop children of faith with godly character
-                  </motion.li>
-                </motion.ul>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{
-                  delay: 0.8,
-                  duration: 0.8,
-                  ease: [0.9, 0.71, 0.7, 1.01],
-                }}
-                className={Abtstyles.rowReverseved}
-              >
-                <p>Where we see ourselves in the near future</p>
-                <motion.ul
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{
-                    delay: 0.8,
-                    duration: 0.8,
-                    ease: [0.9, 0.71, 0.7, 1.01],
-                  }}
-                  className={Abtstyles.listTypeReverse}
-                >
-                  <motion.li
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{
-                      delay: 0.8,
-                      duration: 0.8,
-                      ease: [0.9, 0.71, 0.7, 1.01],
-                    }}
-                  >
-                    To be among the foremost providers of all-round qualitative
-                    education in Nigeria
-                  </motion.li>
-                  <motion.li
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{
-                      delay: 0.8,
-                      duration: 0.8,
-                      ease: [0.9, 0.71, 0.7, 1.01],
-                    }}
-                  >
-                    A citadel where leaders with high spiritual, moral and
-                    intellectual values are raised
-                  </motion.li>
-                </motion.ul>
+                }} className={Abtstyles.missionWrapper}>
+                <div className={Abtstyles.MsH}>
+                  <p>Mission</p>
+                </div>
+                <div className={Abtstyles.listItems}>
+                  <ol>
+                    {missions.map(({ id, text }) => (
+                      <li key={id}>
+                        <p className={Abtstyles.statement}>
+                          <IconContext.Provider
+                            value={{
+                              color: "black",
+                              size: "1.5rem",
+                            }}
+                          >
+                            <AiOutlineBulb />
+                          </IconContext.Provider>
+                          {text}
+                        </p>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
               </motion.div>
             </Col>
-            <Col sm={6} md={6}>
-              <p className={Abtstyles.mainTitle}>Our Mission & Vision</p>
+            <Col sm={6}>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.8,
+                  duration: 0.8,
+                  ease: [0.9, 0.71, 0.7, 1.01],
+                }}
+                className={Abtstyles.visionWrapper}
+              >
+                <div className={Abtstyles.MsH}>
+                  <p>Vision</p>
+                </div>
+                <div className={Abtstyles.listItems}>
+                  <ol>
+                    {visions.map(({ id, text }) => (
+                      <li key={id}>
+                        <p className={Abtstyles.statement}>
+                          <IconContext.Provider
+                            value={{
+                              color: "white",
+                              size: "1.5rem",
+                            }}
+                          >
+                            <AiOutlineBulb />
+                          </IconContext.Provider>
+                          {text}
+                        </p>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              </motion.div>
+            </Col>
+            {/* <Col sm={4}>
               <div className={Abtstyles.principalImgShadow}>
                 <div className={Abtstyles.principalImg}>
                   <Image
@@ -215,7 +192,7 @@ const About = () => {
                 </p>
                 <p className={Abtstyles.principalPosition}>Propritress</p>
               </div>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
         <Container fluid>
