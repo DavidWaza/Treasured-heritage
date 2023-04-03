@@ -11,7 +11,7 @@ const Calender = () => {
         <Row>
           <Col>
             <div className={styles.fullCalender}>
-              <h2>School Calender</h2>
+              <p>School Calender</p>
             </div>
             <Row>
               <Col sm={6}>

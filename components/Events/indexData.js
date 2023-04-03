@@ -6,15 +6,15 @@ const EventData = (props) => {
     <>
       <div>
         <Container>
-          <Row className="g-5">
-            <Col sm={6} className={styles.eventDate}>
+          <div>
+            <div sm={12} className={styles.eventDate}>
               <p>{props.day}</p>
               <p>{props.date}</p>
-            </Col>
-            <Col sm={6} className={styles.eventName}>
+            </div>
+            <div className={styles.eventTitle}>
               <p>{props.activity}</p>
-            </Col>
-          </Row>
+            </div>
+          </div>
         </Container>
       </div>
     </>

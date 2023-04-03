@@ -58,7 +58,9 @@
   background-color: #BE0076;
   color: #fff;
 }
-
+.missionWrapper:hover, .visionWrapper:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 .MsH {
   font-size: 3rem;
@@ -251,44 +253,6 @@
     font-size: .9375rem;
     line-height: 1.3875rem;
     text-align: center;
-  }
-
-  .listTypeReverse>li {
-    margin: 0;
-    font-size: .9375rem;
-  }
-
-  .listType>li {
-    font-size: .9375rem;
-  }
-
-  .accordionWrapper {
-    padding: 0px 20px;
-  }
-
-  .accordion {
-    width: 90%;
-  }
-
-  .row,
-  .rowReverseved {
-    padding: 0px 1.3rem;
-  }
-
-  .row>p {
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .rowReverseved>p {
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .principalImgShadow {
-    display: none;
   }
 
   .mainTitle {

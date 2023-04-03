@@ -482,20 +482,33 @@
 
 .eventDate>p:nth-child(1) {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Covered By Your grace", cursive;
   font-weight: 700;
   padding-top: 1.2rem;
 }
 
 .eventDate>p:nth-child(2) {
   color: #fff;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-family: "Covered By Your grace", cursive;
+  font-size: 1.3rem;
   font-weight: 700;
   text-align: center;
-
+  margin-top: -17px;
+  padding-bottom: 2%;
+}
+.eventTitle{
+  margin-top: -16px;
+  background-color: #d89b0b;
+  padding: 10%;
+}
+.eventTitle>p{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 600;
 }
 
 .eventButton {
@@ -986,12 +999,12 @@
 
 .fullCalender {
   margin-top: 5%;
-  color: #000;
 }
 
-.fullCalender>h2 {
-  font-family: 'Poppins', sans-serif !important;
+.fullCalender>p {
+  font-family: 'Covered By Your Grace', cursive;
   font-weight: 700;
+  font-size: 3rem;
   color: #bd0075;
 }
 
@@ -1041,13 +1054,14 @@
 }
 
 .tableStyles {
-  font-family: "Bree Serif", serif;
+  font-family: "", serif;
   font-size: var(--secondaryFontSize);
 }
 
 .GTC {
-  font-family: "Bree Serif", serif;
-  font-size: var(--primaryFontSize);
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+
 }
 
 .invalidBG {

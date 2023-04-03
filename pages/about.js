@@ -24,11 +24,11 @@ const missions = [
   },
   {
     id: 2,
-    text: `Groom children that can compete favorably on a global level `,
+    text: `Groom children that can compete favorably on a global level. `,
   },
   {
     id: 3,
-    text: `Develop children of faith with godly character `,
+    text: `Develop children of faith with godly character. `,
   },
 ];
 
@@ -36,12 +36,12 @@ const visions = [
   {
     id: 1,
     text: ` To be among the foremost providers of all-round qualitative
-    education in Nigeria`,
+    education in Nigeria.`,
   },
   {
     id: 2,
     text: `A citadel where leaders with high spiritual, moral and
-    intellectual values are raised `,
+    intellectual values are raised. `,
   },
 ];
 const About = () => {
@@ -116,7 +116,9 @@ const About = () => {
                   delay: 0.5,
                   duration: 0.5,
                   ease: [0.9, 0.71, 0.7, 1.01],
-                }} className={Abtstyles.missionWrapper}>
+                }}
+                className={Abtstyles.missionWrapper}
+              >
                 <div className={Abtstyles.MsH}>
                   <p>Mission</p>
                 </div>
