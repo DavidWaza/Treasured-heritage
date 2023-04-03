@@ -618,7 +618,12 @@
     transform: translateY(0px);
   }
 }
-
+.accordionTitle{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+}
 /* CONTACT PAGE */
 .contactBg {
   background: url("https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto,w_500,c_scale/v1668755422/contactBg_qymlzm.png");

@@ -3,6 +3,8 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { TableData } from "../components/DataArr/Data";
 import EventData from "../components/Events/indexData";
+import Accordion from "../components/Accordion/Accordion";
+import Accordions from "../components/Accordion/Accordion";
 
 const Calender = () => {
   return (
@@ -54,6 +56,11 @@ const Calender = () => {
               ))}
             </Row>
           </Col>
+        </Row>
+        <Row>
+          <div className="pt-10">
+            <Accordions />
+          </div>
         </Row>
       </Container>
     </div>
