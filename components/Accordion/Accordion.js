@@ -9,7 +9,7 @@ import {
 } from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
 
-const Accordions = ({ title, content }) => {
+const Accordions = () => {
   const items = [
     {
       uuid: 1,
