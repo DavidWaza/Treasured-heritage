@@ -2,33 +2,27 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+[Treasured Heritage School]('https://treasuredHeritageSchool.com') Is a basic school website designed to provide parents with information about the school's activities. It is divided into four (4) categories.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+-The creche
+- The Nursery
+- The Pre-School
+- The Grade.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The School prioritizes personalized learning by providing students with the most effective and cost-efficient methods. Therefore, this website serves as a platform for sharing information about the school's events and schedule via the calendar and activities pages.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Stacks for Application
+-[Next Js 12](https://nextjs.org) - Next create app
+-[Tailwind CSS](https://tailwindcss.com/) - CSS library
+-[CSS Animation](https://animate.css) - Animations
+-[React Bootstrap](https://react-bootstrap.github.io/) - layouting and Mobile responsivness
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+##Contributors
+[Gad jacobs](https://github.com/gadjacobs)
+[Justice Maduke](https://github.com/justicemaduke)
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This site was locally deployed on [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
