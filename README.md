@@ -12,14 +12,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 The School prioritizes personalized learning by providing students with the most effective and cost-efficient methods. Therefore, this website serves as a platform for sharing information about the school's events and schedule via the calendar and activities pages.
 
 ## Stacks for Application
--[Next Js 12](https://nextjs.org) - Next create app
--[Tailwind CSS](https://tailwindcss.com/) - CSS library
--[CSS Animation](https://animate.css) - Animations
--[React Bootstrap](https://react-bootstrap.github.io/) - layouting and Mobile responsivness
+- [Next Js 12](https://nextjs.org) - Next create app
+- [Tailwind CSS](https://tailwindcss.com/) - CSS library
+- [CSS Animation](https://animate.css) - Animations
+- [React Bootstrap](https://react-bootstrap.github.io/) - layouting and Mobile responsivness
 
 ##Contributors
-[Gad jacobs](https://github.com/gadjacobs)
-[Justice Maduke](https://github.com/justicemaduke)
+- [Gad jacobs](https://github.com/gadjacobs)
+- [Justice Maduke](https://github.com/justicemaduke)
 
 ## Deploy on Vercel
 
