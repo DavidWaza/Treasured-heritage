@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/Home.module.css";
 import { ProgramArr } from "../Programs/indexArr";

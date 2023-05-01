@@ -661,6 +661,11 @@
   }
 }
 
+.loaderGif{
+  position: absolute;
+  left: 40%;
+  transform: translate(0%, 70%);
+}
 .accordionTitle {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
