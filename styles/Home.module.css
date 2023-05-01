@@ -389,7 +389,7 @@
 }
 
 .schoolType {
-  padding-top: 40%;
+  padding-top: 30%;
   padding-left: 10%;
   font-family: "Poppins", sans-serif;
 }
@@ -683,13 +683,13 @@
 }
 
 .contactBg>p:nth-child(1) {
-  font-family: "Bree Serif", serif;
+  font-family:'Covered By Your Grace', cursive;
   font-size: var(--primaryFontSize);
 }
 
 .contactBg>p:nth-child(2) {
   font-family: 'Poppins', sans-serif;
-  font-size: var(--secondaryFontSize);
+  font-size: 15px;
 }
 
 .formSpree {
