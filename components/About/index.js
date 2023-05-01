@@ -69,9 +69,9 @@ const About = () => {
               <Image
                 src="/globe.png"
                 alt="alt"
-                width={400}
-                height={400}
-                className="lg:w-96 md:w-auto"
+                width={200}
+                height={200}
+                className="mt-10"
               />
             </div>
           </Col>
